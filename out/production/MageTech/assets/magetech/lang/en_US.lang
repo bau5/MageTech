@@ -1,0 +1,12 @@
+item.magetech:crystalEmpty.name=Crystal
+item.magetech:crystalFire.name=Fire Crystal
+item.magetech:crystalWater.name=Water Crystal
+item.magetech:crystalEarth.name=Earth Crystal
+item.magetech:crystalAir.name=Air Crystal
+item.magetech:crystalPure.name=Pure Crystal
+item.magetech:ingotLead.name=Lead Ingot
+item.magetech:ingotSilver.name=Silver Ingot
+
+tile.magetech:infuser.name=Infuser
+
+itemGroup.magetech=MageTech
