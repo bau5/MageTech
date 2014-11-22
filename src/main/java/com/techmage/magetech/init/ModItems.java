@@ -5,6 +5,9 @@ import com.techmage.magetech.item.ItemIngot;
 import com.techmage.magetech.item.ItemMageTech;
 import com.techmage.magetech.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems
@@ -14,6 +17,10 @@ public class ModItems
 
     public static void init()
     {
+
+        OreDictionary.registerOre("ingotLead", new ItemStack(ingot, 1, 0));
+        OreDictionary.registerOre("ingotSilver", new ItemStack(ingot, 1, 1));
+
         GameRegistry.registerItem(crystal, "crystal");
         GameRegistry.registerItem(ingot, "ingot");
     }

@@ -1,0 +1,1257 @@
+[16:48:23] [main/INFO]: Setting user: ForgeDevName
+[16:48:23] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:48:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[16:48:28] [Sound Library Loader/INFO]: Sound engine started
+[16:48:29] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[16:48:29] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[16:48:29] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:48:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[16:48:29] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:48:29] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[16:48:30] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[16:48:31] [Sound Library Loader/INFO]: Sound engine started
+[16:53:55] [main/INFO]: Setting user: ForgeDevName
+[16:53:55] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:54:00] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[16:54:00] [Sound Library Loader/INFO]: Sound engine started
+[16:54:01] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[16:54:02] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[16:54:02] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:54:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[16:54:02] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:54:02] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[16:54:02] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[16:54:03] [Sound Library Loader/INFO]: Sound engine started
+[16:54:05] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[16:54:05] [Server thread/INFO]: Generating keypair
+[16:54:06] [Server thread/INFO]: Preparing start region for level 0
+[16:54:06] [Server thread/INFO]: Changing view distance to 16, from 10
+[16:54:07] [Server thread/INFO]: ForgeDevName[local:E:ce0c9b51] logged in with entity id 179 at (-519.7856974717276, 4.0, -867.9894917588658)
+[16:54:07] [Server thread/INFO]: ForgeDevName joined the game
+[16:54:07] [Server thread/INFO]: Saving and pausing game...
+[16:54:07] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[16:54:07] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[16:54:07] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[16:54:11] [Server thread/INFO]: Saving and pausing game...
+[16:54:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[16:54:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[16:54:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[16:54:11] [Server thread/INFO]: Stopping server
+[16:54:11] [Server thread/INFO]: Saving players
+[16:54:11] [Server thread/INFO]: Saving worlds
+[16:54:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[16:54:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[16:54:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[16:54:12] [Client thread/INFO]: Stopping!
+[16:55:15] [main/INFO]: Setting user: ForgeDevName
+[16:55:16] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:55:20] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[16:55:21] [Sound Library Loader/INFO]: Sound engine started
+[16:55:22] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[16:55:22] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[16:55:22] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:55:22] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[16:55:23] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:55:23] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[16:55:23] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[16:55:24] [Sound Library Loader/INFO]: Sound engine started
+[16:55:26] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[16:55:26] [Server thread/INFO]: Generating keypair
+[16:55:27] [Server thread/INFO]: Preparing start region for level 0
+[16:55:27] [Server thread/INFO]: Changing view distance to 16, from 10
+[16:55:27] [Server thread/INFO]: ForgeDevName[local:E:3804a8f1] logged in with entity id 179 at (-519.7856974717276, 4.0, -867.9894917588658)
+[16:55:27] [Server thread/INFO]: ForgeDevName joined the game
+[16:56:21] [Client thread/INFO]: Stopping!
+[16:56:21] [Server thread/INFO]: Stopping server
+[16:56:21] [Server thread/INFO]: Saving players
+[16:56:21] [Server thread/INFO]: Saving worlds
+[16:56:21] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[16:56:22] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[16:56:22] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:00:40] [main/INFO]: Setting user: ForgeDevName
+[17:00:41] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:00:45] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:00:46] [Sound Library Loader/INFO]: Sound engine started
+[17:00:47] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:00:47] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:00:47] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:00:47] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:00:47] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:00:47] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:00:48] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:00:49] [Sound Library Loader/INFO]: Sound engine started
+[17:00:51] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:00:51] [Server thread/INFO]: Generating keypair
+[17:00:51] [Server thread/INFO]: Preparing start region for level 0
+[17:00:52] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:00:52] [Server thread/INFO]: ForgeDevName[local:E:e7737c7e] logged in with entity id 185 at (-519.3631461625655, 4.0, -867.9818081017561)
+[17:00:52] [Server thread/INFO]: ForgeDevName joined the game
+[17:01:06] [Server thread/INFO]: [ForgeDevName: Changing to clear weather]
+[17:01:06] [Client thread/INFO]: [CHAT] Changing to clear weather
+[17:01:33] [Server thread/ERROR]: Encountered an unexpected exception
+net.minecraft.util.ReportedException: Ticking block entity
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:719) ~[MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:624) ~[MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118) ~[IntegratedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:495) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:762) [MinecraftServer$2.class:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.item.ItemStack.isItemEqual(ItemStack.java:446) ~[ItemStack.class:?]
+	at com.techmage.magetech.item.crafting.RecipesInfuser.getCraftingResult(RecipesInfuser.java:84) ~[RecipesInfuser.class:?]
+	at com.techmage.magetech.tileentity.TileEntityInfuser.updateEntity(TileEntityInfuser.java:167) ~[TileEntityInfuser.class:?]
+	at net.minecraft.world.World.updateEntities(World.java:2139) ~[World.class:?]
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:517) ~[WorldServer.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:713) ~[MinecraftServer.class:?]
+	... 4 more
+[17:01:33] [Server thread/ERROR]: This crash report has been saved to: D:\Programming\Minecraft_Modding\[FORGE_1.7]\MageTech\eclipse\.\crash-reports\crash-2014-10-04_17.01.33-server.txt
+[17:01:33] [Server thread/INFO]: Stopping server
+[17:01:33] [Server thread/INFO]: Saving players
+[17:01:33] [Server thread/INFO]: Saving worlds
+[17:01:33] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:01:33] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:01:33] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:01:33] [Client thread/FATAL]: Reported exception thrown!
+net.minecraft.util.ReportedException: Ticking block entity
+	at net.minecraft.world.World.updateEntities(World.java:2154) ~[World.class:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2096) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1038) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:961) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+Caused by: java.lang.NullPointerException
+	at net.minecraft.item.ItemStack.isItemEqual(ItemStack.java:446) ~[ItemStack.class:?]
+	at com.techmage.magetech.item.crafting.RecipesInfuser.getCraftingResult(RecipesInfuser.java:84) ~[RecipesInfuser.class:?]
+	at com.techmage.magetech.tileentity.TileEntityInfuser.updateEntity(TileEntityInfuser.java:167) ~[TileEntityInfuser.class:?]
+	at net.minecraft.world.World.updateEntities(World.java:2139) ~[World.class:?]
+	... 22 more
+[17:02:23] [main/INFO]: Setting user: ForgeDevName
+[17:02:24] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:02:28] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:02:29] [Sound Library Loader/INFO]: Sound engine started
+[17:02:30] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:02:30] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:02:30] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:02:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:02:30] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:02:30] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:02:31] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:02:31] [Sound Library Loader/INFO]: Sound engine started
+[17:02:34] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:02:34] [Server thread/INFO]: Generating keypair
+[17:02:34] [Server thread/INFO]: Preparing start region for level 0
+[17:02:34] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:02:35] [Server thread/INFO]: ForgeDevName[local:E:cb60acb2] logged in with entity id 184 at (-519.1467515629354, 4.0, -869.2485089618725)
+[17:02:35] [Server thread/INFO]: ForgeDevName joined the game
+[17:02:35] [Server thread/INFO]: Saving and pausing game...
+[17:02:35] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:02:35] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:02:35] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:03:03] [Server thread/INFO]: Saving and pausing game...
+[17:03:03] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:03:03] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:03:03] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:03:04] [Server thread/INFO]: Stopping server
+[17:03:04] [Server thread/INFO]: Saving players
+[17:03:04] [Server thread/INFO]: Saving worlds
+[17:03:04] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:03:04] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:03:04] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:03:04] [Client thread/INFO]: Stopping!
+[17:03:32] [main/INFO]: Setting user: ForgeDevName
+[17:03:33] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:03:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:03:38] [Sound Library Loader/INFO]: Sound engine started
+[17:03:39] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:03:39] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:03:39] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:03:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:03:39] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:03:39] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:03:40] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:03:40] [Sound Library Loader/INFO]: Sound engine started
+[17:03:44] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:03:44] [Server thread/INFO]: Generating keypair
+[17:03:44] [Server thread/INFO]: Preparing start region for level 0
+[17:03:45] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:03:45] [Server thread/INFO]: ForgeDevName[local:E:b03e0643] logged in with entity id 184 at (-519.4794256842417, 4.0, -868.4745628130111)
+[17:03:45] [Server thread/INFO]: ForgeDevName joined the game
+[17:03:47] [Server thread/INFO]: Saving and pausing game...
+[17:03:47] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:03:47] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:03:47] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:03:52] [Server thread/INFO]: Stopping server
+[17:03:52] [Server thread/INFO]: Saving players
+[17:03:52] [Server thread/INFO]: Saving worlds
+[17:03:52] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:03:52] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:03:52] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:03:53] [Client thread/INFO]: Stopping!
+[17:05:28] [main/INFO]: Setting user: ForgeDevName
+[17:05:29] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:05:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:05:34] [Sound Library Loader/INFO]: Sound engine started
+[17:05:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:05:35] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:05:35] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:05:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:05:35] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:05:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:05:36] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:05:36] [Sound Library Loader/INFO]: Sound engine started
+[17:05:39] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:05:39] [Server thread/INFO]: Generating keypair
+[17:05:39] [Server thread/INFO]: Preparing start region for level 0
+[17:05:39] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:05:40] [Server thread/INFO]: ForgeDevName[local:E:b04dce22] logged in with entity id 184 at (-519.4794256842417, 4.0, -868.4745628130111)
+[17:05:40] [Server thread/INFO]: ForgeDevName joined the game
+[17:05:40] [Server thread/INFO]: Saving and pausing game...
+[17:05:40] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:05:40] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:05:40] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:05:42] [Server thread/INFO]: Saving and pausing game...
+[17:05:42] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:05:42] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:05:42] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:05:44] [Server thread/INFO]: Stopping server
+[17:05:44] [Server thread/INFO]: Saving players
+[17:05:44] [Server thread/INFO]: Saving worlds
+[17:05:44] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:05:44] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:05:44] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:05:45] [Client thread/INFO]: Stopping!
+[17:06:07] [main/INFO]: Setting user: ForgeDevName
+[17:06:08] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:06:12] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:06:13] [Sound Library Loader/INFO]: Sound engine started
+[17:06:14] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:06:14] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:06:14] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:06:14] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:06:14] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:06:14] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:06:15] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:06:16] [Sound Library Loader/INFO]: Sound engine started
+[17:06:19] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:06:19] [Server thread/INFO]: Generating keypair
+[17:06:19] [Server thread/INFO]: Preparing start region for level 0
+[17:06:20] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:06:20] [Server thread/INFO]: ForgeDevName[local:E:b582f0ab] logged in with entity id 184 at (-519.4794256842417, 4.0, -868.4745628130111)
+[17:06:20] [Server thread/INFO]: ForgeDevName joined the game
+[17:06:20] [Server thread/INFO]: Saving and pausing game...
+[17:06:20] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:06:20] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:06:20] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:06:22] [Server thread/INFO]: Saving and pausing game...
+[17:06:22] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:06:22] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:06:22] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:06:22] [Server thread/INFO]: Stopping server
+[17:06:22] [Server thread/INFO]: Saving players
+[17:06:22] [Server thread/INFO]: Saving worlds
+[17:06:22] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:06:22] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:06:22] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:06:23] [Client thread/INFO]: Stopping!
+[17:06:55] [main/INFO]: Setting user: ForgeDevName
+[17:06:56] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:07:00] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:07:01] [Sound Library Loader/INFO]: Sound engine started
+[17:07:02] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:07:02] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:07:02] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:07:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:07:03] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:07:03] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:07:03] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:07:04] [Sound Library Loader/INFO]: Sound engine started
+[17:07:06] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:07:06] [Server thread/INFO]: Generating keypair
+[17:07:06] [Server thread/INFO]: Preparing start region for level 0
+[17:07:07] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:07:07] [Server thread/INFO]: ForgeDevName[local:E:c1d5e3f0] logged in with entity id 184 at (-519.4794256842417, 4.0, -868.4745628130111)
+[17:07:07] [Server thread/INFO]: ForgeDevName joined the game
+[17:08:11] [Server thread/INFO]: Saving and pausing game...
+[17:08:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:08:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:08:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:08:12] [Server thread/INFO]: Stopping server
+[17:08:12] [Server thread/INFO]: Saving players
+[17:08:12] [Server thread/INFO]: Saving worlds
+[17:08:12] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:08:12] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:08:12] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:08:12] [Client thread/INFO]: Stopping!
+[17:08:27] [main/INFO]: Setting user: ForgeDevName
+[17:08:28] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:08:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:08:33] [Sound Library Loader/INFO]: Sound engine started
+[17:08:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:08:34] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:08:34] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:08:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:08:34] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:08:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:08:34] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:08:35] [Sound Library Loader/INFO]: Sound engine started
+[17:08:38] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:08:38] [Server thread/INFO]: Generating keypair
+[17:08:38] [Server thread/INFO]: Preparing start region for level 0
+[17:08:39] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:08:39] [Server thread/INFO]: ForgeDevName[local:E:df4bd9ba] logged in with entity id 184 at (-519.3724741910028, 4.0, -868.7189432716847)
+[17:08:39] [Server thread/INFO]: ForgeDevName joined the game
+[17:09:57] [Server thread/INFO]: Saving and pausing game...
+[17:09:57] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:09:57] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:09:57] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:09:57] [Server thread/INFO]: Stopping server
+[17:09:57] [Server thread/INFO]: Saving players
+[17:09:57] [Server thread/INFO]: Saving worlds
+[17:09:57] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:09:57] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:09:57] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:09:58] [Client thread/INFO]: Stopping!
+[17:10:55] [main/INFO]: Setting user: ForgeDevName
+[17:10:55] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:10:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:11:00] [Sound Library Loader/INFO]: Sound engine started
+[17:11:01] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:11:01] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:11:01] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:11:01] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:11:01] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:11:02] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:11:02] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:11:03] [Sound Library Loader/INFO]: Sound engine started
+[17:11:05] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:11:05] [Server thread/INFO]: Generating keypair
+[17:11:05] [Server thread/INFO]: Preparing start region for level 0
+[17:11:06] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:11:06] [Server thread/INFO]: ForgeDevName[local:E:8a47aed6] logged in with entity id 184 at (-519.3581312831866, 4.0, -869.1406607205977)
+[17:11:06] [Server thread/INFO]: ForgeDevName joined the game
+[17:11:44] [Server thread/INFO]: Saving and pausing game...
+[17:11:44] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:11:44] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:11:44] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:11:44] [Server thread/INFO]: Stopping server
+[17:11:44] [Server thread/INFO]: Saving players
+[17:11:44] [Server thread/INFO]: Saving worlds
+[17:11:44] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:11:44] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:11:44] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:11:45] [Client thread/INFO]: Stopping!
+[17:13:02] [main/INFO]: Setting user: ForgeDevName
+[17:13:03] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:13:07] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:13:08] [Sound Library Loader/INFO]: Sound engine started
+[17:13:09] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:13:09] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:13:09] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:13:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:13:10] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:13:10] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:13:10] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:13:11] [Sound Library Loader/INFO]: Sound engine started
+[17:13:13] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:13:13] [Server thread/INFO]: Generating keypair
+[17:13:13] [Server thread/INFO]: Preparing start region for level 0
+[17:13:13] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:13:14] [Server thread/INFO]: ForgeDevName[local:E:438c740b] logged in with entity id 182 at (-519.3581312831866, 4.0, -869.1406607205977)
+[17:13:14] [Server thread/INFO]: ForgeDevName joined the game
+[17:13:14] [Server thread/INFO]: Saving and pausing game...
+[17:13:14] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:13:14] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:13:14] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:13:41] [Server thread/INFO]: Saving and pausing game...
+[17:13:41] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:13:42] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:13:42] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:13:42] [Server thread/INFO]: Stopping server
+[17:13:42] [Server thread/INFO]: Saving players
+[17:13:42] [Server thread/INFO]: Saving worlds
+[17:13:42] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:13:42] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:13:42] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:13:43] [Client thread/INFO]: Stopping!
+[17:17:37] [main/INFO]: Setting user: ForgeDevName
+[17:17:38] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:17:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:17:43] [Sound Library Loader/INFO]: Sound engine started
+[17:17:44] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTickableTexture(TextureManager.java:71) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTextureMap(TextureManager.java:58) [TextureManager.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:592) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:17:44] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:17:44] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:17:44] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:17:44] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:17:44] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/infuser.png
+java.io.FileNotFoundException: magetech:textures/blocks/infuser.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:653) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:596) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:941) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+[17:17:44] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:17:45] [Sound Library Loader/INFO]: Sound engine started
+[17:17:47] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:17:47] [Server thread/INFO]: Generating keypair
+[17:17:47] [Server thread/INFO]: Preparing start region for level 0
+[17:17:48] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:17:48] [Server thread/INFO]: ForgeDevName[local:E:15285367] logged in with entity id 181 at (-519.2610094295817, 4.0, -868.2915679268162)
+[17:17:48] [Server thread/INFO]: ForgeDevName joined the game
+[17:17:49] [Server thread/INFO]: Saving and pausing game...
+[17:17:49] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:17:49] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:17:49] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:17:56] [Server thread/ERROR]: Encountered an unexpected exception
+net.minecraft.util.ReportedException: Ticking block entity
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:719) ~[MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:624) ~[MinecraftServer.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118) ~[IntegratedServer.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:495) [MinecraftServer.class:?]
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:762) [MinecraftServer$2.class:?]
+Caused by: java.lang.NullPointerException
+	at com.techmage.magetech.tileentity.TileEntityInfuser.canInfuse(TileEntityInfuser.java:184) ~[TileEntityInfuser.class:?]
+	at com.techmage.magetech.tileentity.TileEntityInfuser.updateEntity(TileEntityInfuser.java:167) ~[TileEntityInfuser.class:?]
+	at net.minecraft.world.World.updateEntities(World.java:2139) ~[World.class:?]
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:517) ~[WorldServer.class:?]
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:713) ~[MinecraftServer.class:?]
+	... 4 more
+[17:17:56] [Server thread/ERROR]: This crash report has been saved to: D:\Programming\Minecraft_Modding\[FORGE_1.7]\MageTech\eclipse\.\crash-reports\crash-2014-10-04_17.17.56-server.txt
+[17:17:56] [Server thread/INFO]: Stopping server
+[17:17:56] [Server thread/INFO]: Saving players
+[17:17:56] [Server thread/INFO]: Saving worlds
+[17:17:56] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:17:57] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:17:57] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:17:57] [Client thread/FATAL]: Reported exception thrown!
+net.minecraft.util.ReportedException: Ticking block entity
+	at net.minecraft.world.World.updateEntities(World.java:2154) ~[World.class:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2096) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1038) ~[Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:961) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at GradleStart.bounce(GradleStart.java:107) [start/:?]
+	at GradleStart.startClient(GradleStart.java:100) [start/:?]
+	at GradleStart.main(GradleStart.java:55) [start/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_67]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_67]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_67]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_67]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
+Caused by: java.lang.NullPointerException
+	at com.techmage.magetech.tileentity.TileEntityInfuser.canInfuse(TileEntityInfuser.java:184) ~[TileEntityInfuser.class:?]
+	at com.techmage.magetech.tileentity.TileEntityInfuser.updateEntity(TileEntityInfuser.java:167) ~[TileEntityInfuser.class:?]
+	at net.minecraft.world.World.updateEntities(World.java:2139) ~[World.class:?]
+	... 22 more
