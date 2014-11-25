@@ -1,7 +1,6 @@
 package com.techmage.magetech.tileentity;
 
-import com.techmage.magetech.init.ModItems;
-import com.techmage.magetech.item.crafting.RecipesInfuser;
+import com.techmage.magetech.crafting.RecipesInfuser;
 import com.techmage.magetech.reference.Names;
 import com.techmage.magetech.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
@@ -21,7 +20,7 @@ public class TileEntityInfuser extends TileEntityMageTech implements IInventory
      */
     private ItemStack[] inventory;
 
-    int CurrentEssence = 1000;
+    public int CurrentEssence = 1000;
 
     public TileEntityInfuser()
     {
@@ -132,6 +131,8 @@ public class TileEntityInfuser extends TileEntityMageTech implements IInventory
     public void writeToNBT(NBTTagCompound nbtTagCompound)
     {
         super.writeToNBT(nbtTagCompound);
+        nbtTagCompound.setShort("InfusionTime", (short)this.InfusionTime);
+        nbtTagCompound.setShort("CurrentEssence", (short)this.CurrentEssence);
 
         // Write the ItemStacks in the inventory to NBT
         NBTTagList tagList = new NBTTagList();
@@ -165,6 +166,8 @@ public class TileEntityInfuser extends TileEntityMageTech implements IInventory
                 inventory[slotIndex] = ItemStack.loadItemStackFromNBT(tagCompound);
             }
         }
+        this.InfusionTime = nbtTagCompound.getShort("InfusionTime");
+        this.CurrentEssence = nbtTagCompound.getShort("CurrentEssence");
     }
 
     @SideOnly(Side.CLIENT)
@@ -186,22 +189,26 @@ public class TileEntityInfuser extends TileEntityMageTech implements IInventory
     @Override
     public void updateEntity()
     {
-
-        if (canInfuse())
+        if (!this.worldObj.isRemote)
         {
-            if (this.InfusionTime < 500)
+            if (canInfuse())
             {
-                this.InfusionTime ++;
+                if (this.InfusionTime < 500)
+                {
+                    this.InfusionTime++;
+                }
+                else
+                {
+                    infuseItem();
+                    this.InfusionTime = 0;
+                    this.markDirty();
+                }
             }
             else
             {
-                infuseItem();
                 this.InfusionTime = 0;
+                this.markDirty();
             }
-        }
-        else
-        {
-            this.InfusionTime = 0;
         }
     }
 
@@ -221,7 +228,7 @@ public class TileEntityInfuser extends TileEntityMageTech implements IInventory
                     {
                         return true;
                     }
-                    else if (inventory[3] == result)
+                    else if (inventory[3].isItemEqual(result))
                     {
                         if (inventory[3].stackSize < 64)
                         {

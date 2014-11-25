@@ -13,6 +13,8 @@ import net.minecraft.item.ItemStack;
 public class ContainerInfuser extends ContainerMageTech
 {
     private TileEntityInfuser tileEntityInfuser;
+    private int lastCrushingTime;
+    private int lastEssenceAmount;
 
     public ContainerInfuser(InventoryPlayer inventoryPlayer, TileEntityInfuser tileEntityInfuser)
     {
@@ -47,16 +49,34 @@ public class ContainerInfuser extends ContainerMageTech
         }
     }
 
-    @Override
     public void addCraftingToCrafters(ICrafting iCrafting)
     {
         super.addCraftingToCrafters(iCrafting);
+        iCrafting.sendProgressBarUpdate(this, 0, this.tileEntityInfuser.InfusionTime);
+        iCrafting.sendProgressBarUpdate(this, 1, this.tileEntityInfuser.CurrentEssence);
     }
 
-    @Override
     public void detectAndSendChanges()
     {
         super.detectAndSendChanges();
+
+        for (int i = 0; i < this.crafters.size(); ++i)
+        {
+            ICrafting icrafting = (ICrafting)this.crafters.get(i);
+
+            if (this.lastCrushingTime != this.tileEntityInfuser.InfusionTime)
+            {
+                icrafting.sendProgressBarUpdate(this, 0, this.tileEntityInfuser.InfusionTime);
+            }
+
+            if (this.lastEssenceAmount != this.tileEntityInfuser.CurrentEssence)
+            {
+                icrafting.sendProgressBarUpdate(this, 1, this.tileEntityInfuser.CurrentEssence);
+            }
+        }
+
+        this.lastCrushingTime = this.tileEntityInfuser.InfusionTime;
+        this.lastEssenceAmount = this.tileEntityInfuser.CurrentEssence;
     }
 
     @SideOnly(Side.CLIENT)
@@ -64,7 +84,12 @@ public class ContainerInfuser extends ContainerMageTech
     {
         if (valueType == 0)
         {
+            this.tileEntityInfuser.InfusionTime = updatedValue;
+        }
 
+        if (valueType == 1)
+        {
+            this.tileEntityInfuser.CurrentEssence = updatedValue;
         }
     }
 

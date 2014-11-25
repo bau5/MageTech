@@ -4,6 +4,7 @@ import com.techmage.magetech.inventory.ContainerInfuser;
 import com.techmage.magetech.reference.Names;
 import com.techmage.magetech.reference.Textures;
 import com.techmage.magetech.tileentity.TileEntityInfuser;
+import com.techmage.magetech.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.gui.inventory.GuiContainer;

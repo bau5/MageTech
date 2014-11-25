@@ -5,7 +5,7 @@ import com.techmage.magetech.handler.GuiHandler;
 import com.techmage.magetech.init.ModBlocks;
 import com.techmage.magetech.init.ModItems;
 import com.techmage.magetech.init.Recipes;
-import com.techmage.magetech.item.crafting.RecipesInfuser;
+import com.techmage.magetech.init.WorldGeneration;
 import com.techmage.magetech.proxy.IProxy;
 import com.techmage.magetech.reference.Reference;
 import com.techmage.magetech.utility.LogHelper;
@@ -16,8 +16,6 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME,  version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class MageTech
@@ -51,6 +49,8 @@ public class MageTech
         proxy.registerTileEntities();
 
         Recipes.init();
+
+        WorldGeneration.init();
     }
 
     @Mod.EventHandler
