@@ -1,5 +1,6 @@
 package com.techmage.magetech.init;
 
+import com.techmage.magetech.crafting.ElectronicsWorkbenchCraftingManager;
 import com.techmage.magetech.crafting.RecipesInfuser;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
@@ -15,6 +16,7 @@ public class Recipes
         initShapedRecipes();
         initSmeltingRecipes();
         initInfusingRecipes();
+        initElectronicsWorkbenchRecipes();
     }
 
     public static void initShapedRecipes()
@@ -23,9 +25,7 @@ public class Recipes
         GameRegistry.addRecipe(new ItemStack(ModItems.glassFibre, 6), "   ", "ggg", "   ", 'g', Blocks.glass);
         GameRegistry.addRecipe(new ItemStack(ModItems.glassFibreMat, 1), "   ", "gg ", "gg ", 'g', ModItems.glassFibre);
         GameRegistry.addRecipe(new ItemStack(ModItems.wireIron, 16), " i ", "isi", " i ", 'i', Items.iron_ingot, 's', Items.stick);
-        GameRegistry.addRecipe(new ItemStack(ModItems.ic), "wpw", "srs", "wpw", 'w', ModItems.wireIron, 'p', ModItems.plastic, 's', ModItems.silicon, 'r', Items.redstone);
-        GameRegistry.addRecipe(new ItemStack(ModItems.capacitor), " p ", "prp", "wsw", 'p', ModItems.plastic, 'r', Items.redstone, 'w', ModItems.wireIron, 's', ModItems.silicon);
-        GameRegistry.addRecipe(new ItemStack(ModItems.transistor), "psp", "prp", "www", 'p', ModItems.plastic, 's', ModItems.silicon, 'r', Items.redstone, 'w', ModItems.wireIron);
+        GameRegistry.addRecipe(new ItemStack(ModItems.circuitBoard), "ggg", "rrr", "ggg", 'g', ModItems.glassFibreMat, 'r', ModItems.resin);
     }
 
     public static void initSmeltingRecipes()
@@ -44,6 +44,16 @@ public class Recipes
         RecipesInfuser.infusing().addRecipe(new ItemStack(ModItems.crystal, 1, 0), new ItemStack(Blocks.stone), new ItemStack(Blocks.dirt), new ItemStack(ModItems.crystal, 1, 3), 100);
         RecipesInfuser.infusing().addRecipe(new ItemStack(ModItems.crystal, 1, 0), new ItemStack(Items.feather), new ItemStack(Items.ghast_tear), new ItemStack(ModItems.crystal, 1, 4), 100);
         RecipesInfuser.infusing().addOreRecipe("ingotLead", new ItemStack(Blocks.stone), new ItemStack(Blocks.stone), new ItemStack(ModBlocks.stoneHardened), 100);
+    }
+
+    public static void initElectronicsWorkbenchRecipes()
+    {
+        ElectronicsWorkbenchCraftingManager.getInstance().addRecipe(new ItemStack(ModItems.transistor), "ppppp", "prrrp", "pspsp", "w w w", "w w w",
+                'p', ModItems.plastic, 's', ModItems.silicon, 'r', Items.redstone, 'w', ModItems.wireIron);
+        ElectronicsWorkbenchCraftingManager.getInstance().addRecipe(new ItemStack(ModItems.capacitor), " ppp ", " prp ", " psp ", " w w ", " w w ",
+                'p', ModItems.plastic, 'r', Items.redstone, 'w', ModItems.wireIron, 's', ModItems.silicon);
+        ElectronicsWorkbenchCraftingManager.getInstance().addRecipe(new ItemStack(ModItems.ic), "wwwww", "ppppp", "psrsp", "ppppp", "wwwww",
+                'w', ModItems.wireIron, 'p', ModItems.plastic, 's', ModItems.silicon, 'r', Items.redstone);
     }
 
 }

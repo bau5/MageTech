@@ -3,5 +3,6 @@ package com.techmage.magetech.reference;
 public enum GuiID
 {
     INFUSER,
-    CRUSHER
+    CRUSHER,
+    ELECTRONICS_WORKBENCH
 }

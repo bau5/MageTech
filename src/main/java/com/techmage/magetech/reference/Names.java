@@ -18,6 +18,8 @@ public class Names
         public static final String IC = "ic";
         public static final String CAPACITOR = "capacitor";
         public static final String TRANSISTOR = "transistor";
+        public static final String CIRCUITBOARD = "circuitBoard";
+        public static final String[] CIRCUITBOARD_SUBTYPES = {"", "Basic"};
     }
 
     public static final class Blocks
@@ -30,6 +32,7 @@ public class Names
         public static final String ORECRYSTAL = "oreCrystal";
         public static final String CRUSHER = "crusher";
         public static final String ORESILICON = "oreSilicon";
+        public static final String ELECTRONICS_WORKBENCH = "electronicsWorkbench";
     }
 
     public static final class NBT
@@ -45,5 +48,6 @@ public class Names
         public static final String VANILLA_INVENTORY = "container.inventory";
         public static final String INFUSER = "container.magetech:" + Blocks.INFUSER;
         public static final String CRUSHER = "container.magetech:" + Blocks.CRUSHER;
+        public static final String ELECTRONICS_WORKBENCH = "container.magetech:" + Blocks.ELECTRONICS_WORKBENCH;
     }
 }

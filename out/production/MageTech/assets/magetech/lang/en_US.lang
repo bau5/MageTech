@@ -21,6 +21,8 @@ item.magetech:wireIron.name=Iron Wire
 item.magetech:ic.name=IC
 item.magetech:capacitor.name=Capacitor
 item.magetech:transistor.name=Transistor
+item.magetech:circuitBoard.name=Circuit Board
+item.magetech:circuitBoardBasic.name=Circuit Board (Basic)
 
 # Blocks
 tile.magetech:infuser.name=Infuser
@@ -31,6 +33,8 @@ tile.magetech:oreSilver.name=Silver Ore
 tile.magetech:oreCopper.name=Copper Ore
 tile.magetech:oreCrystal.name=Crystal Ore
 tile.magetech:oreSilicon.name=Silicon Ore
+tile.magetech:electronicsWorkbench=Electronics Workbench
 
 # GUIs
 container.magetech:infuser=Infuser
+container.magetech:crusher=Crusher
