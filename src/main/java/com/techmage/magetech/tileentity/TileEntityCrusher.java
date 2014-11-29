@@ -1,5 +1,6 @@
 package com.techmage.magetech.tileentity;
 
+import com.techmage.magetech.crafting.RecipesCrusher;
 import com.techmage.magetech.crafting.RecipesInfuser;
 import com.techmage.magetech.reference.Names;
 import cpw.mods.fml.relauncher.Side;
@@ -130,6 +131,8 @@ public class TileEntityCrusher extends TileEntityMageTech implements IInventory
     public void writeToNBT(NBTTagCompound nbtTagCompound)
     {
         super.writeToNBT(nbtTagCompound);
+        nbtTagCompound.setShort("CrushingTime", (short)this.CrushingTime);
+        nbtTagCompound.setShort("CurrentPower", (short)this.CurrentPower);
 
         // Write the ItemStacks in the inventory to NBT
         NBTTagList tagList = new NBTTagList();
@@ -162,6 +165,8 @@ public class TileEntityCrusher extends TileEntityMageTech implements IInventory
             {
                 inventory[slotIndex] = ItemStack.loadItemStackFromNBT(tagCompound);
             }
+            this.CrushingTime = nbtTagCompound.getShort("CrushingTime");
+            this.CurrentPower = nbtTagCompound.getShort("CurrentPower");
         }
     }
 
@@ -169,37 +174,36 @@ public class TileEntityCrusher extends TileEntityMageTech implements IInventory
     public int getPowerScale(int var1) { return this.CurrentPower * var1 / 1000; }
 
     @SideOnly(Side.CLIENT)
-    public int getCrushingProgressScale(int var1) { return this.CrushingTime * var1 / 500; }
+    public int getCrushingProgressScale(int var1) { return this.CrushingTime * var1 / 300; }
 
     public boolean isCrushing()
     {
-        if (this.CrushingTime > 0)
-        {
-            return true;
-        }
-
-        return  false;
+        return this.CrushingTime > 0;
     }
 
     @Override
     public void updateEntity()
     {
-
-        if (canCrush())
+        if (!this.worldObj.isRemote)
         {
-            if (this.CrushingTime < 500)
+            if (canCrush())
             {
-                this.CrushingTime ++;
+                if (this.CrushingTime < 300)
+                {
+                    this.CrushingTime++;
+                }
+                else
+                {
+                    crushItem();
+                    this.CrushingTime = 0;
+                    this.markDirty();
+                }
             }
             else
             {
-                crushItem();
                 this.CrushingTime = 0;
+                this.markDirty();
             }
-        }
-        else
-        {
-            this.CrushingTime = 0;
         }
     }
 
@@ -209,11 +213,11 @@ public class TileEntityCrusher extends TileEntityMageTech implements IInventory
         if (inventory[0] != null)
         {
 
-            ItemStack result = RecipesInfuser.infusing().getCraftingResult(inventory[0], inventory[1], inventory[2]);
+            ItemStack result = RecipesCrusher.crushing().getCraftingResult(inventory[0]);
 
             if (result != null)
             {
-                if (RecipesInfuser.infusing().getEssenceCost(inventory[0], inventory[1], inventory[2]) <= this.CurrentPower)
+                if (this.CurrentPower >= 50)
                 {
                     if (inventory[1] == null)
                     {
@@ -221,7 +225,7 @@ public class TileEntityCrusher extends TileEntityMageTech implements IInventory
                     }
                     else if (inventory[1] == result)
                     {
-                        if (inventory[1].stackSize < 64)
+                        if (inventory[1].stackSize + RecipesCrusher.crushing().getOutputSize(result) <= 64)
                         {
                             return true;
                         }
@@ -237,22 +241,26 @@ public class TileEntityCrusher extends TileEntityMageTech implements IInventory
     public void crushItem()
     {
 
-        ItemStack result = RecipesInfuser.infusing().getCraftingResult(inventory[0], inventory[1], inventory[2]);
+        ItemStack result = RecipesCrusher.crushing().getCraftingResult(inventory[0]);
 
-        this.CurrentPower = this.CurrentPower - RecipesInfuser.infusing().getEssenceCost(inventory[0], inventory[1], inventory[2]);
+        this.CurrentPower = this.CurrentPower - 50;
 
         if (inventory[1] == null)
         {
-            inventory[1] = result;
+            inventory[1] = new ItemStack(result.getItem(), RecipesCrusher.crushing().getOutputSize(result), result.getItemDamage());
         }
         else
         {
-            inventory[3].stackSize ++;
+            inventory[1].stackSize += RecipesCrusher.crushing().getOutputSize(result);
         }
 
         if (inventory[0].stackSize > 1)
         {
             inventory[0].stackSize --;
+        }
+        else
+        {
+            inventory[0] = null;
         }
     }
 }

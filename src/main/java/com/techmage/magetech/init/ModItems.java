@@ -25,14 +25,10 @@ public class ModItems
     public static final Item capacitor = new ItemMageTech().setUnlocalizedName(Names.Items.CAPACITOR).setTextureName(Textures.RESOURCE_PREFIX + Names.Items.CAPACITOR);
     public static final Item transistor = new ItemMageTech().setUnlocalizedName(Names.Items.TRANSISTOR).setTextureName(Textures.RESOURCE_PREFIX + Names.Items.TRANSISTOR);
     public static final ItemMageTech circuitBoard = new ItemCircuitBoard();
+    public static final ItemMageTech crushedOre = new ItemCrushedOre();
 
     public static void init()
     {
-
-        OreDictionary.registerOre("ingotLead", new ItemStack(ingot, 1, 0));
-        OreDictionary.registerOre("ingotSilver", new ItemStack(ingot, 1, 1));
-        OreDictionary.registerOre("ingotCopper", new ItemStack(ingot, 1, 2));
-
         GameRegistry.registerItem(crystal, Names.Items.CRYSTAL);
         GameRegistry.registerItem(ingot, Names.Items.INGOT);
         GameRegistry.registerItem(siliconOre, Names.Items.SILICONORE);
@@ -46,7 +42,11 @@ public class ModItems
         GameRegistry.registerItem(capacitor, Names.Items.CAPACITOR);
         GameRegistry.registerItem(transistor, Names.Items.TRANSISTOR);
         GameRegistry.registerItem(circuitBoard, Names.Items.CIRCUITBOARD);
+        GameRegistry.registerItem(crushedOre, Names.Items.CRUSHEDORE);
 
+        OreDictionary.registerOre("ingotLead", new ItemStack(ingot, 1, 0));
+        OreDictionary.registerOre("ingotSilver", new ItemStack(ingot, 1, 1));
+        OreDictionary.registerOre("ingotCopper", new ItemStack(ingot, 1, 2));
     }
 }
 

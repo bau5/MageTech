@@ -3,6 +3,8 @@ package com.techmage.magetech.init;
 import com.techmage.magetech.block.*;
 import com.techmage.magetech.reference.Names;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class ModBlocks
 {
@@ -25,5 +27,9 @@ public class ModBlocks
         GameRegistry.registerBlock(crusher, Names.Blocks.CRUSHER);
         GameRegistry.registerBlock(oreSilicon, Names.Blocks.ORESILICON);
         GameRegistry.registerBlock(electronicsWorkbench, Names.Blocks.ELECTRONICS_WORKBENCH);
+
+        OreDictionary.registerOre("oreLead", new ItemStack(ore, 1, 0));
+        OreDictionary.registerOre("oreSilver", new ItemStack(ore, 1, 1));
+        OreDictionary.registerOre("oreCopper", new ItemStack(ore, 1, 2));
     }
 }

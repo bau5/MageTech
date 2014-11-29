@@ -20,6 +20,8 @@ public class Names
         public static final String TRANSISTOR = "transistor";
         public static final String CIRCUITBOARD = "circuitBoard";
         public static final String[] CIRCUITBOARD_SUBTYPES = {"", "Basic"};
+        public static final String CRUSHEDORE = "crushedOre";
+        public static final String[] CRUSHEDORE_SUBTYPES = {"Iron", "Gold", "Coal", "Redstone", "Lapis", "Emerald", "Diamond", "Copper", "Lead", "Silver", "Silicon", "Crystal"};
     }
 
     public static final class Blocks

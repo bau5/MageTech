@@ -1,6 +1,7 @@
 package com.techmage.magetech.init;
 
 import com.techmage.magetech.crafting.ElectronicsWorkbenchCraftingManager;
+import com.techmage.magetech.crafting.RecipesCrusher;
 import com.techmage.magetech.crafting.RecipesInfuser;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
@@ -17,6 +18,7 @@ public class Recipes
         initSmeltingRecipes();
         initInfusingRecipes();
         initElectronicsWorkbenchRecipes();
+        initCrushingRecipes();
     }
 
     public static void initShapedRecipes()
@@ -48,12 +50,30 @@ public class Recipes
 
     public static void initElectronicsWorkbenchRecipes()
     {
-        ElectronicsWorkbenchCraftingManager.getInstance().addRecipe(new ItemStack(ModItems.transistor), "ppppp", "prrrp", "pspsp", "w w w", "w w w",
+        ElectronicsWorkbenchCraftingManager.getInstance().addRecipe(new ItemStack(ModItems.transistor), "psp", "prp", "www",
                 'p', ModItems.plastic, 's', ModItems.silicon, 'r', Items.redstone, 'w', ModItems.wireIron);
-        ElectronicsWorkbenchCraftingManager.getInstance().addRecipe(new ItemStack(ModItems.capacitor), " ppp ", " prp ", " psp ", " w w ", " w w ",
+        ElectronicsWorkbenchCraftingManager.getInstance().addRecipe(new ItemStack(ModItems.capacitor), " p ", "prp", "wsw",
                 'p', ModItems.plastic, 'r', Items.redstone, 'w', ModItems.wireIron, 's', ModItems.silicon);
-        ElectronicsWorkbenchCraftingManager.getInstance().addRecipe(new ItemStack(ModItems.ic), "wwwww", "ppppp", "psrsp", "ppppp", "wwwww",
+        ElectronicsWorkbenchCraftingManager.getInstance().addRecipe(new ItemStack(ModItems.ic), "wpw", "srs", "wpw",
                 'w', ModItems.wireIron, 'p', ModItems.plastic, 's', ModItems.silicon, 'r', Items.redstone);
     }
 
+    public static void initCrushingRecipes()
+    {
+        RecipesCrusher.crushing().addRecipe(new ItemStack(ModItems.crushedOre, 1, 0), new ItemStack(Blocks.iron_ore), 2);
+        RecipesCrusher.crushing().addRecipe(new ItemStack(ModItems.crushedOre, 1, 1), new ItemStack(Blocks.gold_ore), 2);
+        RecipesCrusher.crushing().addRecipe(new ItemStack(ModItems.crushedOre, 1, 2), new ItemStack(Blocks.coal_ore), 3);
+        RecipesCrusher.crushing().addRecipe(new ItemStack(ModItems.crushedOre, 1, 3), new ItemStack(Blocks.redstone_ore), 8);
+        RecipesCrusher.crushing().addRecipe(new ItemStack(ModItems.crushedOre, 1, 4), new ItemStack(Blocks.lapis_ore), 8);
+        RecipesCrusher.crushing().addRecipe(new ItemStack(ModItems.crushedOre, 1, 5), new ItemStack(Blocks.emerald_ore), 2);
+        RecipesCrusher.crushing().addRecipe(new ItemStack(ModItems.crushedOre, 1, 6), new ItemStack(Blocks.diamond_ore), 2);
+        RecipesCrusher.crushing().addOreRecipe(new ItemStack(ModItems.crushedOre, 1, 7), "oreCopper", 2);
+        RecipesCrusher.crushing().addOreRecipe(new ItemStack(ModItems.crushedOre, 1, 8), "oreLead", 2);
+        RecipesCrusher.crushing().addOreRecipe(new ItemStack(ModItems.crushedOre, 1, 9), "oreSilver", 2);
+        RecipesCrusher.crushing().addRecipe(new ItemStack(ModItems.crushedOre, 1, 10), new ItemStack(ModBlocks.oreSilicon), 5);
+        RecipesCrusher.crushing().addRecipe(new ItemStack(ModItems.crushedOre, 1, 11), new ItemStack(ModBlocks.oreCrystal), 5);
+        RecipesCrusher.crushing().addRecipe(new ItemStack(Blocks.cobblestone), new ItemStack(Blocks.stone), 1);
+        RecipesCrusher.crushing().addRecipe(new ItemStack(Blocks.gravel), new ItemStack(Blocks.cobblestone), 1);
+        RecipesCrusher.crushing().addRecipe(new ItemStack(Blocks.sand), new ItemStack(Blocks.gravel), 1);
+    }
 }

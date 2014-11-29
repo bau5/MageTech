@@ -10,72 +10,63 @@ import net.minecraft.world.World;
 
 public class ContainerElectronicsWorkbench extends Container
 {
-    public InventoryCrafting craftMatrix;
-    public IInventory craftResult;
+    /** The crafting matrix inventory (3x3). */
+    public InventoryCrafting craftMatrix = new InventoryCrafting(this, 3, 3);
+    public IInventory craftResult = new InventoryCraftResult();
     private World worldObj;
     private int posX;
     private int posY;
     private int posZ;
+    private static final String __OBFID = "CL_00001744";
 
-    public ContainerElectronicsWorkbench(InventoryPlayer invPlayer, World world, int x, int y, int z)
+    public ContainerElectronicsWorkbench(InventoryPlayer p_i1808_1_, World p_i1808_2_, int p_i1808_3_, int p_i1808_4_, int p_i1808_5_)
     {
-        craftMatrix = new InventoryCrafting(this, 5, 5);
-        craftResult = new InventoryCraftResult();
-        worldObj = world;
-        posX = x;
-        posY = y;
-        posZ = z;
+        this.worldObj = p_i1808_2_;
+        this.posX = p_i1808_3_;
+        this.posY = p_i1808_4_;
+        this.posZ = p_i1808_5_;
+        this.addSlotToContainer(new SlotCrafting(p_i1808_1_.player, this.craftMatrix, this.craftResult, 0, 124, 35));
+        int l;
+        int i1;
 
-        this.addSlotToContainer(new SlotCrafting(invPlayer.player, craftMatrix, craftResult, 0, 141, 43));
-
-        for (int i = 0; i < 5; i++)
+        for (l = 0; l < 3; ++l)
         {
-            for(int k = 0; k < 5; k++)
+            for (i1 = 0; i1 < 3; ++i1)
             {
-                this.addSlotToContainer(new Slot(craftMatrix, k + i * 5, 8 + k * 18, 7 + i * 18));
+                this.addSlotToContainer(new Slot(this.craftMatrix, i1 + l * 3, 30 + i1 * 18, 17 + l * 18));
             }
         }
 
-        for (int i = 0; i < 3; i++)
+        for (l = 0; l < 3; ++l)
         {
-            for(int k = 0; k < 9; k++)
+            for (i1 = 0; i1 < 9; ++i1)
             {
-                this.addSlotToContainer(new Slot(invPlayer, k + i * 9 + 9, 8 + k * 18, 106 + i * 18));
+                this.addSlotToContainer(new Slot(p_i1808_1_, i1 + l * 9 + 9, 8 + i1 * 18, 84 + l * 18));
             }
         }
 
-        for (int i = 0; i < 9; i++)
+        for (l = 0; l < 9; ++l)
         {
-            this.addSlotToContainer(new Slot(invPlayer, i, 8 + i * 18, 164));
+            this.addSlotToContainer(new Slot(p_i1808_1_, l, 8 + l * 18, 142));
         }
 
-        onCraftMatrixChanged(craftMatrix);
+        this.onCraftMatrixChanged(this.craftMatrix);
     }
 
-
-    public void onCraftMatrixChanged(IInventory iiventory)
+    /**
+     * Callback for when the crafting matrix is changed.
+     */
+    public void onCraftMatrixChanged(IInventory p_75130_1_)
     {
-        craftResult.setInventorySlotContents(0, ElectronicsWorkbenchCraftingManager.getInstance().findMatchingRecipe(craftMatrix, worldObj));
+        this.craftResult.setInventorySlotContents(0, ElectronicsWorkbenchCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj));
     }
 
-
-    @Override
-    public boolean canInteractWith(EntityPlayer player)
+    /**
+     * Called when the container is closed.
+     */
+    public void onContainerClosed(EntityPlayer p_75134_1_)
     {
-        if(worldObj.getBlock(posX, posY, posZ) != ModBlocks.electronicsWorkbench)
-        {
-            return false;
-        }
-        else
-        {
-            return player.getDistanceSq((double)posX + 0.5D, (double)posY + 0.5D, (double)posZ + 0.5D) <= 64.0D;
-        }
-
-    }
-
-    public void onContainerClosed(EntityPlayer par1EntityPlayer)
-    {
-        super.onContainerClosed(par1EntityPlayer);
+        super.onContainerClosed(p_75134_1_);
 
         if (!this.worldObj.isRemote)
         {
@@ -85,24 +76,31 @@ public class ContainerElectronicsWorkbench extends Container
 
                 if (itemstack != null)
                 {
-                    par1EntityPlayer.dropPlayerItemWithRandomChoice(itemstack, false);
+                    p_75134_1_.dropPlayerItemWithRandomChoice(itemstack, false);
                 }
             }
         }
     }
 
+    public boolean canInteractWith(EntityPlayer p_75145_1_)
+    {
+        return this.worldObj.getBlock(this.posX, this.posY, this.posZ) != ModBlocks.electronicsWorkbench ? false : p_75145_1_.getDistanceSq((double)this.posX + 0.5D, (double)this.posY + 0.5D, (double)this.posZ + 0.5D) <= 64.0D;
+    }
 
-    public ItemStack transferStackInSlot(EntityPlayer par1EntityPlayer, int par2)
+    /**
+     * Called when a player shift-clicks on a slot. You must override this or you will crash when someone does that.
+     */
+    public ItemStack transferStackInSlot(EntityPlayer p_82846_1_, int p_82846_2_)
     {
         ItemStack itemstack = null;
-        Slot slot = (Slot)this.inventorySlots.get(par2);
+        Slot slot = (Slot)this.inventorySlots.get(p_82846_2_);
 
         if (slot != null && slot.getHasStack())
         {
             ItemStack itemstack1 = slot.getStack();
             itemstack = itemstack1.copy();
 
-            if (par2 == 0)
+            if (p_82846_2_ == 0)
             {
                 if (!this.mergeItemStack(itemstack1, 10, 46, true))
                 {
@@ -111,14 +109,14 @@ public class ContainerElectronicsWorkbench extends Container
 
                 slot.onSlotChange(itemstack1, itemstack);
             }
-            else if (par2 >= 10 && par2 < 37)
+            else if (p_82846_2_ >= 10 && p_82846_2_ < 37)
             {
                 if (!this.mergeItemStack(itemstack1, 37, 46, false))
                 {
                     return null;
                 }
             }
-            else if (par2 >= 37 && par2 < 46)
+            else if (p_82846_2_ >= 37 && p_82846_2_ < 46)
             {
                 if (!this.mergeItemStack(itemstack1, 10, 37, false))
                 {
@@ -144,10 +142,14 @@ public class ContainerElectronicsWorkbench extends Container
                 return null;
             }
 
-            slot.onPickupFromSlot(par1EntityPlayer, itemstack1);
+            slot.onPickupFromSlot(p_82846_1_, itemstack1);
         }
 
         return itemstack;
     }
 
+    public boolean func_94530_a(ItemStack p_94530_1_, Slot p_94530_2_)
+    {
+        return p_94530_2_.inventory != this.craftResult && super.func_94530_a(p_94530_1_, p_94530_2_);
+    }
 }

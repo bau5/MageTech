@@ -178,12 +178,7 @@ public class TileEntityInfuser extends TileEntityMageTech implements IInventory
 
     public boolean isInfusing()
     {
-        if (this.InfusionTime > 0)
-        {
-            return true;
-        }
-
-        return  false;
+        return this.InfusionTime > 0;
     }
 
     @Override

@@ -22,14 +22,14 @@ public class GuiElectronicsWorkbench extends GuiContainer
         super(new ContainerElectronicsWorkbench(invPlayer, world, x, y, z));
 
         this.xSize = 176;
-        this.ySize = 188;
+        this.ySize = 171;
     }
 
     @Override
     protected void drawGuiContainerForegroundLayer(int x, int y)
     {
         fontRendererObj.drawString(StatCollector.translateToLocal("Electronics Workbench"), xSize / 2 - fontRendererObj.getStringWidth(StatCollector.translateToLocal("Electronics Workbench")) / 2, 6, 4210752);
-        fontRendererObj.drawString(StatCollector.translateToLocal(Names.Containers.VANILLA_INVENTORY), 8, ySize - 96 + 2, 4210752);
+        fontRendererObj.drawString(StatCollector.translateToLocal(Names.Containers.VANILLA_INVENTORY), 8, ySize - 98, 4210752);
     }
 
     @Override
