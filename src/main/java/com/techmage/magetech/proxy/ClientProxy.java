@@ -4,9 +4,7 @@ import com.techmage.magetech.init.ModBlocks;
 import com.techmage.magetech.reference.Names;
 import com.techmage.magetech.renderer.ItemRendererMPWire;
 import com.techmage.magetech.renderer.TileEntityMPWireRenderer;
-import com.techmage.magetech.tileentity.TileEntityCrusher;
-import com.techmage.magetech.tileentity.TileEntityInfuser;
-import com.techmage.magetech.tileentity.TileEntityMPWire;
+import com.techmage.magetech.tileentity.*;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -21,6 +19,8 @@ public class ClientProxy extends CommonProxy
     {
         GameRegistry.registerTileEntity(TileEntityInfuser.class, Names.Blocks.INFUSER);
         GameRegistry.registerTileEntity(TileEntityCrusher.class, Names.Blocks.CRUSHER);
+        GameRegistry.registerTileEntity(TileEntityCentrifuge.class, Names.Blocks.CENTRIFUGE);
+        GameRegistry.registerTileEntity(TileEntityPowerFurnace.class, Names.Blocks.POWERFURNACE);
 
         ClientRegistry.registerTileEntity(TileEntityMPWire.class, Names.Blocks.MPWIRE, new TileEntityMPWireRenderer());
 

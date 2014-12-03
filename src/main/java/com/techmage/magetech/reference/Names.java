@@ -22,6 +22,9 @@ public class Names
         public static final String[] CIRCUITBOARD_SUBTYPES = {"", "Basic"};
         public static final String CRUSHEDORE = "crushedOre";
         public static final String[] CRUSHEDORE_SUBTYPES = {"Iron", "Gold", "Coal", "Redstone", "Lapis", "Emerald", "Diamond", "Copper", "Lead", "Silver", "Silicon", "Crystal"};
+        public static final String RUBBER = "rubber";
+        public static final String DUSTORE = "dustOre";
+        public static final String[] DUSTORE_SUBTYPES = {"Iron", "Gold", "Copper", "Lead", "Silver"};
     }
 
     public static final class Blocks
@@ -35,6 +38,8 @@ public class Names
         public static final String CRUSHER = "crusher";
         public static final String ORESILICON = "oreSilicon";
         public static final String ELECTRONICS_WORKBENCH = "electronicsWorkbench";
+        public static final String CENTRIFUGE = "centrifuge";
+        public static final String POWERFURNACE = "powerFurnace";
     }
 
     public static final class NBT
@@ -51,5 +56,7 @@ public class Names
         public static final String INFUSER = "container.magetech:" + Blocks.INFUSER;
         public static final String CRUSHER = "container.magetech:" + Blocks.CRUSHER;
         public static final String ELECTRONICS_WORKBENCH = "container.magetech:" + Blocks.ELECTRONICS_WORKBENCH;
+        public static final String CENTRIFUGE = "container.magetech:" + Blocks.CENTRIFUGE;
+        public static final String POWERFURNACE = "container.magetech:" + Blocks.POWERFURNACE;
     }
 }

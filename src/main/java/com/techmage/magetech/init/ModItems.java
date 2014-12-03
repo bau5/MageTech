@@ -26,6 +26,8 @@ public class ModItems
     public static final Item transistor = new ItemMageTech().setUnlocalizedName(Names.Items.TRANSISTOR).setTextureName(Textures.RESOURCE_PREFIX + Names.Items.TRANSISTOR);
     public static final ItemMageTech circuitBoard = new ItemCircuitBoard();
     public static final ItemMageTech crushedOre = new ItemCrushedOre();
+    public static final Item rubber = new ItemMageTech().setUnlocalizedName(Names.Items.RUBBER).setTextureName(Textures.RESOURCE_PREFIX + Names.Items.RUBBER);
+    public static final ItemMageTech dustOre = new ItemDustOre();
 
     public static void init()
     {
@@ -43,10 +45,17 @@ public class ModItems
         GameRegistry.registerItem(transistor, Names.Items.TRANSISTOR);
         GameRegistry.registerItem(circuitBoard, Names.Items.CIRCUITBOARD);
         GameRegistry.registerItem(crushedOre, Names.Items.CRUSHEDORE);
+        GameRegistry.registerItem(rubber, Names.Items.RUBBER);
+        GameRegistry.registerItem(dustOre, Names.Items.DUSTORE);
 
         OreDictionary.registerOre("ingotLead", new ItemStack(ingot, 1, 0));
         OreDictionary.registerOre("ingotSilver", new ItemStack(ingot, 1, 1));
         OreDictionary.registerOre("ingotCopper", new ItemStack(ingot, 1, 2));
+        OreDictionary.registerOre("dustIron", new ItemStack(dustOre, 1, 0));
+        OreDictionary.registerOre("dustGold", new ItemStack(dustOre, 1, 1));
+        OreDictionary.registerOre("dustCopper", new ItemStack(dustOre, 1, 2));
+        OreDictionary.registerOre("dustLead", new ItemStack(dustOre, 1, 3));
+        OreDictionary.registerOre("dustSilver", new ItemStack(dustOre, 1, 4));
     }
 }
 

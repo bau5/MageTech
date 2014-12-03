@@ -14,6 +14,7 @@ public class BlockHardenedStone extends BlockMageTech
     {
         super(Material.rock);
         this.setHardness(2.0f);
+        this.setHarvestLevel("pickaxe", 3);
         this.setBlockName(Names.Blocks.STONE_HARDENED);
     }
 

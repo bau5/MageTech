@@ -18,6 +18,7 @@ public class BlockOreCrystal extends BlockMageTech
     {
         super(Material.rock);
         this.setHardness(2.0f);
+        this.setHarvestLevel("pickaxe", 3);
         this.setBlockName(Names.Blocks.ORECRYSTAL);
     }
 

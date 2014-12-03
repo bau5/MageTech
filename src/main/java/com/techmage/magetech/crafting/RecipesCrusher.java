@@ -58,7 +58,7 @@ public class RecipesCrusher
                 {
                     CrushingRecipes[j][0] = output;
                     CrushingRecipes[j][1] = inputArray[i];
-                    OutputSize[i] = outputSize;
+                    OutputSize[j] = outputSize;
                     break;
                 }
                 if (CrushingRecipes[j][0].isItemEqual(output))

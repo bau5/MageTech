@@ -19,7 +19,10 @@ public class GuiCrusher extends GuiContainer
     public GuiCrusher(InventoryPlayer inventoryPlayer, TileEntityCrusher tileEntityCrusher)
     {
         super(new ContainerCrusher(inventoryPlayer, tileEntityCrusher));
-        ySize = 239;
+
+        this.xSize = 176;
+        this.ySize = 171;
+
         this.tileEntityCrusher = tileEntityCrusher;
     }
 
@@ -28,7 +31,7 @@ public class GuiCrusher extends GuiContainer
     {
         String containerName = StatCollector.translateToLocal(tileEntityCrusher.getInventoryName());
         fontRendererObj.drawString(containerName, xSize / 2 - fontRendererObj.getStringWidth(containerName) / 2, 6, 4210752);
-        fontRendererObj.drawString(StatCollector.translateToLocal(Names.Containers.VANILLA_INVENTORY), 8, ySize - 96 + 2, 4210752);
+        fontRendererObj.drawString(StatCollector.translateToLocal(Names.Containers.VANILLA_INVENTORY), 8, ySize - 98, 4210752);
     }
 
     @Override
@@ -40,15 +43,15 @@ public class GuiCrusher extends GuiContainer
 
         int xStart = (width - xSize) / 2;
         int yStart = (height - ySize) / 2;
-        this.drawTexturedModalRect(xStart, yStart, 0, 0, xSize, ySize);
+        this.drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
 
-        int i1 = this.tileEntityCrusher.getPowerScale(46);
-        this.drawTexturedModalRect (xStart + 12, yStart + 56 + 46 - i1, 177, 46 - i1, 9, i1 + 1);
+        int i1 = this.tileEntityCrusher.getPowerScale(32);
+        this.drawTexturedModalRect (xStart + 17, yStart + 25 + 32 - i1, 177, 63 - i1, 14, i1 + 1);
 
         if (this.tileEntityCrusher.isCrushing())
         {
-            i1 = this.tileEntityCrusher.getCrushingProgressScale(46);
-            this.drawTexturedModalRect (xStart + 155, yStart + 56 + 46 - i1, 187, 46 - i1, 9, i1 + 1);
+            i1 = this.tileEntityCrusher.getCrushingProgressScale(24);
+            this.drawTexturedModalRect(xStart + 79, yStart + 34, 176, 14, i1 + 1, 16);
         }
     }
 }

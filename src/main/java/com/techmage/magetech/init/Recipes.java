@@ -1,6 +1,7 @@
 package com.techmage.magetech.init;
 
 import com.techmage.magetech.crafting.ElectronicsWorkbenchCraftingManager;
+import com.techmage.magetech.crafting.RecipesCentrifuge;
 import com.techmage.magetech.crafting.RecipesCrusher;
 import com.techmage.magetech.crafting.RecipesInfuser;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -19,6 +20,7 @@ public class Recipes
         initInfusingRecipes();
         initElectronicsWorkbenchRecipes();
         initCrushingRecipes();
+        initCentrifugeRecipes();
     }
 
     public static void initShapedRecipes()
@@ -36,7 +38,13 @@ public class Recipes
         FurnaceRecipes.smelting().func_151394_a(new ItemStack(ModBlocks.ore, 1, 1), new ItemStack(ModItems.ingot, 1, 1), 1.0F);
         FurnaceRecipes.smelting().func_151394_a(new ItemStack(ModBlocks.ore, 1, 2), new ItemStack(ModItems.ingot, 1, 2), 0.7F);
         FurnaceRecipes.smelting().func_151394_a(new ItemStack(ModItems.siliconOre, 1, 0), new ItemStack(ModItems.silicon, 1, 0), 0.5F);
-        FurnaceRecipes.smelting().func_151394_a(new ItemStack(ModItems.resin, 1, 0), new ItemStack(ModItems.plastic, 1, 0), 0.5F);
+        FurnaceRecipes.smelting().func_151394_a(new ItemStack(ModItems.resin, 1, 0), new ItemStack(ModItems.rubber, 1, 0), 0.1F);
+        FurnaceRecipes.smelting().func_151394_a(new ItemStack(ModItems.rubber, 1, 0), new ItemStack(ModItems.plastic, 1, 0), 0.1F);
+        FurnaceRecipes.smelting().func_151394_a(new ItemStack(ModItems.dustOre, 1, 0), new ItemStack(Items.iron_ingot), 0.5F);
+        FurnaceRecipes.smelting().func_151394_a(new ItemStack(ModItems.dustOre, 1, 1), new ItemStack(Items.gold_ingot), 0.5F);
+        FurnaceRecipes.smelting().func_151394_a(new ItemStack(ModItems.dustOre, 1, 2), new ItemStack(ModItems.ingot, 1, 2), 0.5F);
+        FurnaceRecipes.smelting().func_151394_a(new ItemStack(ModItems.dustOre, 1, 3), new ItemStack(ModItems.ingot, 1, 0), 0.5F);
+        FurnaceRecipes.smelting().func_151394_a(new ItemStack(ModItems.dustOre, 1, 4), new ItemStack(ModItems.ingot, 1, 1), 0.5F);
     }
 
     public static void initInfusingRecipes()
@@ -75,5 +83,21 @@ public class Recipes
         RecipesCrusher.crushing().addRecipe(new ItemStack(Blocks.cobblestone), new ItemStack(Blocks.stone), 1);
         RecipesCrusher.crushing().addRecipe(new ItemStack(Blocks.gravel), new ItemStack(Blocks.cobblestone), 1);
         RecipesCrusher.crushing().addRecipe(new ItemStack(Blocks.sand), new ItemStack(Blocks.gravel), 1);
+    }
+
+    public static void initCentrifugeRecipes()
+    {
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(ModItems.dustOre, 1, 0), new ItemStack(ModItems.crushedOre, 1, 0));
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(ModItems.dustOre, 1, 1), new ItemStack(ModItems.crushedOre, 1, 1));
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(Items.coal), new ItemStack(ModItems.crushedOre, 1, 2));
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(Items.redstone), new ItemStack(ModItems.crushedOre, 1, 3));
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(Items.dye), new ItemStack(ModItems.crushedOre, 1, 4));
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(Items.emerald), new ItemStack(ModItems.crushedOre, 1, 5));
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(Items.diamond), new ItemStack(ModItems.crushedOre, 1, 6));
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(ModItems.dustOre, 1, 2), new ItemStack(ModItems.crushedOre, 1, 7));
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(ModItems.dustOre, 1, 3), new ItemStack(ModItems.crushedOre, 1, 8));
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(ModItems.dustOre, 1, 4), new ItemStack(ModItems.crushedOre, 1, 9));
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(ModItems.siliconOre), new ItemStack(ModItems.crushedOre, 1, 10));
+        RecipesCentrifuge.centrifuge().addRecipe(new ItemStack(ModItems.crystal), new ItemStack(ModItems.crushedOre, 1, 11));
     }
 }

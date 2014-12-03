@@ -13,21 +13,26 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
-public class BlockOre extends BlockMageTech {
+public class BlockOre extends BlockMageTech
+{
 
     @SideOnly(Side.CLIENT)
     private IIcon[] icons;
 
-    public BlockOre() {
+    public BlockOre()
+    {
         super(Material.rock);
         this.setHardness(2.0f);
+        this.setHarvestLevel("pickaxe", 3);
         this.setBlockName(Names.Blocks.ORE);
     }
 
     @Override
     @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int side, int meta) {
-        if (meta < 0 || meta >= this.icons.length) {
+    public IIcon getIcon(int side, int meta)
+    {
+        if (meta < 0 || meta >= this.icons.length)
+        {
             meta = 0;
         }
         return this.icons[meta];
@@ -35,10 +40,12 @@ public class BlockOre extends BlockMageTech {
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister iconRegister) {
+    public void registerBlockIcons(IIconRegister iconRegister)
+    {
         this.icons = new IIcon[Names.Blocks.ORE_SUBTYPES.length];
 
-        for (int i = 0; i < this.icons.length; i++) {
+        for (int i = 0; i < this.icons.length; i++)
+        {
             icons[i] = iconRegister.registerIcon(Textures.RESOURCE_PREFIX + Names.Blocks.ORE + Names.Blocks.ORE_SUBTYPES[i]);
         }
     }
@@ -49,8 +56,10 @@ public class BlockOre extends BlockMageTech {
 
     @Override
     @SideOnly(Side.CLIENT)
-    public void getSubBlocks(Item item, CreativeTabs creativeTab, List list) {
-        for (int meta = 0; meta < Names.Blocks.ORE_SUBTYPES.length; ++meta) {
+    public void getSubBlocks(Item item, CreativeTabs creativeTab, List list)
+    {
+        for (int meta = 0; meta < Names.Blocks.ORE_SUBTYPES.length; ++meta)
+        {
             list.add(new ItemStack(this, 1, meta));
         }
     }

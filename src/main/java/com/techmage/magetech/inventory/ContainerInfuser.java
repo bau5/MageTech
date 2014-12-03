@@ -1,5 +1,6 @@
 package com.techmage.magetech.inventory;
 
+import com.techmage.magetech.crafting.RecipesInfuser;
 import com.techmage.magetech.item.ItemCrystal;
 import com.techmage.magetech.tileentity.TileEntityInfuser;
 import cpw.mods.fml.relauncher.Side;
@@ -94,10 +95,74 @@ public class ContainerInfuser extends ContainerMageTech
     }
 
     @Override
-    public ItemStack transferStackInSlot(EntityPlayer entityPlayer, int slotIndex)
+    public ItemStack transferStackInSlot(EntityPlayer p_82846_1_, int p_82846_2_)
     {
-        ItemStack itemStack = null;
+        ItemStack itemstack = null;
+        Slot slot = (Slot)this.inventorySlots.get(p_82846_2_);
 
-        return itemStack;
+        if (slot != null && slot.getHasStack())
+        {
+            ItemStack itemstack1 = slot.getStack();
+            itemstack = itemstack1.copy();
+
+            if (p_82846_2_ == 3)
+            {
+                if (!this.mergeItemStack(itemstack1, 4, 40, true))
+                {
+                    return null;
+                }
+
+                slot.onSlotChange(itemstack1, itemstack);
+            }
+            else if (p_82846_2_ != 0 && p_82846_2_ != 1 && p_82846_2_ != 2)
+            {
+                if (RecipesInfuser.infusing().isCraftingComponent(itemstack1))
+                {
+                    if (!this.mergeItemStack(itemstack1, 0, 1, false))
+                    {
+                        if (!this.mergeItemStack(itemstack1, 1, 2, false))
+                        {
+                            if (!this.mergeItemStack(itemstack1, 2, 3, false))
+                            {
+                                return null;
+                            }
+                        }
+                    }
+                }
+                else if (p_82846_2_ >= 4 && p_82846_2_ < 31)
+                {
+                    if (!this.mergeItemStack(itemstack1, 31, 40, false))
+                    {
+                        return null;
+                    }
+                }
+                else if (p_82846_2_ >= 31 && p_82846_2_ < 40 && !this.mergeItemStack(itemstack1, 4, 31, false))
+                {
+                    return null;
+                }
+            }
+            else if (!this.mergeItemStack(itemstack1, 4, 40, false))
+            {
+                return null;
+            }
+
+            if (itemstack1.stackSize == 0)
+            {
+                slot.putStack((ItemStack)null);
+            }
+            else
+            {
+                slot.onSlotChanged();
+            }
+
+            if (itemstack1.stackSize == itemstack.stackSize)
+            {
+                return null;
+            }
+
+            slot.onPickupFromSlot(p_82846_1_, itemstack1);
+        }
+
+        return itemstack;
     }
 }

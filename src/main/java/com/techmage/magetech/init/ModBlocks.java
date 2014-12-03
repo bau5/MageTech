@@ -16,6 +16,8 @@ public class ModBlocks
     public static final BlockMageTech crusher = new BlockCrusher();
     public static final BlockMageTech oreSilicon = new BlockOreSilicon();
     public static final BlockMageTech electronicsWorkbench = new BlockElectronicsWorkbench();
+    public static final BlockMageTech centrifuge = new BlockCentrifuge();
+    public static final BlockMageTech powerFurnace = new BlockPowerFurnace();
 
     public static void init()
     {
@@ -27,6 +29,8 @@ public class ModBlocks
         GameRegistry.registerBlock(crusher, Names.Blocks.CRUSHER);
         GameRegistry.registerBlock(oreSilicon, Names.Blocks.ORESILICON);
         GameRegistry.registerBlock(electronicsWorkbench, Names.Blocks.ELECTRONICS_WORKBENCH);
+        GameRegistry.registerBlock(centrifuge, Names.Blocks.CENTRIFUGE);
+        GameRegistry.registerBlock(powerFurnace, Names.Blocks.POWERFURNACE);
 
         OreDictionary.registerOre("oreLead", new ItemStack(ore, 1, 0));
         OreDictionary.registerOre("oreSilver", new ItemStack(ore, 1, 1));

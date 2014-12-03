@@ -35,6 +35,12 @@ item.magetech:crushedOreLead.name=Crushed Lead Ore
 item.magetech:crushedOreSilver.name=Crushed Silver Ore
 item.magetech:crushedOreSilicon.name=Crushed Silicon Ore
 item.magetech:crushedOreCrystal.name=Crushed Crystal Ore
+item.magetech:rubber.name=Rubber
+item.magetech:dustOreIron.name=Iron Dust
+item.magetech:dustOreGold.name=Gold Dust
+item.magetech:dustOreCopper.name=Copper Dust
+item.magetech:dustOreLead.name=Lead Dust
+item.magetech:dustOreSilver.name=Silver Dust
 
 # Blocks
 tile.magetech:infuser.name=Infuser
@@ -47,7 +53,11 @@ tile.magetech:oreCrystal.name=Crystal Ore
 tile.magetech:oreSilicon.name=Silicon Ore
 tile.magetech:crusher.name=Crusher
 tile.magetech:electronicsWorkbench.name=Electronics Workbench
+tile.magetech:centrifuge.name=Centrifuge
+tile.magetech:powerFurnace.name=Power Furnace
 
 # GUIs
 container.magetech:infuser=Infuser
 container.magetech:crusher=Crusher
+container.magetech:centrifuge=Centrifuge
+container.magetech:powerFurnace=Power Furnace

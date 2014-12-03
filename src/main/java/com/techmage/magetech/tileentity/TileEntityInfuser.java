@@ -7,13 +7,18 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 
-public class TileEntityInfuser extends TileEntityMageTech implements IInventory
+public class TileEntityInfuser extends TileEntityMageTech implements ISidedInventory
 {
     public static final int INVENTORY_SIZE = 4;
+
+    private static final int[] slotsTop = new int[] {0, 1, 2};
+    private static final int[] slotsBottom = new int[] {3};
+    private static final int[] slotsSides = new int[] {0, 1, 2, 3};
 
     /**
      * The ItemStacks that hold the items currently being used in the Glass Bell
@@ -119,12 +124,6 @@ public class TileEntityInfuser extends TileEntityMageTech implements IInventory
     public void closeInventory()
     {
         // NOOP
-    }
-
-    @Override
-    public boolean isItemValidForSlot(int slotIndex, ItemStack itemStack)
-    {
-        return false;
     }
 
     @Override
@@ -247,7 +246,7 @@ public class TileEntityInfuser extends TileEntityMageTech implements IInventory
 
         if (inventory[3] == null)
         {
-            inventory[3] = result;
+            inventory[3] = new ItemStack(result.getItem(), 1, result.getItemDamage());
         }
         else
         {
@@ -281,5 +280,25 @@ public class TileEntityInfuser extends TileEntityMageTech implements IInventory
             inventory[2] = null;
         }
     }
+
+    public boolean isItemValidForSlot(int slotIndex, ItemStack itemStack)
+    {
+        return slotIndex == 3 ? false : true;
+    }
+
+    public int[] getAccessibleSlotsFromSide(int side)
+    {
+        return side == 0 ? slotsBottom : (side == 1 ? slotsTop : slotsSides);
+    }
+
+    public boolean canInsertItem(int slot, ItemStack itemStack, int side)
+    {
+        return this.isItemValidForSlot(side, itemStack);
+    }
+    public boolean canExtractItem(int slot, ItemStack itemStack, int side)
+    {
+        return side != 0 && side != 1 ? slot == 0 || slot == 1 || slot == 2 ? false : true : true;
+    }
+
 }
 

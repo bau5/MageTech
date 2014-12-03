@@ -193,4 +193,28 @@ public class RecipesInfuser
 
     }
 
+    public boolean isCraftingComponent(ItemStack input)
+    {
+        for (int i = 0; i < InfusingRecipes.length; i ++)
+        {
+            if (InfusingRecipes[i][0][0][0] != null)
+            {
+                if (InfusingRecipes[i][1][0][0].isItemEqual(input))
+                {
+                    return true;
+                }
+                else if (InfusingRecipes[i][1][1][0].isItemEqual(input))
+                {
+                    return true;
+                }
+                else if (InfusingRecipes[i][1][1][1].isItemEqual(input))
+                {
+                    return true;
+                }
+                else { }
+            }
+        }
+        return false;
+    }
+
 }
