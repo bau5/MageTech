@@ -5,6 +5,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class RecipesCrusher
 {
@@ -16,94 +18,47 @@ public class RecipesCrusher
         return crushingBase;
     }
 
-    public ItemStack[][] CrushingRecipes = new ItemStack[16][16];
-    public int[] OutputSize = new int[CrushingRecipes.length];
+    List<ItemStack> outputs = new ArrayList<ItemStack>();
+    List<ItemStack> inputs = new ArrayList<ItemStack>();
+    List<Integer> size = new ArrayList<Integer>();
 
     private RecipesCrusher() { }
 
     public void addRecipe(ItemStack output, ItemStack input, int outputSize)
     {
-        for (int i = 0; i < CrushingRecipes.length; i ++)
-        {
-            if (CrushingRecipes[i][0] == null)
-            {
-                CrushingRecipes[i][0] = output;
-                CrushingRecipes[i][1] = input;
-                OutputSize[i] = outputSize;
-                break;
-            }
-            else if (CrushingRecipes[i][0] == output)
-            {
-                for (int j = 0; j < CrushingRecipes.length; j ++)
-                {
-                    if (CrushingRecipes[i][j] == null)
-                    {
-                        CrushingRecipes[i][j] = input;
-                        break;
-                    }
-                }
-            }
-        }
+        outputs.add(output);
+        inputs.add(input);
+        size.add(outputSize);
     }
 
     public void addOreRecipe(ItemStack output, String input, int outputSize)
     {
-        ArrayList<ItemStack> inputs = OreDictionary.getOres(input);
-        ItemStack[] inputArray = inputs.toArray(new ItemStack[inputs.size()]);
-        for (int i = 0; i < inputArray.length; i ++)
+        ArrayList<ItemStack> in = OreDictionary.getOres(input);
+        Iterator<ItemStack> it = in.iterator();
+        while (it.hasNext())
         {
-            for (int j = 0; j < CrushingRecipes.length; j ++)
-            {
-                if (CrushingRecipes[j][0] == null)
-                {
-                    CrushingRecipes[j][0] = output;
-                    CrushingRecipes[j][1] = inputArray[i];
-                    OutputSize[j] = outputSize;
-                    break;
-                }
-                if (CrushingRecipes[j][0].isItemEqual(output))
-                {
-                    for (int k = 0; k < CrushingRecipes.length; k ++)
-                    {
-                        if (CrushingRecipes[j][k] == null)
-                        {
-                            CrushingRecipes[j][k] = inputArray[i];
-                            break;
-                        }
-                    }
-                }
-            }
+            outputs.add(output);
+            inputs.add(it.next());
+            size.add(outputSize);
         }
     }
 
     public ItemStack getCraftingResult(ItemStack input)
     {
-        for (int i = 0; i < CrushingRecipes.length; i ++)
+        Iterator<ItemStack> it = inputs.iterator();
+        while (it.hasNext())
         {
-            for (int j = 0; j < CrushingRecipes.length; j ++)
-            {
-                if (CrushingRecipes[i][j] != null)
-                {
-                    if (CrushingRecipes[i][j].isItemEqual(input))
-                    {
-                        return CrushingRecipes[i][0];
-                    }
-                }
-            }
+            if (inputs.get(inputs.size() - 1).isItemEqual(input))
+                return outputs.get(outputs.size() - 1);
+            else if (it.next().isItemEqual(input))
+                return outputs.get(inputs.indexOf(it.next()) - 1);
         }
         return null;
     }
 
     public int getOutputSize(ItemStack output)
     {
-        for (int i = 0; i < CrushingRecipes.length; i ++)
-        {
-            if (CrushingRecipes[i][0].isItemEqual(output))
-            {
-                return OutputSize[i];
-            }
-        }
-        return 0;
+        return size.get(outputs.indexOf(output));
     }
 
 }

@@ -6,6 +6,7 @@ import com.techmage.magetech.init.ModBlocks;
 import com.techmage.magetech.init.ModItems;
 import com.techmage.magetech.init.Recipes;
 import com.techmage.magetech.init.WorldGeneration;
+import com.techmage.magetech.network.PacketHandler;
 import com.techmage.magetech.proxy.IProxy;
 import com.techmage.magetech.reference.Reference;
 import com.techmage.magetech.utility.LogHelper;
@@ -16,6 +17,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME,  version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class MageTech
@@ -36,16 +38,16 @@ public class MageTech
 
         ModBlocks.init();
 
+        PacketHandler.init();
+
         LogHelper.info("Pre Initialization Complete!");
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-        // Register the GUI Handler
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
-        // Initialize mod tile entities
         proxy.registerTileEntities();
 
         Recipes.init();

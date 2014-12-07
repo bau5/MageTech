@@ -4,6 +4,7 @@ import com.techmage.magetech.crafting.ElectronicsWorkbenchCraftingManager;
 import com.techmage.magetech.crafting.RecipesCentrifuge;
 import com.techmage.magetech.crafting.RecipesCrusher;
 import com.techmage.magetech.crafting.RecipesInfuser;
+import com.techmage.magetech.utility.LogHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;

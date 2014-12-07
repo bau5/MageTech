@@ -2,6 +2,8 @@ package com.techmage.magetech.client.gui.inventory;
 
 import com.techmage.magetech.inventory.ContainerCrusher;
 import com.techmage.magetech.inventory.ContainerPowerFurnace;
+import com.techmage.magetech.network.DoBlockUpdate;
+import com.techmage.magetech.network.PacketHandler;
 import com.techmage.magetech.reference.Names;
 import com.techmage.magetech.reference.Textures;
 import com.techmage.magetech.tileentity.TileEntityPowerFurnace;
@@ -42,7 +44,16 @@ public class GuiPowerFurnace extends GuiContainer
     {
         if(button.id == 1)
         {
-            tileEntityPowerFurnace.setMode();
+            if (tileEntityPowerFurnace.inSeries == false)
+            {
+                PacketHandler.packetReq.sendToServer(new DoBlockUpdate(tileEntityPowerFurnace.xCoord, tileEntityPowerFurnace.yCoord, tileEntityPowerFurnace.zCoord, true));
+                tileEntityPowerFurnace.setMode(true);
+            }
+            else
+            {
+                PacketHandler.packetReq.sendToServer(new DoBlockUpdate(tileEntityPowerFurnace.xCoord, tileEntityPowerFurnace.yCoord, tileEntityPowerFurnace.zCoord, false));
+                tileEntityPowerFurnace.setMode(false);
+            }
         }
     }
 

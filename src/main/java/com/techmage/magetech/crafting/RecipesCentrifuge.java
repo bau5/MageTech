@@ -4,6 +4,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class RecipesCentrifuge
 {
@@ -15,48 +17,26 @@ public class RecipesCentrifuge
         return centrifugeBase;
     }
 
-    public ItemStack[][] CentrifugeRecipes = new ItemStack[16][16];
+    List<ItemStack> outputs = new ArrayList<ItemStack>();
+    List<ItemStack> inputs = new ArrayList<ItemStack>();
 
     private RecipesCentrifuge() { }
 
     public void addRecipe(ItemStack output, ItemStack input)
     {
-        for (int i = 0; i < CentrifugeRecipes.length; i ++)
-        {
-            if (CentrifugeRecipes[i][0] == null)
-            {
-                CentrifugeRecipes[i][0] = output;
-                CentrifugeRecipes[i][1] = input;
-                break;
-            }
-            else if (CentrifugeRecipes[i][0] == output)
-            {
-                for (int j = 0; j < CentrifugeRecipes.length; j ++)
-                {
-                    if (CentrifugeRecipes[i][j] == null)
-                    {
-                        CentrifugeRecipes[i][j] = input;
-                        break;
-                    }
-                }
-            }
-        }
+        outputs.add(output);
+        inputs.add(input);
     }
 
     public ItemStack getCraftingResult(ItemStack input)
     {
-        for (int i = 0; i < CentrifugeRecipes.length; i ++)
+        Iterator<ItemStack> it = inputs.iterator();
+        while (it.hasNext())
         {
-            for (int j = 0; j < CentrifugeRecipes.length; j ++)
-            {
-                if (CentrifugeRecipes[i][j] != null)
-                {
-                    if (CentrifugeRecipes[i][j].isItemEqual(input))
-                    {
-                        return CentrifugeRecipes[i][0];
-                    }
-                }
-            }
+            if (inputs.get(inputs.size() - 1).isItemEqual(input))
+                return outputs.get(outputs.size() - 1);
+            else if (it.next().isItemEqual(input))
+                return outputs.get(inputs.indexOf(it.next()) - 1);
         }
         return null;
     }

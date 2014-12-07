@@ -1,12 +1,12 @@
 package com.techmage.magetech.tileentity;
 
-import com.techmage.magetech.crafting.RecipesCrusher;
+import com.techmage.magetech.network.DoBlockUpdate;
+import com.techmage.magetech.network.PacketHandler;
 import com.techmage.magetech.reference.Names;
 import com.techmage.magetech.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
@@ -39,7 +39,8 @@ public class TileEntityPowerFurnace extends TileEntityMageTech implements ISided
     public int CookingTime1;
     public int CookingTime2;
 
-    public static boolean inSeries;
+    public boolean doUpdate = false;
+    public boolean inSeries = false;
 
     public int transferTime;
 
@@ -142,6 +143,7 @@ public class TileEntityPowerFurnace extends TileEntityMageTech implements ISided
         nbtTagCompound.setShort("CookingTime1", (short)this.CookingTime1);
         nbtTagCompound.setShort("CookingTime2", (short)this.CookingTime2);
         nbtTagCompound.setShort("CurrentPower", (short)this.CurrentPower);
+
         nbtTagCompound.setBoolean("inSeries", this.inSeries);
 
         // Write the ItemStacks in the inventory to NBT
@@ -175,11 +177,27 @@ public class TileEntityPowerFurnace extends TileEntityMageTech implements ISided
             {
                 inventory[slotIndex] = ItemStack.loadItemStackFromNBT(tagCompound);
             }
-            this.CookingTime1 = nbtTagCompound.getShort("CookingTime1");
-            this.CookingTime2 = nbtTagCompound.getShort("CookingTime2");
-            this.CurrentPower = nbtTagCompound.getShort("CurrentPower");
-            this.inSeries = nbtTagCompound.getBoolean("inSeries");
         }
+
+        this.CookingTime1 = nbtTagCompound.getShort("CookingTime1");
+        this.CookingTime2 = nbtTagCompound.getShort("CookingTime2");
+        this.CurrentPower = nbtTagCompound.getShort("CurrentPower");
+        this.inSeries = nbtTagCompound.getBoolean("inSeries");
+    }
+
+    @Override
+    public Packet getDescriptionPacket()
+    {
+        NBTTagCompound tagCompound = new NBTTagCompound();
+        writeToNBT(tagCompound);
+        return new S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 1, tagCompound);
+    }
+
+
+    @Override
+    public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity pkt) {
+        NBTTagCompound tag = pkt.func_148857_g();
+        readFromNBT(tag);
     }
 
     @SideOnly(Side.CLIENT)
@@ -204,66 +222,64 @@ public class TileEntityPowerFurnace extends TileEntityMageTech implements ISided
     public void updateEntity()
     {
 
-        boolean doUpdate = false;
+        if (worldObj.isRemote) return;
 
-        if (!this.worldObj.isRemote)
+        if (canCook1())
         {
-            if (canCook1())
+            if (this.CookingTime1 < 300)
             {
-                if (this.CookingTime1 < 300)
-                {
-                    this.CookingTime1++;
-                }
-                else
-                {
-                    cookItem1();
-                    this.CookingTime1 = 0;
-                    doUpdate = true;
-                }
+                this.CookingTime1++;
             }
             else
             {
+                cookItem1();
                 this.CookingTime1 = 0;
+                doUpdate = true;
             }
+        }
+        else
+        {
+            this.CookingTime1 = 0;
+        }
 
-            if (canCook2())
+        if (canCook2())
+        {
+            if (this.CookingTime2 < 300)
             {
-                if (this.CookingTime2 < 300)
-                {
-                    this.CookingTime2++;
-                }
-                else
-                {
-                    cookItem2();
-                    this.CookingTime2 = 0;
-                    doUpdate = true;
-                }
+                this.CookingTime2++;
             }
             else
             {
+                cookItem2();
                 this.CookingTime2 = 0;
+                doUpdate = true;
             }
+        }
+        else
+        {
+            this.CookingTime2 = 0;
+        }
 
-            if (this.inSeries)
+        if (this.inSeries)
+        {
+            if (canTransferItem())
             {
-                if (canTransferItem())
+                if (this.transferTime < 100) {
+                    this.transferTime++;
+                }
+                else
                 {
-                    if (this.transferTime < 100)
-                    {
-                        this.transferTime++;
-                    }
-                    else
-                    {
-                        this.transferItem();
-                        this.transferTime = 0;
-                    }
+                    this.transferItem();
+                    this.transferTime = 0;
                 }
             }
         }
 
         if (doUpdate)
         {
+            this.worldObj.markBlockForUpdate(this.xCoord, this.yCoord, this.zCoord);
             this.markDirty();
+            doUpdate = false;
         }
     }
 
@@ -381,16 +397,9 @@ public class TileEntityPowerFurnace extends TileEntityMageTech implements ISided
         }
     }
 
-    public void setMode()
+    public void setMode(boolean mode)
     {
-        if (this.inSeries == true)
-        {
-            this.inSeries = false;
-        }
-        else
-        {
-            this.inSeries = true;
-        }
+        this.inSeries = mode;
     }
 
     public boolean canTransferItem()
