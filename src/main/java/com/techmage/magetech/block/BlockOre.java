@@ -13,7 +13,7 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
-public class BlockOre extends BlockMageTech
+public class BlockOre extends BlockMageTech_Tech
 {
 
     @SideOnly(Side.CLIENT)

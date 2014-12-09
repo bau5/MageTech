@@ -5,7 +5,6 @@ import com.techmage.magetech.reference.GuiID;
 import com.techmage.magetech.reference.Names;
 import com.techmage.magetech.reference.Textures;
 import com.techmage.magetech.tileentity.TileEntityCentrifuge;
-import com.techmage.magetech.tileentity.TileEntityCrusher;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.ITileEntityProvider;
@@ -16,7 +15,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public class BlockCentrifuge extends BlockMageTech implements ITileEntityProvider
+public class BlockCentrifuge extends BlockMageTech_Tech implements ITileEntityProvider
 {
     public BlockCentrifuge()
     {

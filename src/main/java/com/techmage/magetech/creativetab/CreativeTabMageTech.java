@@ -7,7 +7,13 @@ import net.minecraft.item.Item;
 
 public class CreativeTabMageTech
 {
-    public static final CreativeTabs MAGETECH_TAB = new CreativeTabs(Reference.MOD_ID.toLowerCase())
+    public static final CreativeTabs MAGETECH_TECH_TAB = new CreativeTabs(Reference.MOD_ID.toLowerCase() + " - Tech")
+    {
+        @Override
+        public Item getTabIconItem() { return ModItems.ic; }
+    };
+
+    public static final CreativeTabs MAGETECH_MAGIC_TAB = new CreativeTabs(Reference.MOD_ID.toLowerCase() + " - Magic")
     {
         @Override
         public Item getTabIconItem() { return ModItems.crystal; }

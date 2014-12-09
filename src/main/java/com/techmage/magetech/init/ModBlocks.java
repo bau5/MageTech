@@ -8,16 +8,16 @@ import net.minecraftforge.oredict.OreDictionary;
 
 public class ModBlocks
 {
-    public static final BlockMageTech infuser = new BlockInfuser();
-    public static final BlockMageTech stoneHardened = new BlockHardenedStone();
-    public static final BlockMageTech mpWire = new BlockMPWire();
-    public static final BlockMageTech ore = new BlockOre();
-    public static final BlockMageTech oreCrystal = new BlockOreCrystal();
-    public static final BlockMageTech crusher = new BlockCrusher();
-    public static final BlockMageTech oreSilicon = new BlockOreSilicon();
-    public static final BlockMageTech electronicsWorkbench = new BlockElectronicsWorkbench();
-    public static final BlockMageTech centrifuge = new BlockCentrifuge();
-    public static final BlockMageTech powerFurnace = new BlockPowerFurnace();
+    public static final BlockMageTech_Magic infuser = new BlockInfuser();
+    public static final BlockMageTech_Magic stoneHardened = new BlockHardenedStone();
+    public static final BlockMageTech_Tech mpWire = new BlockMPWire();
+    public static final BlockMageTech_Tech ore = new BlockOre();
+    public static final BlockMageTech_Magic oreCrystal = new BlockOreCrystal();
+    public static final BlockMageTech_Tech crusher = new BlockCrusher();
+    public static final BlockMageTech_Tech oreSilicon = new BlockOreSilicon();
+    public static final BlockMageTech_Tech electronicsWorkbench = new BlockElectronicsWorkbench();
+    public static final BlockMageTech_Tech centrifuge = new BlockCentrifuge();
+    public static final BlockMageTech_Tech powerFurnace = new BlockPowerFurnace();
 
     public static void init()
     {

@@ -8,7 +8,7 @@ import cpw.mods.fml.relauncher.Side;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.tileentity.TileEntity;
 
-public class DoBlockUpdate implements IMessage
+public class PacketPowerFurnaceSetMode implements IMessage
 {
 
     private int xCoord;
@@ -16,9 +16,9 @@ public class DoBlockUpdate implements IMessage
     private int zCoord;
     private boolean mode;
 
-    public DoBlockUpdate() { }
+    public PacketPowerFurnaceSetMode() { }
 
-    public DoBlockUpdate(int xCoord, int yCoord, int zCoord, boolean mode)
+    public PacketPowerFurnaceSetMode(int xCoord, int yCoord, int zCoord, boolean mode)
     {
         this.xCoord = xCoord;
         this.yCoord = yCoord;
@@ -44,10 +44,10 @@ public class DoBlockUpdate implements IMessage
         buf.writeBoolean(mode);
     }
 
-    public static class Handler implements IMessageHandler<DoBlockUpdate, IMessage>
+    public static class Handler implements IMessageHandler<PacketPowerFurnaceSetMode, IMessage>
     {
         @Override
-        public IMessage onMessage(DoBlockUpdate msg, MessageContext ctx)
+        public IMessage onMessage(PacketPowerFurnaceSetMode msg, MessageContext ctx)
         {
             if (ctx.side == Side.SERVER)
             {

@@ -1,13 +1,11 @@
 package com.techmage.magetech.client.gui.inventory;
 
-import com.techmage.magetech.inventory.ContainerCrusher;
 import com.techmage.magetech.inventory.ContainerPowerFurnace;
-import com.techmage.magetech.network.DoBlockUpdate;
-import com.techmage.magetech.network.PacketHandler;
+import com.techmage.magetech.network.PacketPowerFurnaceSetMode;
+import com.techmage.magetech.handler.PacketHandler;
 import com.techmage.magetech.reference.Names;
 import com.techmage.magetech.reference.Textures;
 import com.techmage.magetech.tileentity.TileEntityPowerFurnace;
-import com.techmage.magetech.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.gui.GuiButton;
@@ -46,12 +44,12 @@ public class GuiPowerFurnace extends GuiContainer
         {
             if (tileEntityPowerFurnace.inSeries == false)
             {
-                PacketHandler.packetReq.sendToServer(new DoBlockUpdate(tileEntityPowerFurnace.xCoord, tileEntityPowerFurnace.yCoord, tileEntityPowerFurnace.zCoord, true));
+                PacketHandler.packetReq.sendToServer(new PacketPowerFurnaceSetMode(tileEntityPowerFurnace.xCoord, tileEntityPowerFurnace.yCoord, tileEntityPowerFurnace.zCoord, true));
                 tileEntityPowerFurnace.setMode(true);
             }
             else
             {
-                PacketHandler.packetReq.sendToServer(new DoBlockUpdate(tileEntityPowerFurnace.xCoord, tileEntityPowerFurnace.yCoord, tileEntityPowerFurnace.zCoord, false));
+                PacketHandler.packetReq.sendToServer(new PacketPowerFurnaceSetMode(tileEntityPowerFurnace.xCoord, tileEntityPowerFurnace.yCoord, tileEntityPowerFurnace.zCoord, false));
                 tileEntityPowerFurnace.setMode(false);
             }
         }

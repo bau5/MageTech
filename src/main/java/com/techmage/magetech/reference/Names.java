@@ -25,6 +25,8 @@ public class Names
         public static final String RUBBER = "rubber";
         public static final String DUSTORE = "dustOre";
         public static final String[] DUSTORE_SUBTYPES = {"Iron", "Gold", "Copper", "Lead", "Silver"};
+        public static final String TALISMAN_AIR = "talismanAir";
+        public static final String TALISMAN_FIRE = "talismanFire";
     }
 
     public static final class Blocks

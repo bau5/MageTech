@@ -1,9 +1,6 @@
 package com.techmage.magetech.tileentity;
 
-import com.techmage.magetech.network.DoBlockUpdate;
-import com.techmage.magetech.network.PacketHandler;
 import com.techmage.magetech.reference.Names;
-import com.techmage.magetech.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.player.EntityPlayer;

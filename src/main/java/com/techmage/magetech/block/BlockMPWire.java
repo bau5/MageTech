@@ -9,7 +9,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockMPWire extends BlockMageTech implements ITileEntityProvider
+public class BlockMPWire extends BlockMageTech_Tech implements ITileEntityProvider
 {
     public BlockMPWire()
     {

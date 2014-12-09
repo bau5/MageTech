@@ -1,5 +1,6 @@
 # Creative Tabs
-itemGroup.magetech=MageTech
+itemGroup.magetech - Tech=MageTech - Tech
+itemGroup.magetech - Magic=MageTech - Magic
 
 # Items
 item.magetech:crystalEmpty.name=Crystal
@@ -41,6 +42,8 @@ item.magetech:dustOreGold.name=Gold Dust
 item.magetech:dustOreCopper.name=Copper Dust
 item.magetech:dustOreLead.name=Lead Dust
 item.magetech:dustOreSilver.name=Silver Dust
+item.magetech:talismanAir.name=Talisman (Air Infused)
+item.magetech:talismanFire.name=Talisman (Fire InfusedI)
 
 # Blocks
 tile.magetech:infuser.name=Infuser

@@ -15,7 +15,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public class BlockCrusher extends BlockMageTech implements ITileEntityProvider
+public class BlockCrusher extends BlockMageTech_Tech implements ITileEntityProvider
 {
     public BlockCrusher()
     {

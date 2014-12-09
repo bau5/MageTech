@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class BlockOreCrystal extends BlockMageTech
+public class BlockOreCrystal extends BlockMageTech_Magic
 {
 
     public BlockOreCrystal()

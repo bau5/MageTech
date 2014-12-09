@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class BlockOreSilicon extends BlockMageTech
+public class BlockOreSilicon extends BlockMageTech_Tech
 {
 
     public BlockOreSilicon()

@@ -20,17 +20,17 @@ import net.minecraftforge.common.util.ForgeDirection;
 
 import java.util.Random;
 
-public class BlockMageTech extends Block
+public class BlockMageTech_Magic extends Block
 {
-    public BlockMageTech()
+    public BlockMageTech_Magic()
     {
         this(Material.rock);
     }
 
-    public BlockMageTech(Material material)
+    public BlockMageTech_Magic(Material material)
     {
         super(material);
-        this.setCreativeTab(CreativeTabMageTech.MAGETECH_TAB);
+        this.setCreativeTab(CreativeTabMageTech.MAGETECH_MAGIC_TAB);
     }
 
     @Override

@@ -13,7 +13,7 @@ import net.minecraft.util.MathHelper;
 
 import java.util.List;
 
-public class ItemDustOre extends ItemMageTech
+public class ItemDustOre extends ItemMageTech_Tech
 {
     @SideOnly(Side.CLIENT)
     private IIcon[] icons;

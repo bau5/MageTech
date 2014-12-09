@@ -13,7 +13,7 @@ import net.minecraft.util.MathHelper;
 
 import java.util.List;
 
-public class ItemCrystal extends ItemMageTech
+public class ItemCrystal extends ItemMageTech_Magic
 {
     @SideOnly(Side.CLIENT)
     private IIcon[] icons;

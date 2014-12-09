@@ -15,7 +15,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 
-public class BlockPowerFurnace extends BlockMageTech implements ITileEntityProvider
+public class BlockPowerFurnace extends BlockMageTech_Tech implements ITileEntityProvider
 {
     public BlockPowerFurnace()
     {

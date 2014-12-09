@@ -5,16 +5,15 @@ import com.techmage.magetech.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class ItemMageTech extends Item
+public class ItemMageTech_Tech extends Item
 {
-    public ItemMageTech()
+    public ItemMageTech_Tech()
     {
         super();
-        this.setCreativeTab(CreativeTabMageTech.MAGETECH_TAB);
+        this.setCreativeTab(CreativeTabMageTech.MAGETECH_TECH_TAB);
     }
 
     @Override
