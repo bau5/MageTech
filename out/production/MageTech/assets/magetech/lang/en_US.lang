@@ -43,7 +43,7 @@ item.magetech:dustOreCopper.name=Copper Dust
 item.magetech:dustOreLead.name=Lead Dust
 item.magetech:dustOreSilver.name=Silver Dust
 item.magetech:talismanAir.name=Talisman (Air Infused)
-item.magetech:talismanFire.name=Talisman (Fire InfusedI)
+item.magetech:talismanFire.name=Talisman (Fire Infused)
 
 # Blocks
 tile.magetech:infuser.name=Infuser

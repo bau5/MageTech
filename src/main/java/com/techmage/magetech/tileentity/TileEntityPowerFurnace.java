@@ -21,9 +21,6 @@ public class TileEntityPowerFurnace extends TileEntityMageTech implements ISided
     private static final int[] slotsBottom = new int[] {1, 3};
     private static final int[] slotsSides = new int[] {0, 1, 2, 3};
 
-    /**
-     * The ItemStacks that hold the items currently being used in the Glass Bell
-     */
     private ItemStack[] inventory;
 
     public int CurrentPower = 1000;
@@ -421,6 +418,15 @@ public class TileEntityPowerFurnace extends TileEntityMageTech implements ISided
 
     public void transferItem()
     {
+        if (inventory[2] == null)
+        {
+            inventory[2] = new ItemStack(inventory[1].getItem(), 1, inventory[1].getItemDamage());
+        }
+        else
+        {
+            inventory[2].stackSize++;
+        }
+
         if (inventory[1] != null)
         {
             if (inventory[1].stackSize > 1)
@@ -431,15 +437,6 @@ public class TileEntityPowerFurnace extends TileEntityMageTech implements ISided
             {
                 inventory[1] = null;
             }
-        }
-
-        if (inventory[2] == null)
-        {
-            inventory[2] = new ItemStack(inventory[1].getItem(), 1, inventory[1].getItemDamage());
-        }
-        else
-        {
-            inventory[2].stackSize++;
         }
     }
 
