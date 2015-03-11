@@ -11,6 +11,8 @@ import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
+import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
 
 public class TileEntityCrusher extends TileEntityMageTech implements ISidedInventory
 {
@@ -20,13 +22,11 @@ public class TileEntityCrusher extends TileEntityMageTech implements ISidedInven
     private static final int[] slotsBottom = new int[] {1};
     private static final int[] slotsSides = new int[] {0, 1};
 
-    /**
-     * The ItemStacks that hold the items currently being used in the Glass Bell
-     */
     private ItemStack[] inventory;
 
+    public int MaxPower = 1000;
     public int CurrentPower = 1000;
-    
+
     public TileEntityCrusher()
     {
         inventory = new ItemStack[INVENTORY_SIZE];

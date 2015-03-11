@@ -3,27 +3,6 @@ itemGroup.magetech - Tech=MageTech - Tech
 itemGroup.magetech - Magic=MageTech - Magic
 
 # Items
-item.magetech:crystalEmpty.name=Crystal
-item.magetech:crystalFire.name=Fire Crystal
-item.magetech:crystalWater.name=Water Crystal
-item.magetech:crystalEarth.name=Earth Crystal
-item.magetech:crystalAir.name=Air Crystal
-item.magetech:crystalPure.name=Pure Crystal
-item.magetech:ingotLead.name=Lead Ingot
-item.magetech:ingotSilver.name=Silver Ingot
-item.magetech:ingotCopper.name=Copper Ingot
-item.magetech:siliconOre.name=Silicon Ore
-item.magetech:silicon.name=Silicon
-item.magetech:resin.name=Resin
-item.magetech:plastic.name=Plastic
-item.magetech:glassFibre.name=Glass Fibre
-item.magetech:glassFibreMat.name=Glass Fibre Mat
-item.magetech:wireIron.name=Iron Wire
-item.magetech:ic.name=IC
-item.magetech:capacitor.name=Capacitor
-item.magetech:transistor.name=Transistor
-item.magetech:circuitBoard.name=Circuit Board
-item.magetech:circuitBoardBasic.name=Circuit Board (Basic)
 item.magetech:crushedOreIron.name=Crushed Iron Ore
 item.magetech:crushedOreGold.name=Crushed Gold Ore
 item.magetech:crushedOreCoal.name=Crushed Coal Ore
@@ -36,31 +15,64 @@ item.magetech:crushedOreLead.name=Crushed Lead Ore
 item.magetech:crushedOreSilver.name=Crushed Silver Ore
 item.magetech:crushedOreSilicon.name=Crushed Silicon Ore
 item.magetech:crushedOreCrystal.name=Crushed Crystal Ore
-item.magetech:rubber.name=Rubber
 item.magetech:dustOreIron.name=Iron Dust
 item.magetech:dustOreGold.name=Gold Dust
 item.magetech:dustOreCopper.name=Copper Dust
 item.magetech:dustOreLead.name=Lead Dust
 item.magetech:dustOreSilver.name=Silver Dust
+item.magetech:ingotLead.name=Lead Ingot
+item.magetech:ingotSilver.name=Silver Ingot
+item.magetech:ingotCopper.name=Copper Ingot
+item.magetech:siliconOre.name=Silicon Ore
+item.magetech:silicon.name=Silicon
+item.magetech:resin.name=Resin
+item.magetech:rubber.name=Rubber
+item.magetech:plastic.name=Plastic
+item.magetech:wireIron.name=Iron Wire
+item.magetech:wireGold.name=Gold Wire
+item.magetech:wireCopper.name=Copper Wire
+item.magetech:wireSilver.name=Silver Wire
+item.magetech:ic.name=IC
+item.magetech:capacitor.name=Capacitor
+item.magetech:transistor.name=Transistor
+item.magetech:resistor.name=Resistor
+item.magetech:glassFibre.name=Glass Fibre
+item.magetech:glassFibreMat.name=Glass Fibre Mat
+item.magetech:circuitBoard.name=Circuit Board
+item.magetech:circuitBoardBasic.name=Circuit Board (Basic)
+item.magetech:circuitBoardAdvanced.name=Circuit Board (Advanced)
+
+item.magetech:crystalEmpty.name=Crystal
+item.magetech:crystalFire.name=Fire Crystal
+item.magetech:crystalWater.name=Water Crystal
+item.magetech:crystalEarth.name=Earth Crystal
+item.magetech:crystalAir.name=Air Crystal
+item.magetech:crystalPure.name=Pure Crystal
 item.magetech:talismanAir.name=Talisman (Air Infused)
 item.magetech:talismanFire.name=Talisman (Fire Infused)
 
 # Blocks
-tile.magetech:infuser.name=Infuser
-tile.magetech:stoneHardened.name=Hardened Stone
-tile.magetech:mpwire.name=Power Cable
 tile.magetech:oreLead.name=Lead Ore
 tile.magetech:oreSilver.name=Silver Ore
 tile.magetech:oreCopper.name=Copper Ore
-tile.magetech:oreCrystal.name=Crystal Ore
 tile.magetech:oreSilicon.name=Silicon Ore
+
 tile.magetech:crusher.name=Crusher
-tile.magetech:electronicsWorkbench.name=Electronics Workbench
 tile.magetech:centrifuge.name=Centrifuge
 tile.magetech:powerFurnace.name=Power Furnace
+tile.magetech:electronicsWorkbench.name=Electronics Workbench
+tile.magetech:solderingStation.name=Soldering Station
+
+tile.magetech:oreCrystal.name=Crystal Ore
+tile.magetech:stoneHardened.name=Hardened Stone
+
+tile.magetech:infuser.name=Infuser
 
 # GUIs
-container.magetech:infuser=Infuser
 container.magetech:crusher=Crusher
 container.magetech:centrifuge=Centrifuge
 container.magetech:powerFurnace=Power Furnace
+container.magetech:electronicsWorkbench=Electronics Workbench
+container.magetech:solderingStation=Soldering Station
+
+container.magetech:infuser=Infuser

@@ -11,6 +11,10 @@ import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
+import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
+import scala.collection.parallel.ParIterableLike;
+import sun.util.resources.cldr.ebu.CurrencyNames_ebu;
 
 public class TileEntityCentrifuge extends TileEntityMageTech implements ISidedInventory
 {
@@ -20,13 +24,11 @@ public class TileEntityCentrifuge extends TileEntityMageTech implements ISidedIn
     private static final int[] slotsBottom = new int[] {1};
     private static final int[] slotsSides = new int[] {0, 1};
 
-    /**
-     * The ItemStacks that hold the items currently being used in the Glass Bell
-     */
     private ItemStack[] inventory;
 
+    public int MaxPower = 1000;
     public int CurrentPower = 1000;
-    
+
     public TileEntityCentrifuge()
     {
         inventory = new ItemStack[INVENTORY_SIZE];
@@ -186,6 +188,7 @@ public class TileEntityCentrifuge extends TileEntityMageTech implements ISidedIn
 
         if (!this.worldObj.isRemote)
         {
+
             if (canCentrifuge())
             {
                 if (this.CentrifugeTime < 300)

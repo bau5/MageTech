@@ -20,9 +20,6 @@ public class TileEntityInfuser extends TileEntityMageTech implements ISidedInven
     private static final int[] slotsBottom = new int[] {3};
     private static final int[] slotsSides = new int[] {0, 1, 2, 3};
 
-    /**
-     * The ItemStacks that hold the items currently being used in the Glass Bell
-     */
     private ItemStack[] inventory;
 
     public int CurrentEssence = 1000;

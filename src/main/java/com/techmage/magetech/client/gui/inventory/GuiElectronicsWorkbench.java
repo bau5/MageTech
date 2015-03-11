@@ -28,7 +28,7 @@ public class GuiElectronicsWorkbench extends GuiContainer
     @Override
     protected void drawGuiContainerForegroundLayer(int x, int y)
     {
-        fontRendererObj.drawString(StatCollector.translateToLocal("Electronics Workbench"), xSize / 2 - fontRendererObj.getStringWidth(StatCollector.translateToLocal("Electronics Workbench")) / 2, 6, 4210752);
+        fontRendererObj.drawString(StatCollector.translateToLocal(Names.Containers.ELECTRONICS_WORKBENCH), xSize / 2 - fontRendererObj.getStringWidth(StatCollector.translateToLocal(Names.Containers.ELECTRONICS_WORKBENCH)) / 2, 6, 4210752);
         fontRendererObj.drawString(StatCollector.translateToLocal(Names.Containers.VANILLA_INVENTORY), 8, ySize - 98, 4210752);
     }
 

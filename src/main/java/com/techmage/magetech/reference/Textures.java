@@ -10,11 +10,18 @@ public class Textures
     public static final class Gui
     {
         private static final String GUI_SHEET_LOCATION = "textures/gui/";
-        public static final ResourceLocation INFUSER = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "infuser.png");
+
+        // Tech
+
         public static final ResourceLocation CRUSHER = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "crusher.png");
-        public static final ResourceLocation ELECTRONICS_WORKBENCH = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "electronicsWorkbench.png");
         public static final ResourceLocation CENTRIFUGE = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "centrifuge.png");
         public static final ResourceLocation POWERFURNACE = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "powerFurnace.png");
+        public static final ResourceLocation ELECTRONICS_WORKBENCH = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "electronicsWorkbench.png");
+        public static final ResourceLocation SOLDERING_STATION = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "solderingStation.png");
+
+        // Magic
+        public static final ResourceLocation INFUSER = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "infuser.png");
+
     }
 
 }
