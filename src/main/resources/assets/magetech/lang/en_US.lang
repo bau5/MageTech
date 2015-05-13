@@ -23,6 +23,7 @@ item.magetech:dustOreSilver.name=Silver Dust
 item.magetech:ingotLead.name=Lead Ingot
 item.magetech:ingotSilver.name=Silver Ingot
 item.magetech:ingotCopper.name=Copper Ingot
+item.magetech:ingotSolder.name=Solder Ingot
 item.magetech:siliconOre.name=Silicon Ore
 item.magetech:silicon.name=Silicon
 item.magetech:resin.name=Resin
@@ -32,6 +33,7 @@ item.magetech:wireIron.name=Iron Wire
 item.magetech:wireGold.name=Gold Wire
 item.magetech:wireCopper.name=Copper Wire
 item.magetech:wireSilver.name=Silver Wire
+item.magetech:wireSolder.name=Solder Wire
 item.magetech:ic.name=IC
 item.magetech:capacitor.name=Capacitor
 item.magetech:transistor.name=Transistor
@@ -65,8 +67,10 @@ tile.magetech:solderingStation.name=Soldering Station
 
 tile.magetech:oreCrystal.name=Crystal Ore
 tile.magetech:stoneHardened.name=Hardened Stone
+tile.magetech:crystalCluster.name=Crystal Cluster
 
 tile.magetech:infuser.name=Infuser
+tile.magetech:elementalExtractor.name=Elemental Extractor
 
 # GUIs
 container.magetech:crusher=Crusher

@@ -54,7 +54,7 @@ public class ContainerInfuser extends ContainerMageTech
     {
         super.addCraftingToCrafters(iCrafting);
         iCrafting.sendProgressBarUpdate(this, 0, this.tileEntityInfuser.InfusionTime);
-        iCrafting.sendProgressBarUpdate(this, 1, this.tileEntityInfuser.CurrentEssence);
+        iCrafting.sendProgressBarUpdate(this, 1, this.tileEntityInfuser.storedEssence);
     }
 
     public void detectAndSendChanges()
@@ -70,14 +70,14 @@ public class ContainerInfuser extends ContainerMageTech
                 icrafting.sendProgressBarUpdate(this, 0, this.tileEntityInfuser.InfusionTime);
             }
 
-            if (this.lastEssenceAmount != this.tileEntityInfuser.CurrentEssence)
+            if (this.lastEssenceAmount != this.tileEntityInfuser.storedEssence)
             {
-                icrafting.sendProgressBarUpdate(this, 1, this.tileEntityInfuser.CurrentEssence);
+                icrafting.sendProgressBarUpdate(this, 1, this.tileEntityInfuser.storedEssence);
             }
         }
 
         this.lastCrushingTime = this.tileEntityInfuser.InfusionTime;
-        this.lastEssenceAmount = this.tileEntityInfuser.CurrentEssence;
+        this.lastEssenceAmount = this.tileEntityInfuser.storedEssence;
     }
 
     @SideOnly(Side.CLIENT)
@@ -90,7 +90,7 @@ public class ContainerInfuser extends ContainerMageTech
 
         if (valueType == 1)
         {
-            this.tileEntityInfuser.CurrentEssence = updatedValue;
+            this.tileEntityInfuser.storedEssence = updatedValue;
         }
     }
 

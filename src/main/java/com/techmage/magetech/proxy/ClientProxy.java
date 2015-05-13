@@ -16,5 +16,7 @@ public class ClientProxy extends CommonProxy
         GameRegistry.registerTileEntity(TileEntitySolderingStation.class, Names.Blocks.SOLDERING_STATION);
 
         GameRegistry.registerTileEntity(TileEntityInfuser.class, Names.Blocks.INFUSER);
+        GameRegistry.registerTileEntity(TileEntityElementalExtractor.class, Names.Blocks.ELEMENTAL_EXTRACTOR);
+        GameRegistry.registerTileEntity(TileEntityCrystalCluster.class, Names.Blocks.CRYSTAL_CLUSTER);
     }
 }

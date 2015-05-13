@@ -1,5 +1,6 @@
 package com.techmage.magetech.inventory;
 
+import com.techmage.magetech.init.ModItems;
 import com.techmage.magetech.tileentity.TileEntitySolderingStation;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -26,8 +27,21 @@ public class ContainerSolderingStation extends ContainerMageTech
             }
 
         });
-        this.addSlotToContainer(new Slot(tileEntitySolderingStation, 1, 61, 40) { });
-        this.addSlotToContainer(new Slot(tileEntitySolderingStation, 2, 61, 19) { });
+        this.addSlotToContainer(new Slot(tileEntitySolderingStation, 1, 61, 40)
+        {
+            public boolean isItemValid(ItemStack itemStack)
+            {
+                return itemStack.getItem() == ModItems.circuitBoard && itemStack.getItemDamage() == 0 ? true : false;
+            }
+
+        });
+        this.addSlotToContainer(new Slot(tileEntitySolderingStation, 2, 61, 19)
+        {
+            public boolean isItemValid(ItemStack itemStack)
+            {
+                return itemStack.getItem() == ModItems.wire && itemStack.getItemDamage() == 4 ? true : false;
+            }
+        });
 
         for (int i = 0; i < 3; i ++)
         {

@@ -25,9 +25,10 @@ public class Recipes
     public static void initShapedRecipes()
     {
         GameRegistry.addRecipe(new ItemStack(ModItems.wire, 12, 0), " i ", "isi", " i ", 'i', Items.iron_ingot, 's', Items.stick);
-        GameRegistry.addRecipe(new ItemStack(ModItems.wire, 6, 1), " i ", "isi", " i ", 'i', Items.iron_ingot, 's', Items.stick);
-        GameRegistry.addRecipe(new ItemStack(ModItems.wire, 8, 2), " i ", "isi", " i ", 'i', Items.iron_ingot, 's', Items.stick);
-        GameRegistry.addRecipe(new ItemStack(ModItems.wire, 4, 3), " i ", "isi", " i ", 'i', Items.iron_ingot, 's', Items.stick);
+        GameRegistry.addRecipe(new ItemStack(ModItems.wire, 6, 1), " i ", "isi", " i ", 'i', Items.gold_ingot, 's', Items.stick);
+        GameRegistry.addRecipe(new ItemStack(ModItems.wire, 8, 2), " i ", "isi", " i ", 'i', new ItemStack(ModItems.ingot, 1, 2), 's', Items.stick);
+        GameRegistry.addRecipe(new ItemStack(ModItems.wire, 4, 3), " i ", "isi", " i ", 'i', new ItemStack(ModItems.ingot, 1, 1), 's', Items.stick);
+        GameRegistry.addRecipe(new ItemStack(ModItems.wire, 4, 4), " i ", "isi", " i ", 'i', new ItemStack(ModItems.ingot, 1, 3), 's', Items.stick);
         GameRegistry.addRecipe(new ItemStack(ModItems.glassFibre, 6), "   ", "ggg", "   ", 'g', Blocks.glass);
         GameRegistry.addRecipe(new ItemStack(ModItems.glassFibreMat, 1), "   ", "gg ", "gg ", 'g', ModItems.glassFibre);
         GameRegistry.addRecipe(new ItemStack(ModItems.circuitBoard), "ggg", "rrr", "ggg", 'g', ModItems.glassFibreMat, 'r', ModItems.resin);
@@ -108,6 +109,11 @@ public class Recipes
                 new ItemStack(ModItems.resistor, 1, 0), null, null,
                 null, new ItemStack(ModItems.capacitor, 1, 0), null,
                 null, null, new ItemStack(ModItems.resistor, 1, 0));
+
+        RecipesSolderingStation.soldering().addRecipe(new ItemStack(ModItems.circuitBoard, 1, 2),
+                new ItemStack(ModItems.resistor, 1, 0), new ItemStack(ModItems.capacitor, 1, 0), new ItemStack(ModItems.resistor, 1, 0),
+                new ItemStack(ModItems.transistor, 1, 0), new ItemStack(ModItems.ic, 1, 0), new ItemStack(ModItems.transistor, 1, 0),
+                new ItemStack(ModItems.resistor, 1, 0), new ItemStack(ModItems.capacitor, 1, 0), new ItemStack(ModItems.resistor, 1, 0));
     }
 
     public static void initInfusingRecipes()

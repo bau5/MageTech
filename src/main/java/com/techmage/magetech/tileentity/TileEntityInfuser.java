@@ -11,8 +11,9 @@ import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
+import net.minecraftforge.common.util.ForgeDirection;
 
-public class TileEntityInfuser extends TileEntityMageTech implements ISidedInventory
+public class TileEntityInfuser extends TileEntityEssenceHandler implements ISidedInventory
 {
     public static final int INVENTORY_SIZE = 4;
 
@@ -22,10 +23,13 @@ public class TileEntityInfuser extends TileEntityMageTech implements ISidedInven
 
     private ItemStack[] inventory;
 
-    public int CurrentEssence = 1000;
+    public int storedEssence = 0;
+    public int maxEssence = 1000;
 
     public TileEntityInfuser()
     {
+        this.setReceiverSites(ForgeDirection.NORTH, ForgeDirection.SOUTH, ForgeDirection.EAST, ForgeDirection.WEST);
+
         inventory = new ItemStack[INVENTORY_SIZE];
     }
 
@@ -128,7 +132,7 @@ public class TileEntityInfuser extends TileEntityMageTech implements ISidedInven
     {
         super.writeToNBT(nbtTagCompound);
         nbtTagCompound.setShort("InfusionTime", (short)this.InfusionTime);
-        nbtTagCompound.setShort("CurrentEssence", (short)this.CurrentEssence);
+        nbtTagCompound.setShort("storedEssence", (short)this.storedEssence);
 
         // Write the ItemStacks in the inventory to NBT
         NBTTagList tagList = new NBTTagList();
@@ -163,11 +167,30 @@ public class TileEntityInfuser extends TileEntityMageTech implements ISidedInven
             }
         }
         this.InfusionTime = nbtTagCompound.getShort("InfusionTime");
-        this.CurrentEssence = nbtTagCompound.getShort("CurrentEssence");
+        this.storedEssence = nbtTagCompound.getShort("storedEssence");
+    }
+
+    @Override
+    public int getStoredEssence()
+    {
+        return this.storedEssence;
+    }
+
+    public int getMaxEssence()
+    {
+        return this.maxEssence;
+    }
+
+    @Override
+    public void ReceiveEssence(int amount)
+    {
+        LogHelper.info("receiving essence ...");
+        this.storedEssence += amount;
+        LogHelper.info(this.getStoredEssence());
     }
 
     @SideOnly(Side.CLIENT)
-    public int getEssenceScale(int var1) { return this.CurrentEssence * var1 / 1000; }
+    public int getEssenceScale(int var1) { return this.storedEssence * var1 / 1000; }
 
     @SideOnly(Side.CLIENT)
     public int getInfusionProgressScale(int var1) { return this.InfusionTime * var1 / 500; }
@@ -213,7 +236,7 @@ public class TileEntityInfuser extends TileEntityMageTech implements ISidedInven
 
             if (result != null)
             {
-                if (RecipesInfuser.infusing().getEssenceCost(inventory[0], inventory[1], inventory[2]) <= this.CurrentEssence)
+                if (RecipesInfuser.infusing().getEssenceCost(inventory[0], inventory[1], inventory[2]) <= this.storedEssence)
                 {
                     if (inventory[3] == null)
                     {
@@ -239,7 +262,7 @@ public class TileEntityInfuser extends TileEntityMageTech implements ISidedInven
 
         ItemStack result = RecipesInfuser.infusing().getCraftingResult(inventory[0], inventory[1], inventory[2]);
 
-        this.CurrentEssence = this.CurrentEssence - RecipesInfuser.infusing().getEssenceCost(inventory[0], inventory[1], inventory[2]);
+        this.storedEssence = this.storedEssence - RecipesInfuser.infusing().getEssenceCost(inventory[0], inventory[1], inventory[2]);
 
         if (inventory[3] == null)
         {

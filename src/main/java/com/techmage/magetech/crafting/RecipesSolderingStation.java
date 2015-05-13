@@ -3,6 +3,7 @@ package com.techmage.magetech.crafting;
 import com.techmage.magetech.utility.LogHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
+import sun.rmi.runtime.Log;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -49,7 +50,6 @@ public class RecipesSolderingStation
     public ItemStack getCraftingResult (ItemStack[] input)
     {
         int correct = 0;
-
         for (int i = 0; i < recipe.length; i ++)
         {
             for (int j = 0; j < 9; j ++)
@@ -67,8 +67,11 @@ public class RecipesSolderingStation
 
             if (correct == 9)
             {
-                return recipe[i][0];
+                if (recipe[i][0] != null)
+                    return recipe[i][0];
             }
+
+            correct = 0;
 
         }
         return null;

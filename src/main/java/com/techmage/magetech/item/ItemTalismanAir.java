@@ -124,7 +124,7 @@ public class ItemTalismanAir extends ItemMageTech_Magic
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister)
     {
-        itemIcon = iconRegister.registerIcon(Textures.RESOURCE_PREFIX + this.getUnlocalizedName());
+        itemIcon = iconRegister.registerIcon(Textures.RESOURCE_PREFIX + Names.Items.TALISMAN_AIR);
     }
 
 }

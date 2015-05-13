@@ -75,6 +75,11 @@ public class ItemTalismanFire extends ItemMageTech_Magic
                 {
                     EntityPlayer player = ((EntityPlayer) par3Entity);
                     player.addPotionEffect(new PotionEffect(Potion.fireResistance.id, 20, 2));
+
+                    if (player.isBurning())
+                    {
+                        player.extinguish();
+                    }
                 }
             }
         }
@@ -84,7 +89,7 @@ public class ItemTalismanFire extends ItemMageTech_Magic
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister)
     {
-        itemIcon = iconRegister.registerIcon(Textures.RESOURCE_PREFIX + this.getUnlocalizedName());
+        itemIcon = iconRegister.registerIcon(Textures.RESOURCE_PREFIX + Names.Items.TALISMAN_FIRE);
     }
 
 }

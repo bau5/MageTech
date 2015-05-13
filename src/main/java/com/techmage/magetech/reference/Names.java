@@ -10,14 +10,14 @@ public class Names
         public static final String DUSTORE = "dustOre";
         public static final String[] DUSTORE_SUBTYPES = {"Iron", "Gold", "Copper", "Lead", "Silver"};
         public static final String INGOT = "ingot";
-        public static final String[] INGOT_SUBTYPES = {"Lead", "Silver", "Copper"};
+        public static final String[] INGOT_SUBTYPES = {"Lead", "Silver", "Copper", "Solder"};
         public static final String SILICONORE = "siliconOre";
         public static final String SILICON = "silicon";
         public static final String RESIN = "resin";
         public static final String RUBBER = "rubber";
         public static final String PLASTIC = "plastic";
         public static final String WIRE = "wire";
-        public static final String WIRE_SUBTYPES[] = {"Iron", "Gold", "Copper", "Silver"};
+        public static final String WIRE_SUBTYPES[] = {"Iron", "Gold", "Copper", "Silver", "Solder"};
         public static final String IC = "ic";
         public static final String CAPACITOR = "capacitor";
         public static final String TRANSISTOR = "transistor";
@@ -52,6 +52,8 @@ public class Names
         public static final String STONE_HARDENED = "stoneHardened";
 
         public static final String INFUSER = "infuser";
+        public static final String ELEMENTAL_EXTRACTOR = "elementalExtractor";
+        public static final String CRYSTAL_CLUSTER = "crystalCluster";
     }
 
     public static final class NBT

@@ -21,6 +21,10 @@ public class TileEntitySolderingStation extends TileEntityMageTech implements IS
 
     private ItemStack[] inventory;
 
+    public boolean buttonPressed = false;
+
+    public int SolderingTime;
+
     public int MaxPower = 1000;
     public int CurrentPower = 1000;
 
@@ -168,21 +172,77 @@ public class TileEntitySolderingStation extends TileEntityMageTech implements IS
     @Override
     public void updateEntity()
     {
-        if (!this.worldObj.isRemote)
-        {
+        if (this.worldObj.isRemote) return;
 
+        if (canSolder())
+        {
+            if (this.SolderingTime < 100) {
+                this.SolderingTime++;
+            }
+            else
+            {
+                solderPCB();
+                this.SolderingTime = 0;
+                this.markDirty();
+            }
+        }
+        else
+        {
+            this.SolderingTime = 0;
+            this.setCraftingButtonPressed(false);
+            this.markDirty();
+        }
+    }
+
+    public void solderPCB()
+    {
+        if (inventory[0] == null)
+        {
+            inventory[0] = getCraftingResult();
+        }
+        else
+            inventory[0].stackSize ++;
+
+        if (inventory[2].stackSize > RecipesSolderingStation.soldering().getNeededSolder(getCraftingResult()))
+            inventory[2].stackSize -= RecipesSolderingStation.soldering().getNeededSolder(getCraftingResult());
+        else
+            inventory[2] = null;
+
+        if (inventory[1].stackSize > 1)
+            inventory[1].stackSize --;
+        else
+            inventory[1] = null;
+
+        this.CurrentPower -= 50;
+
+        for (int i = 0; i < inventory.length - 3; i++)
+        {
+            if (inventory[i + 3] != null)
+            {
+                if (inventory[i + 3].stackSize > 1)
+                    inventory[i + 3].stackSize--;
+                else
+                    inventory[i + 3] = null;
+            }
         }
     }
 
     public boolean canSolder()
     {
+        if (inventory[1] == null) return false;
         if (!hasValidRecipe()) return false;
         if (!hasEnoughSolder()) return false;
         if (inventory[0] != null && inventory[0].getItem() != getCraftingResult().getItem()) return false;
-        if (inventory[0].stackSize == 64) return false;
+        if (inventory[0] != null && inventory[0].getItemDamage() != getCraftingResult().getItemDamage()) return false;
+        if (inventory[0] != null && inventory[0].stackSize == 64) return false;
         if (CurrentPower < 50) return false;
-
+        if (!buttonPressed) return false;
         return true;
+    }
+
+    public void setCraftingButtonPressed (boolean state)
+    {
+        this.buttonPressed = state;
     }
 
     public ItemStack getCraftingResult()
@@ -204,7 +264,10 @@ public class TileEntitySolderingStation extends TileEntityMageTech implements IS
 
     public boolean hasEnoughSolder()
     {
-        return RecipesSolderingStation.soldering().getNeededSolder(getCraftingResult()) <= inventory[2].stackSize ? true : false;
+        if (inventory[2] != null)
+            return RecipesSolderingStation.soldering().getNeededSolder(getCraftingResult()) <= inventory[2].stackSize ? true : false;
+        else
+            return false;
     }
 
     public boolean isItemValidForSlot(int slotIndex, ItemStack itemStack)

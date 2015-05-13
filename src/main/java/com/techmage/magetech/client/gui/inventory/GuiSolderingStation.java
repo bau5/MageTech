@@ -1,11 +1,14 @@
 package com.techmage.magetech.client.gui.inventory;
 
+import com.techmage.magetech.handler.PacketHandler;
 import com.techmage.magetech.inventory.ContainerSolderingStation;
+import com.techmage.magetech.network.PacketSolderingStationCraftingButtonPressed;
 import com.techmage.magetech.reference.Names;
 import com.techmage.magetech.reference.Textures;
 import com.techmage.magetech.tileentity.TileEntitySolderingStation;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.StatCollector;
@@ -24,6 +27,25 @@ public class GuiSolderingStation extends GuiContainer
         this.ySize = 171;
 
         this.tileEntitySolderingStation = tileEntitySolderingStation;
+    }
+
+    @Override
+    public void initGui()
+    {
+        super.initGui();
+
+        this.buttonList.add(new GuiButton(1, (width - xSize) / 2 + 139, (height - ySize) / 2 + 14, 20, 20, ""));
+    }
+
+    @Override
+    protected void actionPerformed(GuiButton button)
+    {
+        if (button.id == 1)
+        {
+
+            PacketHandler.packetReq.sendToServer(new PacketSolderingStationCraftingButtonPressed(tileEntitySolderingStation.xCoord, tileEntitySolderingStation.yCoord, tileEntitySolderingStation.zCoord, true));
+            tileEntitySolderingStation.setCraftingButtonPressed(true);
+        }
     }
 
     @Override
