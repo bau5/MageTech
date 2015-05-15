@@ -6,7 +6,6 @@ import com.techmage.magetech.essence.IEssenceStorage;
 import com.techmage.magetech.utility.LogHelper;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.util.ForgeDirection;
-import sun.rmi.runtime.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +35,7 @@ public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEs
     }
 
     @Override
-    public void ReceiveEssence(int amount)
+    public void ReceiveEssence(int amount, int[] source)
     {
         storeEssence(amount);
     }
@@ -47,6 +46,15 @@ public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEs
         for (int i = 0; i < dir.length; i ++)
         {
             SenderSites[i] = dir[i];
+        }
+    }
+
+    @Override
+    public void setSenderSites(ArrayList<ForgeDirection> dir)
+    {
+        for (int i = 0; i < dir.size(); i ++)
+        {
+            SenderSites[i] = dir.get(i);
         }
     }
 
@@ -65,8 +73,9 @@ public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEs
             {
                 if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(dest[0], dest[1], dest[2])).canStoreEssence(amount))
                 {
-                    ((TileEntityEssenceHandler) this.worldObj.getTileEntity(dest[0], dest[1], dest[2])).ReceiveEssence(amount);
-                    removeEssence(amount);
+                    int[] source = {this.xCoord, this.yCoord, this.zCoord};
+                    ((TileEntityEssenceHandler) this.worldObj.getTileEntity(dest[0], dest[1], dest[2])).ReceiveEssence(amount, source);
+                    this.removeEssence(amount);
                 }
             }
         }
@@ -148,7 +157,7 @@ public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEs
                     {
                         if (this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord - j) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord - j)).isReceiverSide(ForgeDirection.NORTH))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord - j)).isReceiverSide(getOppositeSite(ForgeDirection.NORTH)))
                             {
                                 int[] dest = {this.xCoord, this.yCoord, this.zCoord - j};
                                 destination.add(dest);
@@ -168,7 +177,7 @@ public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEs
                     {
                         if (this.worldObj.getTileEntity(this.xCoord + j, this.yCoord, this.zCoord) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord + j, this.yCoord, this.zCoord)).isReceiverSide(ForgeDirection.EAST))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord + j, this.yCoord, this.zCoord)).isReceiverSide(getOppositeSite(ForgeDirection.EAST)))
                             {
                                 int[] dest = {this.xCoord + j, this.yCoord, this.zCoord};
                                 destination.add(dest);
@@ -188,7 +197,7 @@ public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEs
                     {
                         if (this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord + j) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord + j)).isReceiverSide(ForgeDirection.SOUTH))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord + j)).isReceiverSide(getOppositeSite(ForgeDirection.SOUTH)))
                             {
                                 int[] dest = {this.xCoord, this.yCoord, this.zCoord + j};
                                 destination.add(dest);
@@ -208,7 +217,7 @@ public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEs
                     {
                         if (this.worldObj.getTileEntity(this.xCoord - j, this.yCoord, this.zCoord) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord - j, this.yCoord, this.zCoord)).isReceiverSide(ForgeDirection.WEST))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord - j, this.yCoord, this.zCoord)).isReceiverSide(getOppositeSite(ForgeDirection.WEST)))
                             {
                                 int[] dest = {this.xCoord - j, this.yCoord, this.zCoord};
                                 destination.add(dest);
@@ -228,7 +237,7 @@ public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEs
                     {
                         if (this.worldObj.getTileEntity(this.xCoord, this.yCoord + j, this.zCoord) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord + j, this.zCoord)).isReceiverSide(ForgeDirection.UP))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord + j, this.zCoord)).isReceiverSide(getOppositeSite(ForgeDirection.UP)))
                             {
                                 int[] dest = {this.xCoord, this.yCoord + j, this.zCoord};
                                 destination.add(dest);
@@ -248,7 +257,7 @@ public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEs
                     {
                         if (this.worldObj.getTileEntity(this.xCoord, this.yCoord - j, this.zCoord) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord - j, this.zCoord)).isReceiverSide(ForgeDirection.DOWN))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord - j, this.zCoord)).isReceiverSide(getOppositeSite(ForgeDirection.DOWN)))
                             {
                                 int[] dest = {this.xCoord, this.yCoord - j, this.zCoord};
                                 destination.add(dest);

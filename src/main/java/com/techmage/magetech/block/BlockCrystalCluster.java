@@ -19,15 +19,8 @@ public class BlockCrystalCluster extends BlockMageTech_Magic implements ITileEnt
         super(Material.iron);
         this.setHardness(2.0f);
         this.setBlockName(Names.Blocks.CRYSTAL_CLUSTER);
+        this.useNeighborBrightness = true;
     }
-
-    @SideOnly(Side.CLIENT)
-    private IIcon topIcon;
-    @SideOnly(Side.CLIENT)
-    private IIcon bottomIcon;
-    @SideOnly(Side.CLIENT)
-    private IIcon sideIcon;
-    @SideOnly(Side.CLIENT)
 
     @Override
     public TileEntity createNewTileEntity(World world, int metaData)
@@ -35,32 +28,19 @@ public class BlockCrystalCluster extends BlockMageTech_Magic implements ITileEnt
         return new TileEntityCrystalCluster();
     }
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void registerBlockIcons (IIconRegister iconRegister)
+    public int getRenderType()
     {
-        topIcon = iconRegister.registerIcon (Textures.RESOURCE_PREFIX + Names.Blocks.CRYSTAL_CLUSTER + "_top");
-        bottomIcon = iconRegister.registerIcon (Textures.RESOURCE_PREFIX + Names.Blocks.CRYSTAL_CLUSTER + "_bottom");
-        sideIcon = iconRegister.registerIcon (Textures.RESOURCE_PREFIX + Names.Blocks.CRYSTAL_CLUSTER +  "_side");
+        return -1;
     }
 
-
-    @Override
-    @SideOnly(Side.CLIENT)
-    public IIcon getIcon (int side, int metadata)
+    public boolean isOpaqueCube()
     {
-        if (side == 0)
-        {
-            return bottomIcon;
-        }
-        else if (side == 1)
-        {
-            return topIcon;
-        }
-        else
-        {
-            return sideIcon;
-        }
+        return false;
+    }
+
+    public boolean renderAsNormalBlock()
+    {
+        return false;
     }
 
 }

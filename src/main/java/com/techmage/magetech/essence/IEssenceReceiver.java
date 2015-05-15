@@ -9,6 +9,6 @@ public interface IEssenceReceiver
 
     public ForgeDirection[] getReceiverSites();
 
-    public void ReceiveEssence(int amount);
+    public void ReceiveEssence(int amount, int[] source);
 
 }

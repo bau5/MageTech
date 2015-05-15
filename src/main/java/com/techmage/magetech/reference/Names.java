@@ -54,6 +54,7 @@ public class Names
         public static final String INFUSER = "infuser";
         public static final String ELEMENTAL_EXTRACTOR = "elementalExtractor";
         public static final String CRYSTAL_CLUSTER = "crystalCluster";
+        public static final String ESSENCE_NODE = "essenceNode";
     }
 
     public static final class NBT

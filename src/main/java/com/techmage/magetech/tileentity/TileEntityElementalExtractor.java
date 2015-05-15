@@ -55,28 +55,24 @@ public class TileEntityElementalExtractor extends TileEntityEssenceHandler
     public void updateEntity()
     {
 
-        if (!worldObj.isRemote)
+    if (!worldObj.isRemote)
+    {
+        if (productionTime > 100)
         {
-            if (productionTime > 100)
-            {
-                productionTime = 0;
-                this.collectEssence();
+            productionTime = 0;
+            this.collectEssence();
+        }
+        else
+            productionTime++;
+
+        if (!this.getDest().isEmpty())
+        {
+            for (int i = 0; i < this.getDest().size(); i++)
+                if (this.getStoredEssence() > 0)
+                {
+                    this.SendEssence(1, this.getDest().get(i));
+                }
             }
-            else
-                productionTime++;
-
-            LogHelper.info(this.getStoredEssence());
-
-            if (!this.getDest().isEmpty())
-            {
-                for (int i = 0; i < this.getDest().size(); i++)
-                    if (this.getStoredEssence() > 1)
-                    {
-                        this.SendEssence(1, this.getDest().get(i));
-                        this.removeEssence(1);
-                    }
-            }
-
         }
     }
 

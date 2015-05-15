@@ -5,7 +5,7 @@ import net.minecraft.nbt.NBTTagCompound;
 
 public class TileEntityCrystalCluster extends TileEntityMageTech
 {
-    public int EssenceLeft = 10;
+    public int EssenceLeft = 100;
 
     public TileEntityCrystalCluster() { }
 

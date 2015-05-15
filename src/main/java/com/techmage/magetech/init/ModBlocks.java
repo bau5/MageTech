@@ -22,6 +22,7 @@ public class ModBlocks
     public static final BlockMageTech_Magic oreCrystal = new BlockOreCrystal();
     public static final BlockMageTech_Magic stoneHardened = new BlockHardenedStone();
     public static final BlockMageTech_Magic crystalCluster = new BlockCrystalCluster();
+    public static final BlockMageTech_Magic essenceNode = new BlockEssenceNode();
 
     public static final BlockMageTech_Magic infuser = new BlockInfuser();
     public static final BlockMageTech_Magic elementalExtractor = new BlockElementalExtractor();
@@ -46,6 +47,7 @@ public class ModBlocks
         GameRegistry.registerBlock(oreCrystal, Names.Blocks.ORECRYSTAL);
         GameRegistry.registerBlock(stoneHardened, Names.Blocks.STONE_HARDENED);
         GameRegistry.registerBlock(crystalCluster, Names.Blocks.CRYSTAL_CLUSTER);
+        GameRegistry.registerBlock(essenceNode, Names.Blocks.ESSENCE_NODE);
 
         GameRegistry.registerBlock(infuser, Names.Blocks.INFUSER);
         GameRegistry.registerBlock(elementalExtractor, Names.Blocks.ELEMENTAL_EXTRACTOR);

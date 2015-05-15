@@ -2,70 +2,165 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39512254-8be5-45c1-a2ad-4c1618b94a78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockCrystalCluster.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockElementalExtractor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceReceiver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceSender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceStorage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/network/PacketSolderingStationCraftingButtonPressed.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityCrystalCluster.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityElementalExtractor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockEssenceNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/ItemCrystalClusterRenderer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/ItemEssenceNodeRenderer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/TileEntityCrystalClusterRenderer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/TileEntityEssenceNodeRenderer.java" />
+      <change type="DELETED" beforePath="D:\Programmierung\Modding\Minecraft\[FORGE] 1.7.10\MageTech\LiL.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\Programmierung\Modding\Minecraft\[FORGE] 1.7.10\MageTech\eclipse\screenshots\2014-12-02_19.06.38.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Programmierung\Modding\Minecraft\[FORGE] 1.7.10\MageTech\out\production\MageTech\assets\magetech\textures\models\mpwire.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\Programmierung\Modding\Minecraft\[FORGE] 1.7.10\MageTech\src\main\resources\assets\magetech\textures\models\mpwire.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/03ba29a1-d6bd-32ba-90b2-375e4d65abc9.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/03ba29a1-d6bd-32ba-90b2-375e4d65abc9.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/04ba6478-628e-32a2-915d-0b45ca8b366b.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/04ba6478-628e-32a2-915d-0b45ca8b366b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/08e49200-0644-3742-931a-94fcbb560d07.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/08e49200-0644-3742-931a-94fcbb560d07.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/0f12271c-8f6c-3b4a-9805-4e9544c8a791.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/0f12271c-8f6c-3b4a-9805-4e9544c8a791.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/1178851a-8246-318e-85f8-1ae4517330a2.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/1178851a-8246-318e-85f8-1ae4517330a2.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/17b67947-156d-3518-9500-f7e04df5e64d.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/17b67947-156d-3518-9500-f7e04df5e64d.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/1b8221f7-5861-330e-bef0-ac96b785ff27.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/1b8221f7-5861-330e-bef0-ac96b785ff27.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2015-05-13-1.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2015-05-13-1.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2015-05-13-2.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2015-05-13-2.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2015-05-13-3.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2015-05-13-3.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2015-05-13-4.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2015-05-13-4.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2015-05-13-5.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2015-05-13-5.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2015-05-13-6.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2015-05-13-6.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2015-05-13-7.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2015-05-13-7.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/2210beb6-4dc2-38a8-8f45-f0cb49bb6846.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/2210beb6-4dc2-38a8-8f45-f0cb49bb6846.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/23d7e7bc-6e91-3bb0-aef5-04f8d5ce94c1.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/23d7e7bc-6e91-3bb0-aef5-04f8d5ce94c1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/25b11e49-a7c5-3d9c-8271-d4f68f211051.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/25b11e49-a7c5-3d9c-8271-d4f68f211051.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/2654e3c3-150d-3857-a426-0b141796a4e0.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/2654e3c3-150d-3857-a426-0b141796a4e0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/2659329e-1c65-3850-9659-d27fc655aa3c.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/2659329e-1c65-3850-9659-d27fc655aa3c.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/29aa321a-1ce7-35de-bfab-f37fa4095c7d.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/29aa321a-1ce7-35de-bfab-f37fa4095c7d.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/37815b4b-a277-3e88-89c9-687629f7c447.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/37815b4b-a277-3e88-89c9-687629f7c447.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/39a095b5-aea9-3421-a918-d077b0105370.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/39a095b5-aea9-3421-a918-d077b0105370.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/3bdd7bc1-57b3-3ed1-a14e-cc7341dec1b1.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/3bdd7bc1-57b3-3ed1-a14e-cc7341dec1b1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/3f66a67c-db6c-36b7-b762-d7a40c17883b.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/3f66a67c-db6c-36b7-b762-d7a40c17883b.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/41196538-4c2b-371d-b141-0e51ad033fac.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/41196538-4c2b-371d-b141-0e51ad033fac.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/446355e4-985a-3d9c-a63c-4d95aa4b0dff.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/446355e4-985a-3d9c-a63c-4d95aa4b0dff.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/45c2c1e2-9dd4-3d62-8e53-82e2b4b32b4a.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/45c2c1e2-9dd4-3d62-8e53-82e2b4b32b4a.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/4bf8ac1c-047f-3d7f-9946-705bc571459f.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/4bf8ac1c-047f-3d7f-9946-705bc571459f.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/4c4af65a-e991-33a8-a762-2d145c215578.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/4c4af65a-e991-33a8-a762-2d145c215578.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/5d6f5056-9d82-3950-9ee4-6a4e4ed3cf33.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/5d6f5056-9d82-3950-9ee4-6a4e4ed3cf33.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/5f90bf1f-575d-3542-89d7-731859eee6f2.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/5f90bf1f-575d-3542-89d7-731859eee6f2.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/68723020-3c7d-332b-9007-b1f8c7a00304.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/68723020-3c7d-332b-9007-b1f8c7a00304.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/6ecd1629-dee4-373d-9457-481bd36b0826.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/6ecd1629-dee4-373d-9457-481bd36b0826.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/8c1ef9e6-3632-3ca3-9eee-559f6e0a39df.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/8c1ef9e6-3632-3ca3-9eee-559f6e0a39df.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/905847c0-6737-32d8-85e6-3f64ecd32033.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/905847c0-6737-32d8-85e6-3f64ecd32033.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/9a9101ac-937d-31fc-99f0-be5bc89dd1bc.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/9a9101ac-937d-31fc-99f0-be5bc89dd1bc.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/block/BlockCrystalCluster.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/block/BlockCrystalCluster.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/proxy/ClientProxy.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/proxy/ClientProxy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/inventory/ContainerInfuser.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/inventory/ContainerInfuser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/item/ItemTalismanAir.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/item/ItemTalismanAir.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/item/ItemTalismanFire.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/item/ItemTalismanFire.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/proxy/CommonProxy.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/proxy/CommonProxy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/essence/IEssenceReceiver.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/essence/IEssenceReceiver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/essence/IEssenceSender.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/essence/IEssenceSender.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/proxy/IProxy.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/proxy/IProxy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/MageTech.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/MageTech.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/init/ModBlocks.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/init/ModBlocks.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/reference/Names$Blocks.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/reference/Names$Blocks.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/reference/Names$Containers.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/reference/Names$Containers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/reference/Names$Items.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/reference/Names$Items.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/reference/Names$NBT.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/reference/Names$NBT.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/reference/Names.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/reference/Names.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/handler/PacketHandler.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/handler/PacketHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/init/Recipes.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/init/Recipes.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/tileentity/TileEntityCrystalCluster.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/tileentity/TileEntityCrystalCluster.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/tileentity/TileEntityElementalExtractor.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/tileentity/TileEntityElementalExtractor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/tileentity/TileEntityEssenceHandler.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/tileentity/TileEntityEssenceHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/tileentity/TileEntityInfuser.class" afterPath="$PROJECT_DIR$/out/production/MageTech/com/techmage/magetech/tileentity/TileEntityInfuser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/data/Village.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/data/Village.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/a129ebab-93ca-3ac8-86a9-47cce1be86d0.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/a129ebab-93ca-3ac8-86a9-47cce1be86d0.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/a2d3cb04-2e77-32ea-a568-7872ba7e9c5c.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/a2d3cb04-2e77-32ea-a568-7872ba7e9c5c.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/ac42e7c5-bf90-3ead-ba50-c551df161044.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/ac42e7c5-bf90-3ead-ba50-c551df161044.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/ad4a30d4-53bd-30c6-b482-5d77fb42b2d7.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/ad4a30d4-53bd-30c6-b482-5d77fb42b2d7.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/b743052f-5855-37e7-a97b-fd551acafef4.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/b743052f-5855-37e7-a97b-fd551acafef4.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/bd11acc2-8e1a-348b-89a6-a309159aa437.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/bd11acc2-8e1a-348b-89a6-a309159aa437.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/bf0c47d3-02b6-3463-8e38-457226b1407c.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/bf0c47d3-02b6-3463-8e38-457226b1407c.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/c98187a9-e17b-3f48-8a33-882e62d18d19.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/c98187a9-e17b-3f48-8a33-882e62d18d19.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/ca560dd3-ebf9-3fc9-b2e6-088534082c81.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/ca560dd3-ebf9-3fc9-b2e6-088534082c81.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/d2fd1c5d-4760-35a0-aa0f-c197e25af2ac.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/d2fd1c5d-4760-35a0-aa0f-c197e25af2ac.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/d60321ce-54ba-31e5-bac3-cbb6a732015a.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/d60321ce-54ba-31e5-bac3-cbb6a732015a.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/d96be705-d0ae-31d3-afba-31a637d80f6d.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/d96be705-d0ae-31d3-afba-31a637d80f6d.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/dfa57433-6d23-31fd-a282-bdca1175e553.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/dfa57433-6d23-31fd-a282-bdca1175e553.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/e2fd3051-a7ee-3ec9-ae1f-a1b6240b0501.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/e2fd3051-a7ee-3ec9-ae1f-a1b6240b0501.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/ea1dedcc-65ad-3e4c-bece-937c54b0cb65.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/ea1dedcc-65ad-3e4c-bece-937c54b0cb65.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/eb3e37b3-0c87-3026-b460-637c38fd4fdd.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/eb3e37b3-0c87-3026-b460-637c38fd4fdd.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/f2ba1573-0c0d-3978-bb86-e2dc9c0eb9a4.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/f2ba1573-0c0d-3978-bb86-e2dc9c0eb9a4.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/f79c4f00-774e-3daf-ac9c-aebcbcc29c64.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/f79c4f00-774e-3daf-ac9c-aebcbcc29c64.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/f8a1463c-07b2-3433-918f-386b8accf0f1.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/f8a1463c-07b2-3433-918f-386b8accf0f1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/fe207da4-45aa-3a2a-bf67-72a700290388.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/fe207da4-45aa-3a2a-bf67-72a700290388.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/fe736038-102e-365b-a97e-eabc472944ec.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/playerdata/fe736038-102e-365b-a97e-eabc472944ec.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/level.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/level.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/level.dat_old" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/level.dat_old" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-1.-1.mca" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-1.-1.mca" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-1.-2.mca" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-1.-2.mca" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-1.-3.mca" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-1.-3.mca" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-2.-1.mca" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-2.-1.mca" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-2.-2.mca" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-2.-2.mca" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-2.-3.mca" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.-2.-3.mca" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.0.-1.mca" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.0.-1.mca" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.0.-2.mca" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.0.-2.mca" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.0.-3.mca" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.0.-3.mca" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.0.0.mca" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/region/r.0.0.mca" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/session.lock" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/session.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/magetech/textures/items/transistor.png" afterPath="$PROJECT_DIR$/src/main/resources/assets/magetech/textures/items/transistor.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/DIM-1/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/DIM-1/data/villages.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/DIM1/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/DIM1/data/villages.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/data/villages.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/03ba29a1-d6bd-32ba-90b2-375e4d65abc9.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/03ba29a1-d6bd-32ba-90b2-375e4d65abc9.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/04ba6478-628e-32a2-915d-0b45ca8b366b.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/04ba6478-628e-32a2-915d-0b45ca8b366b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/08e49200-0644-3742-931a-94fcbb560d07.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/08e49200-0644-3742-931a-94fcbb560d07.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/0f12271c-8f6c-3b4a-9805-4e9544c8a791.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/0f12271c-8f6c-3b4a-9805-4e9544c8a791.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/1178851a-8246-318e-85f8-1ae4517330a2.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/1178851a-8246-318e-85f8-1ae4517330a2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/17b67947-156d-3518-9500-f7e04df5e64d.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/17b67947-156d-3518-9500-f7e04df5e64d.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/1b8221f7-5861-330e-bef0-ac96b785ff27.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/1b8221f7-5861-330e-bef0-ac96b785ff27.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/2210beb6-4dc2-38a8-8f45-f0cb49bb6846.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/2210beb6-4dc2-38a8-8f45-f0cb49bb6846.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/23d7e7bc-6e91-3bb0-aef5-04f8d5ce94c1.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/23d7e7bc-6e91-3bb0-aef5-04f8d5ce94c1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/25b11e49-a7c5-3d9c-8271-d4f68f211051.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/25b11e49-a7c5-3d9c-8271-d4f68f211051.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/2654e3c3-150d-3857-a426-0b141796a4e0.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/2654e3c3-150d-3857-a426-0b141796a4e0.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/2659329e-1c65-3850-9659-d27fc655aa3c.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/2659329e-1c65-3850-9659-d27fc655aa3c.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/29aa321a-1ce7-35de-bfab-f37fa4095c7d.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/29aa321a-1ce7-35de-bfab-f37fa4095c7d.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/37815b4b-a277-3e88-89c9-687629f7c447.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/37815b4b-a277-3e88-89c9-687629f7c447.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/39a095b5-aea9-3421-a918-d077b0105370.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/39a095b5-aea9-3421-a918-d077b0105370.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/3bdd7bc1-57b3-3ed1-a14e-cc7341dec1b1.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/3bdd7bc1-57b3-3ed1-a14e-cc7341dec1b1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/3f66a67c-db6c-36b7-b762-d7a40c17883b.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/3f66a67c-db6c-36b7-b762-d7a40c17883b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/41196538-4c2b-371d-b141-0e51ad033fac.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/41196538-4c2b-371d-b141-0e51ad033fac.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/446355e4-985a-3d9c-a63c-4d95aa4b0dff.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/446355e4-985a-3d9c-a63c-4d95aa4b0dff.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/45c2c1e2-9dd4-3d62-8e53-82e2b4b32b4a.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/45c2c1e2-9dd4-3d62-8e53-82e2b4b32b4a.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/4bf8ac1c-047f-3d7f-9946-705bc571459f.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/4bf8ac1c-047f-3d7f-9946-705bc571459f.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/4c4af65a-e991-33a8-a762-2d145c215578.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/4c4af65a-e991-33a8-a762-2d145c215578.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/5d6f5056-9d82-3950-9ee4-6a4e4ed3cf33.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/5d6f5056-9d82-3950-9ee4-6a4e4ed3cf33.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/5f90bf1f-575d-3542-89d7-731859eee6f2.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/5f90bf1f-575d-3542-89d7-731859eee6f2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/68723020-3c7d-332b-9007-b1f8c7a00304.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/68723020-3c7d-332b-9007-b1f8c7a00304.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/6ecd1629-dee4-373d-9457-481bd36b0826.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/6ecd1629-dee4-373d-9457-481bd36b0826.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/8c1ef9e6-3632-3ca3-9eee-559f6e0a39df.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/8c1ef9e6-3632-3ca3-9eee-559f6e0a39df.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/905847c0-6737-32d8-85e6-3f64ecd32033.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/905847c0-6737-32d8-85e6-3f64ecd32033.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/9a9101ac-937d-31fc-99f0-be5bc89dd1bc.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/9a9101ac-937d-31fc-99f0-be5bc89dd1bc.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockCrystalCluster.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockCrystalCluster.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/ClientProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/ClientProxy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/inventory/ContainerInfuser.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/inventory/ContainerInfuser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/inventory/ContainerSolderingStation.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/inventory/ContainerSolderingStation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/client/gui/inventory/GuiSolderingStation.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/client/gui/inventory/GuiSolderingStation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/item/ItemTalismanAir.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/item/ItemTalismanAir.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/item/ItemTalismanFire.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/item/ItemTalismanFire.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/CommonProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/CommonProxy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceReceiver.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceReceiver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceSender.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceSender.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/IProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/IProxy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MageTech.iws" afterPath="$PROJECT_DIR$/MageTech.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/MageTech.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/MageTech.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/init/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/init/ModBlocks.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/reference/Names.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/reference/Names.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/handler/PacketHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/handler/PacketHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/init/Recipes.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/init/Recipes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/crafting/RecipesSolderingStation.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/crafting/RecipesSolderingStation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityCrystalCluster.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityCrystalCluster.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityElementalExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityElementalExtractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityInfuser.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityInfuser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntitySolderingStation.java" afterPath="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntitySolderingStation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/a129ebab-93ca-3ac8-86a9-47cce1be86d0.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/a129ebab-93ca-3ac8-86a9-47cce1be86d0.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/a2d3cb04-2e77-32ea-a568-7872ba7e9c5c.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/a2d3cb04-2e77-32ea-a568-7872ba7e9c5c.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/ac42e7c5-bf90-3ead-ba50-c551df161044.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/ac42e7c5-bf90-3ead-ba50-c551df161044.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/ad4a30d4-53bd-30c6-b482-5d77fb42b2d7.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/ad4a30d4-53bd-30c6-b482-5d77fb42b2d7.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/b743052f-5855-37e7-a97b-fd551acafef4.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/b743052f-5855-37e7-a97b-fd551acafef4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/bd11acc2-8e1a-348b-89a6-a309159aa437.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/bd11acc2-8e1a-348b-89a6-a309159aa437.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/bf0c47d3-02b6-3463-8e38-457226b1407c.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/bf0c47d3-02b6-3463-8e38-457226b1407c.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/c98187a9-e17b-3f48-8a33-882e62d18d19.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/c98187a9-e17b-3f48-8a33-882e62d18d19.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/ca560dd3-ebf9-3fc9-b2e6-088534082c81.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/ca560dd3-ebf9-3fc9-b2e6-088534082c81.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/d2fd1c5d-4760-35a0-aa0f-c197e25af2ac.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/d2fd1c5d-4760-35a0-aa0f-c197e25af2ac.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/d60321ce-54ba-31e5-bac3-cbb6a732015a.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/d60321ce-54ba-31e5-bac3-cbb6a732015a.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/d96be705-d0ae-31d3-afba-31a637d80f6d.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/d96be705-d0ae-31d3-afba-31a637d80f6d.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/dfa57433-6d23-31fd-a282-bdca1175e553.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/dfa57433-6d23-31fd-a282-bdca1175e553.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/e2fd3051-a7ee-3ec9-ae1f-a1b6240b0501.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/e2fd3051-a7ee-3ec9-ae1f-a1b6240b0501.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/ea1dedcc-65ad-3e4c-bece-937c54b0cb65.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/ea1dedcc-65ad-3e4c-bece-937c54b0cb65.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/eb3e37b3-0c87-3026-b460-637c38fd4fdd.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/eb3e37b3-0c87-3026-b460-637c38fd4fdd.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MageTech/assets/magetech/lang/en_US.lang" afterPath="$PROJECT_DIR$/out/production/MageTech/assets/magetech/lang/en_US.lang" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/magetech/lang/en_US.lang" afterPath="$PROJECT_DIR$/src/main/resources/assets/magetech/lang/en_US.lang" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/f2ba1573-0c0d-3978-bb86-e2dc9c0eb9a4.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/f2ba1573-0c0d-3978-bb86-e2dc9c0eb9a4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/f79c4f00-774e-3daf-ac9c-aebcbcc29c64.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/f79c4f00-774e-3daf-ac9c-aebcbcc29c64.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/f8a1463c-07b2-3433-918f-386b8accf0f1.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/f8a1463c-07b2-3433-918f-386b8accf0f1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/fe207da4-45aa-3a2a-bf67-72a700290388.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/fe207da4-45aa-3a2a-bf67-72a700290388.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/fe736038-102e-365b-a97e-eabc472944ec.json" afterPath="$PROJECT_DIR$/eclipse/saves/MageTech Flat Test/stats/fe736038-102e-365b-a97e-eabc472944ec.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-1.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-2.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" afterPath="$PROJECT_DIR$/eclipse/logs/fml-client-3.log" />
@@ -134,155 +229,7 @@
     <favorites_list name="MageTech" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="BlockElementalExtractor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockElementalExtractor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1020">
-              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TileEntityElementalExtractor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityElementalExtractor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66392094" vertical-offset="2708" max-vertical-offset="3315">
-              <caret line="183" column="40" selection-start-line="183" selection-start-column="40" selection-end-line="183" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1116#1117#0" expanded="true" />
-                <element signature="e#1157#1158#0" expanded="true" />
-                <element signature="e#1209#1210#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
-                <element signature="e#1310#1311#0" expanded="true" />
-                <element signature="e#1354#1355#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TileEntityInfuser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityInfuser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2499" max-vertical-offset="5372">
-              <caret line="188" column="46" selection-start-line="188" selection-start-column="46" selection-end-line="188" selection-end-column="46" />
-              <folding>
-                <element signature="e#1313#1314#0" expanded="true" />
-                <element signature="e#1352#1353#0" expanded="true" />
-                <element signature="e#1424#1425#0" expanded="true" />
-                <element signature="e#1467#1468#0" expanded="true" />
-                <element signature="e#2741#2742#0" expanded="true" />
-                <element signature="e#2834#2835#0" expanded="true" />
-                <element signature="e#2899#2900#0" expanded="true" />
-                <element signature="e#2942#2943#0" expanded="true" />
-                <element signature="e#3003#3004#0" expanded="true" />
-                <element signature="e#3028#3029#0" expanded="true" />
-                <element signature="e#3113#3114#0" expanded="true" />
-                <element signature="e#3140#3141#0" expanded="true" />
-                <element signature="e#5057#5058#0" expanded="true" />
-                <element signature="e#5098#5099#0" expanded="true" />
-                <element signature="e#5136#5137#0" expanded="true" />
-                <element signature="e#5174#5175#0" expanded="true" />
-                <element signature="e#5654#5655#0" expanded="true" />
-                <element signature="e#5698#5699#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContainerInfuser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/inventory/ContainerInfuser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.137931" vertical-offset="310" max-vertical-offset="2737">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IEssenceStorage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceStorage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IEssenceReceiver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceReceiver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IEssenceSender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceSender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlockCrystalCluster.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockCrystalCluster.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="1190">
-              <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TileEntityCrystalCluster.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityCrystalCluster.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="782">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TileEntityEssenceHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="906" max-vertical-offset="4658">
-              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#996#997#0" expanded="true" />
-                <element signature="e#1037#1038#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1387#1388#0" expanded="true" />
-                <element signature="e#1426#1427#0" expanded="true" />
-                <element signature="e#2286#2287#0" expanded="true" />
-                <element signature="e#2330#2331#0" expanded="true" />
-                <element signature="e#2393#2394#0" expanded="true" />
-                <element signature="e#2437#2438#0" expanded="true" />
-                <element signature="e#2492#2493#0" expanded="true" />
-                <element signature="e#2533#2534#0" expanded="true" />
-                <element signature="e#2585#2586#0" expanded="true" />
-                <element signature="e#2623#2624#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -290,19 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockDuct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockMultiBlock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/ItemBlockDuct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/multiblock/SubTileMultiBlock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/multiblock/TileMultiBlock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/handler/TickHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/multiblock/IMultiBlockRoute.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/duct/energy/subgrid/EnergySubGrid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/duct/energy/subgrid/SubTileEnergy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/duct/energy/subgrid/SubTileEnergyRedstone.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/duct/energy/EnergyGridSuperConductor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/duct/energy/TileEnergyDuct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/duct/energy/TileEnergyDuctSuperConductor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/duct/Duct.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/duct/DuctFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/duct/MTDucts.java" />
@@ -311,7 +245,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/client/gui/inventory/GuiElectronicsWorkbench.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/crafting/RecipesCrusher.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/init/ModItems.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/MageTech.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/reference/GuiID.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityCentrifuge.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityCrusher.java" />
@@ -328,19 +261,33 @@
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/inventory/ContainerSolderingStation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntitySolderingStation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockElementalExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/reference/Names.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/ClientProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/init/ModBlocks.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/magetech/lang/en_US.lang" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockCrystalCluster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityCrystalCluster.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceReceiver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/inventory/ContainerInfuser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceStorage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/reference/Names.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/init/ModBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceReceiver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceSender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityCrystalCluster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/CommonProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/IProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/MageTech.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityInfuser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockCrystalCluster.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/magetech/lang/en_US.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/EssenceMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceRequester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/EssenceGrid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceGrid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityElementalExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockEssenceNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/TileEntityCrystalClusterRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/ItemCrystalClusterRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/ClientProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/ItemEssenceNodeRenderer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/TileEntityEssenceNodeRenderer.java" />
       </list>
     </option>
   </component>
@@ -349,10 +296,10 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1918" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -385,6 +332,70 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MageTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MageTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MageTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MageTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.techmage.magetech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MageTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MageTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets.magetech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="textures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MageTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MageTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets.magetech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -514,214 +525,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.techmage.magetech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.techmage.magetech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tileentity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.techmage.magetech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.techmage.magetech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.techmage.magetech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="item" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.techmage.magetech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="init" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.techmage.magetech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="essence" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.techmage.magetech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crafting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.techmage.magetech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="block" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets.magetech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="textures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MageTech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets.magetech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -747,11 +550,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.techmage.magetech.block.renderer" />
       <recent name="com.techmage.magetech.tileentity" />
       <recent name="com.techmage.magetech.block" />
       <recent name="com.techmage.magetech.network" />
       <recent name="com.techmage.magetech.crafting" />
-      <recent name="com.techmage.magetech.inventory" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
@@ -965,23 +768,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="1" y="1" width="1918" height="1038" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.335845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25184017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1020,111 +823,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/handler/ConfigurationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35146898" vertical-offset="0" max-vertical-offset="919">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/item/ItemDustOre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.513468" vertical-offset="494" max-vertical-offset="1088">
-          <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/item/ItemMageTech_Tech.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.112026356" vertical-offset="0" max-vertical-offset="731">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/client/gui/inventory/GuiInfuser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53212523" vertical-offset="0" max-vertical-offset="850">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/client/gui/inventory/GuiElectronicsWorkbench.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.543771" vertical-offset="0" max-vertical-offset="646">
-          <caret line="30" column="219" selection-start-line="30" selection-start-column="219" selection-end-line="30" selection-end-column="219" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/init/ModItems.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6359143" vertical-offset="5" max-vertical-offset="1224">
-          <caret line="30" column="80" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/reference/GuiID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2520593" vertical-offset="0" max-vertical-offset="607">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityCentrifuge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30807248" vertical-offset="0" max-vertical-offset="4386">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/reference/Textures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="19" column="146" selection-start-line="19" selection-start-column="146" selection-end-line="19" selection-end-column="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/client/gui/GuiFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.073993474" vertical-offset="0" max-vertical-offset="919">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/client/gui/ModGuiConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.073993474" vertical-offset="0" max-vertical-offset="919">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/handler/GuiHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
-          <caret line="75" column="93" selection-start-line="75" selection-start-column="93" selection-end-line="75" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/inventory/ContainerElectronicsWorkbench.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11447811" vertical-offset="0" max-vertical-offset="2618">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/crafting/ElectronicsWorkbenchShapedRecipes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.112026356" vertical-offset="0" max-vertical-offset="2380">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/crafting/ElectronicsWorkbenchCraftingManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2602966" vertical-offset="306" max-vertical-offset="3434">
-          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/crafting/RecipesCrusher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4398682" vertical-offset="311" max-vertical-offset="986">
@@ -1242,38 +940,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/MageTech.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/item/ItemTalismanAir.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9159802" vertical-offset="1178" max-vertical-offset="2091">
           <caret line="115" column="81" selection-start-line="115" selection-start-column="81" selection-end-line="115" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/reference/Names.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="543" max-vertical-offset="1479">
-          <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/init/ModBlocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <caret line="23" column="87" selection-start-line="23" selection-start-column="87" selection-end-line="23" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/magetech/lang/en_US.lang">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="838" max-vertical-offset="1479">
-          <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1284,26 +954,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/ClientProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="19" column="100" selection-start-line="19" selection-start-column="100" selection-end-line="19" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityMageTech.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.112026356" vertical-offset="0" max-vertical-offset="1275">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockElementalExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,122 +968,236 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockCrystalCluster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityCrystalCluster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceStorage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+        <state vertical-scroll-proportion="0.30807248" vertical-offset="0" max-vertical-offset="607">
           <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/inventory/ContainerInfuser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.137931" vertical-offset="310" max-vertical-offset="2737">
+        <state vertical-scroll-proportion="0.77759475" vertical-offset="310" max-vertical-offset="2737">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockElementalExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="906" max-vertical-offset="4658">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-            <element signature="e#2330#2331#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2437#2438#0" expanded="true" />
-            <element signature="e#2492#2493#0" expanded="true" />
-            <element signature="e#2533#2534#0" expanded="true" />
-            <element signature="e#2585#2586#0" expanded="true" />
-            <element signature="e#2623#2624#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/reference/Names.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72252446" vertical-offset="288" max-vertical-offset="1496">
+          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/init/ModBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8150163" vertical-offset="16" max-vertical-offset="969">
+          <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20348205" vertical-offset="0" max-vertical-offset="919">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/essence/IEssenceSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42009884" vertical-offset="0" max-vertical-offset="607">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityCrystalCluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12948857" vertical-offset="0" max-vertical-offset="919">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/ServerProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.036996737" vertical-offset="0" max-vertical-offset="919">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/IProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.110990204" vertical-offset="0" max-vertical-offset="919">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/CommonProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14798695" vertical-offset="0" max-vertical-offset="919">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1291/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/client/renderer/tileentity/TileEntityRendererPiston.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18763797" vertical-offset="0" max-vertical-offset="1207">
+          <caret line="24" column="63" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/MageTech.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66392094" vertical-offset="175" max-vertical-offset="901">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/reference/Textures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5041186" vertical-offset="0" max-vertical-offset="607">
+          <caret line="19" column="146" selection-start-line="19" selection-start-column="146" selection-end-line="19" selection-end-column="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/magetech/lang/en_US.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56876063" vertical-offset="838" max-vertical-offset="1513">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityInfuser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2499" max-vertical-offset="5372">
-          <caret line="188" column="46" selection-start-line="188" selection-start-column="46" selection-end-line="188" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.34295416" vertical-offset="2348" max-vertical-offset="4879">
+          <caret line="185" column="5" selection-start-line="185" selection-start-column="5" selection-end-line="185" selection-end-column="5" />
           <folding>
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
-            <element signature="e#2741#2742#0" expanded="true" />
-            <element signature="e#2834#2835#0" expanded="true" />
-            <element signature="e#2899#2900#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
-            <element signature="e#3003#3004#0" expanded="true" />
-            <element signature="e#3028#3029#0" expanded="true" />
-            <element signature="e#3113#3114#0" expanded="true" />
-            <element signature="e#3140#3141#0" expanded="true" />
-            <element signature="e#5057#5058#0" expanded="true" />
-            <element signature="e#5098#5099#0" expanded="true" />
-            <element signature="e#5136#5137#0" expanded="true" />
-            <element signature="e#5174#5175#0" expanded="true" />
-            <element signature="e#5654#5655#0" expanded="true" />
-            <element signature="e#5698#5699#0" expanded="true" />
+            <element signature="e#5296#5297#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4454">
+          <caret line="274" column="5" selection-start-line="274" selection-start-column="5" selection-end-line="274" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityEssenceNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/tileentity/TileEntityElementalExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66392094" vertical-offset="2708" max-vertical-offset="3315">
-          <caret line="183" column="40" selection-start-line="183" selection-start-column="40" selection-end-line="183" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3043">
+          <caret line="7" column="74" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockCrystalCluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1291/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/client/renderer/ItemRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14756945" vertical-offset="0" max-vertical-offset="12546">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1291/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/client/renderer/tileentity/TileEntitySpecialRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4040747" vertical-offset="0" max-vertical-offset="589">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1291/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraftforge/client/IItemRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2363">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/TileEntityCrystalClusterRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="1054">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/proxy/ClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="38" column="125" selection-start-line="38" selection-start-column="125" selection-end-line="38" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/ItemCrystalClusterRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="30" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/ItemEssenceNodeRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/renderer/TileEntityEssenceNodeRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71137524" vertical-offset="329" max-vertical-offset="1054">
+          <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/techmage/magetech/block/BlockEssenceNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37521222" vertical-offset="0" max-vertical-offset="589">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.2.1291/forgeSrc-1.7.10-10.13.2.1291-sources.jar!/net/minecraft/client/renderer/tileentity/TileEntityBeaconRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1460102" vertical-offset="1349" max-vertical-offset="1938">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

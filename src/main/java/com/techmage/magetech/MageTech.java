@@ -45,6 +45,7 @@ public class MageTech
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
         proxy.registerTileEntities();
+        proxy.bindTileEntityRenderer();
 
         Recipes.init();
 

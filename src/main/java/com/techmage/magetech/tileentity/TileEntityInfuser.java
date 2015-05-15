@@ -182,11 +182,9 @@ public class TileEntityInfuser extends TileEntityEssenceHandler implements ISide
     }
 
     @Override
-    public void ReceiveEssence(int amount)
+    public void ReceiveEssence(int amount, int[] source)
     {
-        LogHelper.info("receiving essence ...");
         this.storedEssence += amount;
-        LogHelper.info(this.getStoredEssence());
     }
 
     @SideOnly(Side.CLIENT)
