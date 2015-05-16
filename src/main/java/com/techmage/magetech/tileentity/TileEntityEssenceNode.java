@@ -1,23 +1,30 @@
 package com.techmage.magetech.tileentity;
 
+import com.techmage.magetech.utility.Location;
+import com.techmage.magetech.utility.LogHelper;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.util.ForgeDirection;
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class TileEntityEssenceNode extends TileEntityEssenceHandler
 {
     public int storedEssence = 0;
     public int maxEssence = 50;
 
-    public List<int[]> sources = new ArrayList<int[]>();
-    public ArrayList<ForgeDirection> defSenderSites = new ArrayList(Arrays.asList(ForgeDirection.NORTH, ForgeDirection.SOUTH, ForgeDirection.EAST, ForgeDirection.WEST));
+    public ArrayList<Location> Provider = new ArrayList<Location>();
+    public ArrayList<Location> Requester = new ArrayList<Location>();
+    public ArrayList<Location> Nodes = new ArrayList<Location>();
+
+    public ArrayList<Location> clonedProvider = new ArrayList<Location>();
+    public ArrayList<Location> clonedRequester = new ArrayList<Location>();
+    public ArrayList<Location> clonedNodes = new ArrayList<Location>();
+
+    public boolean isReset = false;
+    public int EssenceHandlerType = 2;
 
     public TileEntityEssenceNode()
     {
-        this.setReceiverSites(ForgeDirection.NORTH, ForgeDirection.SOUTH, ForgeDirection.EAST, ForgeDirection.WEST);
+        this.setConnectionSides(ForgeDirection.NORTH, ForgeDirection.SOUTH, ForgeDirection.EAST, ForgeDirection.WEST);
     }
 
     @Override
@@ -35,6 +42,47 @@ public class TileEntityEssenceNode extends TileEntityEssenceHandler
     }
 
     @Override
+    public int getEssenceHandlerTypeOwn()
+    {
+        return this.EssenceHandlerType;
+    }
+
+    @Override
+    public void cloneConnections()
+    {
+        this.clonedProvider = this.Provider;
+        this.clonedRequester = this.Requester;
+        this.clonedNodes = this.Nodes;
+    }
+
+    @Override
+    public ArrayList<Location> getClonedProvider()
+    {
+        return this.clonedProvider;
+    }
+
+    @Override
+    public ArrayList<Location> getClonedRequester()
+    {
+        return this.clonedRequester;
+    }
+
+    @Override
+    public ArrayList<Location> getClonedNodes()
+    {
+        return this.clonedNodes;
+    }
+
+    @Override
+    public void resetConnections()
+    {
+        this.Provider = new ArrayList<Location>();
+        this.Requester = new ArrayList<Location>();
+        this.Nodes = new ArrayList<Location>();
+        this.isReset = true;
+    }
+
+    @Override
     public int getStoredEssence()
     {
         return this.storedEssence;
@@ -47,74 +95,67 @@ public class TileEntityEssenceNode extends TileEntityEssenceHandler
     }
 
     @Override
-    public void removeEssence(int amount)
+    public ArrayList<Location> getConnectedProvider()
     {
-        this.storedEssence -= amount;
+        return this.Provider;
     }
 
     @Override
-    public void ReceiveEssence(int amount, int[] source)
+    public ArrayList<Location> getConnectedRequester()
     {
-        this.storedEssence += amount;
-        if (!this.sources.contains(source))
-        {
-            this.sources.add(source);
-        }
+        return this.Requester;
+    }
+
+    @Override
+    public ArrayList<Location> getConnectedNodes()
+    {
+        return this.Nodes;
+    }
+
+    @Override
+    public void addConnectedProvider(Location provider)
+    {
+        this.Provider.add(provider);
+    }
+
+    @Override
+    public void addConnectedRequester(Location requester)
+    {
+        this.Requester.add(requester);
+    }
+
+    @Override
+    public void addConnectedNode(Location node)
+    {
+        this.Nodes.add(node);
     }
 
     @Override
     public void updateEntity()
     {
 
-    if (!worldObj.isRemote)
-    {
-
-        List<ForgeDirection> getEssenceFrom = new ArrayList<ForgeDirection>();
-
-        for (int i = 0; i < this.sources.size(); i ++)
+        if (!worldObj.isRemote)
         {
-            if (this.worldObj.getBlock(this.sources.get(i)[0], this.sources.get(i)[1], this.sources.get(i)[2]).hasTileEntity())
+
+            this.isReset = false;
+
+            if (!connectionsExist())
+                resetEssenceNetwork();
+
+            ArrayList<Location> Connections = getConnections(this.xCoord, this.yCoord, this.zCoord);
+
+            for (Location loc : Connections)
             {
-                if (this.worldObj.getTileEntity(this.sources.get(i)[0], this.sources.get(i)[1], this.sources.get(i)[2]) instanceof TileEntityEssenceHandler)
+                int type = getEssenceHandlerType(loc);
+
+                if (!isConnected(loc, type))
                 {
-                    TileEntityEssenceHandler source = (TileEntityEssenceHandler) this.worldObj.getTileEntity(this.sources.get(i)[0], this.sources.get(i)[1], this.sources.get(i)[2]);
-
-                    if (source.xCoord == this.xCoord && source.yCoord == this.yCoord && source.zCoord < this.zCoord)
-                        getEssenceFrom.add(ForgeDirection.NORTH);
-
-                    if (source.xCoord == this.xCoord && source.yCoord == this.yCoord && source.zCoord > this.zCoord)
-                        getEssenceFrom.add(ForgeDirection.SOUTH);
-
-                    if (source.xCoord < this.xCoord && source.yCoord == this.yCoord && source.zCoord == this.zCoord)
-                        getEssenceFrom.add(ForgeDirection.WEST);
-
-                    if (source.xCoord > this.xCoord && source.yCoord == this.yCoord && source.zCoord == this.zCoord)
-                        getEssenceFrom.add(ForgeDirection.EAST);
-
-                    if (source.xCoord == this.xCoord && source.yCoord < this.yCoord && source.zCoord == this.zCoord)
-                        getEssenceFrom.add(ForgeDirection.DOWN);
-
-                    if (source.xCoord == this.xCoord && source.yCoord > this.yCoord && source.zCoord == this.zCoord)
-                        getEssenceFrom.add(ForgeDirection.UP);
-                }
-                else
-                    this.sources.remove(i);
-            }
-        }
-
-        ArrayList<ForgeDirection> senderSites = this.defSenderSites;
-        senderSites.removeAll(getEssenceFrom);
-
-        this.setSenderSites(senderSites);
-
-        if (!this.getDest().isEmpty())
-        {
-            for (int i = 0; i < this.getDest().size(); i++)
-                if (this.getStoredEssence() > 0)
-                {
-                    this.SendEssence(1, this.getDest().get(i));
+                    createConnection(loc, type);
                 }
             }
+
+            addNodeConnections();
+
         }
     }
 }

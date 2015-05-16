@@ -1,9 +1,9 @@
 package com.techmage.magetech.proxy;
 
-import com.techmage.magetech.block.renderer.ItemCrystalClusterRenderer;
-import com.techmage.magetech.block.renderer.ItemEssenceNodeRenderer;
-import com.techmage.magetech.block.renderer.TileEntityCrystalClusterRenderer;
-import com.techmage.magetech.block.renderer.TileEntityEssenceNodeRenderer;
+import com.techmage.magetech.client.render.item.ItemCrystalClusterRenderer;
+import com.techmage.magetech.client.render.item.ItemEssenceNodeRenderer;
+import com.techmage.magetech.client.render.tileentity.TileEntityCrystalClusterRenderer;
+import com.techmage.magetech.client.render.tileentity.TileEntityEssenceNodeRenderer;
 import com.techmage.magetech.init.ModBlocks;
 import com.techmage.magetech.reference.Names;
 import com.techmage.magetech.tileentity.*;

@@ -1,83 +1,71 @@
 package com.techmage.magetech.tileentity;
 
-import com.techmage.magetech.essence.IEssenceReceiver;
-import com.techmage.magetech.essence.IEssenceSender;
-import com.techmage.magetech.essence.IEssenceStorage;
+import com.techmage.magetech.utility.Location;
 import com.techmage.magetech.utility.LogHelper;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.util.ForgeDirection;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEssenceStorage, IEssenceSender, IEssenceReceiver
+public class TileEntityEssenceHandler extends TileEntityMageTech
 {
 
     public int maxEssence;
     public int storedEssence;
 
-    public ForgeDirection[] ReceiverSites = new ForgeDirection[6];
-    public ForgeDirection[] SenderSites = new ForgeDirection[6];
+    public ForgeDirection[] ConnectionSides = new ForgeDirection[6];
 
-    @Override
-    public void setReceiverSites(ForgeDirection... dir)
+    public ArrayList<Location> Provider = new ArrayList<Location>();
+    public ArrayList<Location> Requester = new ArrayList<Location>();
+    public ArrayList<Location> Nodes = new ArrayList<Location>();
+
+    public ArrayList<Location> clonedProvider = new ArrayList<Location>();
+    public ArrayList<Location> clonedRequester = new ArrayList<Location>();
+    public ArrayList<Location> clonedNodes = new ArrayList<Location>();
+
+    public boolean isReset = false;
+    public int EssenceHandlerType = 3;
+
+    public ArrayList<Location> getConnectedProvider()
+    {
+        return this.Provider;
+    }
+
+    public ArrayList<Location> getConnectedRequester()
+    {
+        return this.Requester;
+    }
+
+    public ArrayList<Location> getConnectedNodes()
+    {
+        return this.Nodes;
+    }
+
+    public void addConnectedProvider(Location provider)
+    {
+        this.Provider.add(provider);
+    }
+
+    public void addConnectedRequester(Location requester)
+    {
+        this.Requester.add(requester);
+    }
+
+    public void addConnectedNode(Location node)
+    {
+        this.Nodes.add(node);
+    }
+
+    public ForgeDirection[] getConnectionSides()
+    {
+        return this.ConnectionSides;
+    }
+
+    public void setConnectionSides(ForgeDirection... dir)
     {
         for (int i = 0; i < dir.length; i ++)
         {
-            ReceiverSites[i] = dir[i];
-        }
-    }
-
-    @Override
-    public ForgeDirection[] getReceiverSites()
-    {
-        return this.ReceiverSites;
-    }
-
-    @Override
-    public void ReceiveEssence(int amount, int[] source)
-    {
-        storeEssence(amount);
-    }
-
-    @Override
-    public void setSenderSites(ForgeDirection... dir)
-    {
-        for (int i = 0; i < dir.length; i ++)
-        {
-            SenderSites[i] = dir[i];
-        }
-    }
-
-    @Override
-    public void setSenderSites(ArrayList<ForgeDirection> dir)
-    {
-        for (int i = 0; i < dir.size(); i ++)
-        {
-            SenderSites[i] = dir.get(i);
-        }
-    }
-
-    @Override
-    public ForgeDirection[] getSenderSites()
-    {
-        return this.SenderSites;
-    }
-
-    @Override
-    public void SendEssence(int amount, int[] dest)
-    {
-        if (this.worldObj.getBlock(dest[0], dest[1], dest[2]).hasTileEntity())
-        {
-            if (this.worldObj.getTileEntity(dest[0], dest[1], dest[2]) instanceof TileEntityEssenceHandler)
-            {
-                if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(dest[0], dest[1], dest[2])).canStoreEssence(amount))
-                {
-                    int[] source = {this.xCoord, this.yCoord, this.zCoord};
-                    ((TileEntityEssenceHandler) this.worldObj.getTileEntity(dest[0], dest[1], dest[2])).ReceiveEssence(amount, source);
-                    this.removeEssence(amount);
-                }
-            }
+            ConnectionSides[i] = dir[i];
         }
     }
 
@@ -86,28 +74,70 @@ public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEs
         return this.getStoredEssence() + amount <= this.getMaxEssence() ? true : false;
     }
 
-    @Override
-    public void storeEssence(int amount)
-    {
-        this.storedEssence += amount;
-    }
-
-    @Override
-    public void removeEssence(int amount)
-    {
-        this.storedEssence -= amount;
-    }
-
-    @Override
     public int getStoredEssence()
     {
         return this.storedEssence;
     }
 
-    @Override
     public int getMaxEssence()
     {
         return this.maxEssence;
+    }
+
+    public int getAvaibleEssenceInNetwork()
+    {
+        ArrayList<Location> provider = getConnectedProvider();
+        int avaibleEssence = 0;
+
+        for (Location loc : provider)
+        {
+            TileEntityEssenceHandler tile = (TileEntityEssenceHandler) this.worldObj.getTileEntity(loc.x, loc.y, loc.z);
+            avaibleEssence += tile.getStoredEssence();
+        }
+
+        return avaibleEssence;
+
+    }
+
+    public void requestEssenceFromNetwork(int amount)
+    {
+        ArrayList<Location> provider = getConnectedProvider();
+        int remainAmount = amount;
+
+        for (Location loc : provider)
+        {
+            TileEntityEssenceHandler tile = (TileEntityEssenceHandler) this.worldObj.getTileEntity(loc.x, loc.y, loc.z);
+            if (tile.getStoredEssence() > 0)
+            {
+                int avaibleEssence = tile.getStoredEssence();
+
+                if (avaibleEssence >= remainAmount)
+                {
+                    tile.removeEssence(remainAmount);
+                    storeEssence(remainAmount);
+                    remainAmount = 0;
+                }
+                else
+                {
+                    tile.removeEssence(avaibleEssence);
+                    storeEssence(avaibleEssence);
+                    remainAmount -= avaibleEssence;
+                }
+            }
+
+            if (remainAmount == 0)
+                return;
+        }
+    }
+
+    public void removeEssence(int amount)
+    {
+        this.storedEssence -= amount;
+    }
+
+    public void storeEssence(int amount)
+    {
+        this.storedEssence += amount;
     }
 
     public ForgeDirection getOppositeSite(ForgeDirection site)
@@ -131,147 +161,367 @@ public class TileEntityEssenceHandler extends TileEntityMageTech  implements IEs
             return null;
     }
 
-    public boolean isReceiverSide(ForgeDirection site)
+    public boolean isConnectionSide(ForgeDirection side)
     {
-        for (int i = 0; i < this.getReceiverSites().length; i ++)
+        for (int i = 0; i < this.getConnectionSides().length; i ++)
         {
-            if (this.getReceiverSites()[i] == site)
+            if (this.getConnectionSides()[i] == side)
                 return true;
         }
 
         return false;
     }
 
-    public List <int[]> getDest()
+    public ArrayList<Location> getConnections(int x, int y, int z)
     {
 
-        List<int[]> destination = new ArrayList<int[]>();
+        ArrayList<Location> connections = new ArrayList<Location>();
 
-        for (int i = 0; i < getSenderSites().length; i ++)
+        for (int i = 0; i < getConnectionSides().length; i ++)
         {
-            if (getSenderSites()[i] == ForgeDirection.NORTH)
+            if (getConnectionSides()[i] == ForgeDirection.NORTH)
             {
                 for (int j = 1; j < 9; j ++)
                 {
-                    if (this.worldObj.getBlock(this.xCoord, this.yCoord, this.zCoord - j).hasTileEntity())
+                    if (this.worldObj.getBlock(x, y, z - j).hasTileEntity())
                     {
-                        if (this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord - j) instanceof TileEntityEssenceHandler)
+                        if (this.worldObj.getTileEntity(x, y, z - j) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord - j)).isReceiverSide(getOppositeSite(ForgeDirection.NORTH)))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(x, y, z - j)).isConnectionSide(getOppositeSite(ForgeDirection.NORTH)))
                             {
-                                int[] dest = {this.xCoord, this.yCoord, this.zCoord - j};
-                                destination.add(dest);
+                                Location connection = new Location(x, y, z - j);
+                                connections.add(connection);
                             }
                         }
                     }
-                    if (this.worldObj.getBlock(this.xCoord, this.yCoord, this.zCoord - j) != Blocks.air)
+                    if (this.worldObj.getBlock(x, y, z - j) != Blocks.air)
                         break;
                 }
             }
 
-            if (getSenderSites()[i] == ForgeDirection.EAST)
+            if (getConnectionSides()[i] == ForgeDirection.EAST)
             {
                 for (int j = 1; j < 9; j ++)
                 {
-                    if (this.worldObj.getBlock(this.xCoord + j, this.yCoord, this.zCoord).hasTileEntity())
+                    if (this.worldObj.getBlock(x + j, y, z).hasTileEntity())
                     {
-                        if (this.worldObj.getTileEntity(this.xCoord + j, this.yCoord, this.zCoord) instanceof TileEntityEssenceHandler)
+                        if (this.worldObj.getTileEntity(x + j, y, z) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord + j, this.yCoord, this.zCoord)).isReceiverSide(getOppositeSite(ForgeDirection.EAST)))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(x + j, y, z)).isConnectionSide(getOppositeSite(ForgeDirection.EAST)))
                             {
-                                int[] dest = {this.xCoord + j, this.yCoord, this.zCoord};
-                                destination.add(dest);
+                                Location connection = new Location(x + j, y, z);
+                                connections.add(connection);
                             }
                         }
                     }
-                    if (this.worldObj.getBlock(this.xCoord + j, this.yCoord, this.zCoord) != Blocks.air)
+                    if (this.worldObj.getBlock(x + j, y, z) != Blocks.air)
                         break;
                 }
             }
 
-            if (getSenderSites()[i] == ForgeDirection.SOUTH)
+            if (getConnectionSides()[i] == ForgeDirection.SOUTH)
             {
                 for (int j = 1; j < 9; j ++)
                 {
-                    if (this.worldObj.getBlock(this.xCoord, this.yCoord, this.zCoord + j).hasTileEntity())
+                    if (this.worldObj.getBlock(x, y, z + j).hasTileEntity())
                     {
-                        if (this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord + j) instanceof TileEntityEssenceHandler)
+                        if (this.worldObj.getTileEntity(x, y, z + j) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord + j)).isReceiverSide(getOppositeSite(ForgeDirection.SOUTH)))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(x, y, z + j)).isConnectionSide(getOppositeSite(ForgeDirection.SOUTH)))
                             {
-                                int[] dest = {this.xCoord, this.yCoord, this.zCoord + j};
-                                destination.add(dest);
+                                Location connection = new Location(x, y, z + j);
+                                connections.add(connection);
                             }
                         }
                     }
-                    if (this.worldObj.getBlock(this.xCoord, this.yCoord, this.zCoord + j) != Blocks.air)
+                    if (this.worldObj.getBlock(x, y, z + j) != Blocks.air)
                         break;
                 }
             }
 
-            if (getSenderSites()[i] == ForgeDirection.WEST)
+            if (getConnectionSides()[i] == ForgeDirection.WEST)
             {
                 for (int j = 1; j < 9; j ++)
                 {
-                    if (this.worldObj.getBlock(this.xCoord - j, this.yCoord, this.zCoord).hasTileEntity())
+                    if (this.worldObj.getBlock(x - j, y, z).hasTileEntity())
                     {
-                        if (this.worldObj.getTileEntity(this.xCoord - j, this.yCoord, this.zCoord) instanceof TileEntityEssenceHandler)
+                        if (this.worldObj.getTileEntity(x - j, y, z) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord - j, this.yCoord, this.zCoord)).isReceiverSide(getOppositeSite(ForgeDirection.WEST)))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(x - j, y, z)).isConnectionSide(getOppositeSite(ForgeDirection.WEST)))
                             {
-                                int[] dest = {this.xCoord - j, this.yCoord, this.zCoord};
-                                destination.add(dest);
+                                Location connection = new Location(x - j, y, z);
+                                connections.add(connection);
                             }
                         }
                     }
-                    if (this.worldObj.getBlock(this.xCoord - j, this.yCoord, this.zCoord) != Blocks.air)
+                    if (this.worldObj.getBlock(x - j, y, z) != Blocks.air)
                         break;
                 }
             }
 
-            if (getSenderSites()[i] == ForgeDirection.UP)
+            if (getConnectionSides()[i] == ForgeDirection.UP)
             {
                 for (int j = 1; j < 9; j ++)
                 {
-                    if (this.worldObj.getBlock(this.xCoord, this.yCoord + j, this.zCoord).hasTileEntity())
+                    if (this.worldObj.getBlock(x, y + j, z).hasTileEntity())
                     {
-                        if (this.worldObj.getTileEntity(this.xCoord, this.yCoord + j, this.zCoord) instanceof TileEntityEssenceHandler)
+                        if (this.worldObj.getTileEntity(x, y + j, z) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord + j, this.zCoord)).isReceiverSide(getOppositeSite(ForgeDirection.UP)))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(x, y + j, z)).isConnectionSide(getOppositeSite(ForgeDirection.UP)))
                             {
-                                int[] dest = {this.xCoord, this.yCoord + j, this.zCoord};
-                                destination.add(dest);
+                                Location connection = new Location(x, y + j, z);
+                                connections.add(connection);
                             }
                         }
                     }
-                    if (this.worldObj.getBlock(this.xCoord, this.yCoord + j, this.zCoord) != Blocks.air)
+                    if (this.worldObj.getBlock(x, y + j, z) != Blocks.air)
                         break;
                 }
             }
 
-            if (getSenderSites()[i] == ForgeDirection.DOWN)
+            if (getConnectionSides()[i] == ForgeDirection.DOWN)
             {
                 for (int j = 1; j < 9; j ++)
                 {
-                    if (this.worldObj.getBlock(this.xCoord, this.yCoord - j, this.zCoord).hasTileEntity())
+                    if (this.worldObj.getBlock(x, y - j, z).hasTileEntity())
                     {
-                        if (this.worldObj.getTileEntity(this.xCoord, this.yCoord - j, this.zCoord) instanceof TileEntityEssenceHandler)
+                        if (this.worldObj.getTileEntity(x, y - j, z) instanceof TileEntityEssenceHandler)
                         {
-                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(this.xCoord, this.yCoord - j, this.zCoord)).isReceiverSide(getOppositeSite(ForgeDirection.DOWN)))
+                            if (((TileEntityEssenceHandler) this.worldObj.getTileEntity(x, y - j, z)).isConnectionSide(getOppositeSite(ForgeDirection.DOWN)))
                             {
-                                int[] dest = {this.xCoord, this.yCoord - j, this.zCoord};
-                                destination.add(dest);
+                                Location connection = new Location(x, y - j, z);
+                                connections.add(connection);
                             }
                         }
                     }
-                    if (this.worldObj.getBlock(this.xCoord, this.yCoord - j, this.zCoord) != Blocks.air)
+                    if (this.worldObj.getBlock(x, y - j, z) != Blocks.air)
                         break;
                 }
             }
 
         }
 
-        return destination;
+        return connections;
     }
 
+    public int getEssenceHandlerTypeOwn()
+    {
+        return this.EssenceHandlerType;
+    }
+
+    public int getEssenceHandlerType(Location loc)
+    {
+        TileEntityEssenceHandler tile = (TileEntityEssenceHandler) this.worldObj.getTileEntity(loc.x, loc.y, loc.z);
+        return tile.getEssenceHandlerTypeOwn();
+    }
+
+    public boolean isConnected(Location loc, int type)
+    {
+        switch (type)
+        {
+            case 0:
+                ArrayList<Location> connectedProvider = getConnectedProvider();
+                for (Location provider : connectedProvider)
+                {
+                    if (provider.compareLocation(loc))
+                        return true;
+                }
+                return false;
+            case 1:
+                ArrayList<Location> connectedRequester = getConnectedRequester();
+                for (Location requester : connectedRequester)
+                {
+                    if (requester.compareLocation(loc))
+                        return true;
+                }
+                return false;
+            case 2:
+                ArrayList<Location> connectedNode = getConnectedNodes();
+                for (Location node : connectedNode)
+                {
+                    if (node.compareLocation(loc))
+                        return true;
+                }
+                return false;
+            default:
+                return true;
+        }
+    }
+
+    public void createConnection(Location loc, int type)
+    {
+        switch (type)
+        {
+            case 0:
+                addConnectedProvider(loc);
+                break;
+            case 1:
+                addConnectedRequester(loc);
+                break;
+            case 2:
+                addConnectedNode(loc);
+                break;
+        }
+    }
+
+    public boolean connectionsExist()
+    {
+        if (!providerConnectionsExist())
+            return false;
+        if (!requesterConnectionsExist())
+            return false;
+        if (!nodeConnectionsExist())
+            return false;
+        return true;
+    }
+
+    public boolean providerConnectionsExist()
+    {
+        ArrayList<Location> provider = getConnectedProvider();
+        for (Location loc : provider)
+        {
+            if (this.worldObj.getBlock(loc.x, loc.y, loc.z) == Blocks.air)
+                return false;
+        }
+        return true;
+    }
+
+    public boolean requesterConnectionsExist()
+    {
+        ArrayList<Location> requester = getConnectedRequester();
+        for (Location loc : requester)
+        {
+            if (this.worldObj.getBlock(loc.x, loc.y, loc.z) == Blocks.air)
+                return false;
+        }
+        return true;
+    }
+
+    public boolean nodeConnectionsExist()
+    {
+        ArrayList<Location> nodes = getConnectedNodes();
+        for (Location loc : nodes)
+        {
+            if (this.worldObj.getBlock(loc.x, loc.y, loc.z) == Blocks.air)
+                return false;
+        }
+        return true;
+    }
+
+    public void resetEssenceNetwork()
+    {
+        cloneConnections();
+        resetConnections();
+        resetProvider();
+        resetRequester();
+        resetNodes();
+    }
+
+    public void cloneConnections()
+    {
+        this.clonedProvider = this.Provider;
+        this.clonedRequester = this.Requester;
+        this.clonedNodes = this.Nodes;
+    }
+
+    public ArrayList<Location> getClonedProvider()
+    {
+        return this.clonedProvider;
+    }
+
+    public ArrayList<Location> getClonedRequester()
+    {
+        return this.clonedRequester;
+    }
+
+    public ArrayList<Location> getClonedNodes()
+    {
+        return this.clonedNodes;
+    }
+
+    public void resetConnections()
+    {
+        this.Provider = new ArrayList<Location>();
+        this.Requester = new ArrayList<Location>();
+        this.Nodes = new ArrayList<Location>();
+    }
+
+    public void resetProvider()
+    {
+        ArrayList<Location> provider = getClonedProvider();
+
+        for (Location loc : provider)
+        {
+            TileEntityEssenceHandler tile = (TileEntityEssenceHandler) this.worldObj.getTileEntity(loc.x, loc.y, loc.z);
+            if (tile != null)
+            {
+                if (!tile.isReset)
+                    tile.resetEssenceNetwork();
+            }
+        }
+    }
+
+    public void resetRequester()
+    {
+        ArrayList<Location> requester = getClonedRequester();
+
+        for (Location loc : requester)
+        {
+            TileEntityEssenceHandler tile = (TileEntityEssenceHandler) this.worldObj.getTileEntity(loc.x, loc.y, loc.z);
+            if (tile != null)
+            {
+                if (!tile.isReset)
+                    tile.resetEssenceNetwork();
+            }
+        }
+    }
+
+    public void resetNodes()
+    {
+        ArrayList<Location> nodes = getClonedNodes();
+
+        for (Location loc : nodes)
+        {
+            TileEntityEssenceHandler tile = (TileEntityEssenceHandler) this.worldObj.getTileEntity(loc.x, loc.y, loc.z);
+            if (tile != null)
+            {
+                if (!tile.isReset)
+                 tile.resetEssenceNetwork();
+            }
+        }
+    }
+
+    public void transferProviderConnections(ArrayList<Location> connections)
+    {
+        for (Location provider : connections)
+        {
+            if (!isConnected(provider, 0))
+                addConnectedProvider(provider);
+        }
+    }
+
+    public void transferRequesterConnections(ArrayList<Location> connections)
+    {
+        for (Location requester : connections)
+        {
+            if (!isConnected(requester, 1))
+                addConnectedRequester(requester);
+        }
+    }
+
+
+    public void addNodeConnections()
+    {
+        ArrayList<Location> ConnectedNodes = getConnectedNodes();
+
+        for (Location node : ConnectedNodes)
+        {
+            if (this.worldObj.getBlock(node.x, node.y, node.z) != Blocks.air)
+            {
+                TileEntityEssenceHandler tile = (TileEntityEssenceHandler) this.worldObj.getTileEntity(node.x, node.y, node.z);
+                transferProviderConnections(tile.getConnectedProvider());
+                transferRequesterConnections(tile.getConnectedRequester());
+            }
+        }
+    }
 }

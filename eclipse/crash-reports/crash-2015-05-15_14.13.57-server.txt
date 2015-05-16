@@ -1,0 +1,79 @@
+---- Minecraft Crash Report ----
+// Quite honestly, I wouldn't worry myself about that.
+
+Time: 15.05.15 14:13
+Description: Ticking block entity
+
+java.lang.NullPointerException: Ticking block entity
+	at com.techmage.magetech.tileentity.TileEntityEssenceHandler.addNodeConnections(TileEntityEssenceHandler.java:397)
+	at com.techmage.magetech.tileentity.TileEntityEssenceNode.updateEntity(TileEntityEssenceNode.java:94)
+	at net.minecraft.world.World.updateEntities(World.java:2160)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:515)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:703)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.techmage.magetech.tileentity.TileEntityEssenceHandler.addNodeConnections(TileEntityEssenceHandler.java:397)
+	at com.techmage.magetech.tileentity.TileEntityEssenceNode.updateEntity(TileEntityEssenceNode.java:94)
+
+-- Block entity being ticked --
+Details:
+	Name: essenceNode // com.techmage.magetech.tileentity.TileEntityEssenceNode
+	Block type: ID #184 (tile.magetech:essenceNode // com.techmage.magetech.block.BlockEssenceNode)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (-498,4,-851), Chunk: (at 14,0,13 in -32,-54; contains blocks -512,0,-864 to -497,255,-849), Region: (-1,-2; contains chunks -32,-64 to -1,-33, blocks -512,0,-1024 to -1,255,-513)
+	Actual block type: ID #184 (tile.magetech:essenceNode // com.techmage.magetech.block.BlockEssenceNode)
+	Actual block data value: 0 / 0x0 / 0b0000
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:2160)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:515)
+
+-- Affected level --
+Details:
+	Level name: MageTech Flat Test
+	All players: 1 total; [EntityPlayerMP['Player328'/105, l='MageTech Flat Test', x=-495,64, y=4,00, z=-845,78]]
+	Chunk stats: ServerChunkCache: 1226 Drop: 0
+	Level seed: -8127643690615586798
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (-546,4,-877), Chunk: (at 14,0,3 in -35,-55; contains blocks -560,0,-880 to -545,255,-865), Region: (-2,-2; contains chunks -64,-64 to -33,-33, blocks -1024,0,-1024 to -513,255,-513)
+	Level time: 704719 game time, 6000 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 90907 (now: false), thunder time: 13169 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:703)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:614)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:485)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_31, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 4015116968 bytes (3829 MB) / 4225236992 bytes (4029 MB) up to 4225236992 bytes (4029 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx4096M -Xms4096M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1291 Minecraft Forge 10.13.2.1291 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1291} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1291} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MageTech{1.7.10-1.0} [MageTech] (MageTech) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['Player328'/105, l='MageTech Flat Test', x=-495,64, y=4,00, z=-845,78]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
