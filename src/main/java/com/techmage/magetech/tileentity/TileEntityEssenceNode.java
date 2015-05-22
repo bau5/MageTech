@@ -1,15 +1,25 @@
 package com.techmage.magetech.tileentity;
 
+import com.techmage.magetech.entity.EntityEssenceBeam;
 import com.techmage.magetech.utility.Location;
 import com.techmage.magetech.utility.LogHelper;
+import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import java.util.ArrayList;
 
 public class TileEntityEssenceNode extends TileEntityEssenceHandler
 {
+
+    public boolean init = false;
+
+    private static final float ESSENCEBEAM_OFFSET = 2.0F / 16.0F;
+
     public int storedEssence = 0;
     public int maxEssence = 50;
+
+    public ArrayList<Location> dirConnections = new ArrayList<Location>();
 
     public ArrayList<Location> Provider = new ArrayList<Location>();
     public ArrayList<Location> Requester = new ArrayList<Location>();
@@ -19,12 +29,14 @@ public class TileEntityEssenceNode extends TileEntityEssenceHandler
     public ArrayList<Location> clonedRequester = new ArrayList<Location>();
     public ArrayList<Location> clonedNodes = new ArrayList<Location>();
 
+    public Location essenceBeamTarget = new Location(0, 0, 0);
+
     public boolean isReset = false;
     public int EssenceHandlerType = 2;
 
     public TileEntityEssenceNode()
     {
-        this.setConnectionSides(ForgeDirection.NORTH, ForgeDirection.SOUTH, ForgeDirection.EAST, ForgeDirection.WEST);
+        this.setConnectionSides(ForgeDirection.NORTH, ForgeDirection.SOUTH, ForgeDirection.EAST, ForgeDirection.WEST, ForgeDirection.UP, ForgeDirection.DOWN);
     }
 
     @Override
@@ -71,6 +83,12 @@ public class TileEntityEssenceNode extends TileEntityEssenceHandler
     public ArrayList<Location> getClonedNodes()
     {
         return this.clonedNodes;
+    }
+
+    @Override
+    public ArrayList<Location> getDirConnections()
+    {
+        return this.dirConnections;
     }
 
     @Override
@@ -143,6 +161,7 @@ public class TileEntityEssenceNode extends TileEntityEssenceHandler
                 resetEssenceNetwork();
 
             ArrayList<Location> Connections = getConnections(this.xCoord, this.yCoord, this.zCoord);
+            dirConnections = Connections;
 
             for (Location loc : Connections)
             {
@@ -151,6 +170,10 @@ public class TileEntityEssenceNode extends TileEntityEssenceHandler
                 if (!isConnected(loc, type))
                 {
                     createConnection(loc, type);
+                    World world = Minecraft.getMinecraft().theWorld;
+                    EntityEssenceBeam essenceBeam = new EntityEssenceBeam(world, new Location(this.xCoord, this.yCoord, this.zCoord), loc);
+                    if (world != null)
+                        world.spawnEntityInWorld(essenceBeam);
                 }
             }
 

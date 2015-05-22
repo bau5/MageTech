@@ -2,6 +2,10 @@
 itemGroup.magetech - Tech=MageTech - Tech
 itemGroup.magetech - Magic=MageTech - Magic
 
+#Keys
+keys.techmage.category=TechMage
+keys.techmage.talismanswitch=Switch Talisman
+
 # Items
 item.magetech:crushedOreIron.name=Crushed Iron Ore
 item.magetech:crushedOreGold.name=Crushed Gold Ore

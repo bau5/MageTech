@@ -79,4 +79,10 @@ public class Names
         // Magic
         public static final String INFUSER = "container.magetech:" + Blocks.INFUSER;
     }
+
+    public static final class Keys
+    {
+        public static final String CATEGORY = "keys.techmage.category";
+        public static final String TALISMANSWITCH = "keys.techmage.talismanswitch";
+    }
 }

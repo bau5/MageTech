@@ -5,6 +5,7 @@ import com.techmage.magetech.utility.LogHelper;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.util.ForgeDirection;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class TileEntityEssenceHandler extends TileEntityMageTech
@@ -14,6 +15,8 @@ public class TileEntityEssenceHandler extends TileEntityMageTech
     public int storedEssence;
 
     public ForgeDirection[] ConnectionSides = new ForgeDirection[6];
+
+    public ArrayList<Location> dirConnections = new ArrayList<Location>();
 
     public ArrayList<Location> Provider = new ArrayList<Location>();
     public ArrayList<Location> Requester = new ArrayList<Location>();
@@ -366,46 +369,26 @@ public class TileEntityEssenceHandler extends TileEntityMageTech
 
     public boolean connectionsExist()
     {
-        if (!providerConnectionsExist())
-            return false;
-        if (!requesterConnectionsExist())
-            return false;
-        if (!nodeConnectionsExist())
-            return false;
-        return true;
+        int connections = 0;
+
+        for (Location con : getDirConnections())
+        {
+            for (Location loc : getConnections(this.xCoord, this.yCoord, this.zCoord))
+            {
+                if(con.compareLocation(loc))
+                    connections ++;
+
+            }
+        }
+
+        if (connections == getDirConnections().size())
+            return true;
+        return false;
     }
 
-    public boolean providerConnectionsExist()
+    public ArrayList<Location> getDirConnections()
     {
-        ArrayList<Location> provider = getConnectedProvider();
-        for (Location loc : provider)
-        {
-            if (this.worldObj.getBlock(loc.x, loc.y, loc.z) == Blocks.air)
-                return false;
-        }
-        return true;
-    }
-
-    public boolean requesterConnectionsExist()
-    {
-        ArrayList<Location> requester = getConnectedRequester();
-        for (Location loc : requester)
-        {
-            if (this.worldObj.getBlock(loc.x, loc.y, loc.z) == Blocks.air)
-                return false;
-        }
-        return true;
-    }
-
-    public boolean nodeConnectionsExist()
-    {
-        ArrayList<Location> nodes = getConnectedNodes();
-        for (Location loc : nodes)
-        {
-            if (this.worldObj.getBlock(loc.x, loc.y, loc.z) == Blocks.air)
-                return false;
-        }
-        return true;
+        return dirConnections;
     }
 
     public void resetEssenceNetwork()

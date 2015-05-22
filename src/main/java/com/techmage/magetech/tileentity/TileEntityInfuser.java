@@ -13,6 +13,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraftforge.common.util.ForgeDirection;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class TileEntityInfuser extends TileEntityEssenceHandler implements ISidedInventory
@@ -27,6 +28,8 @@ public class TileEntityInfuser extends TileEntityEssenceHandler implements ISide
 
     public int storedEssence = 0;
     public int maxEssence = 1000;
+
+    public ArrayList<Location> dirConnections = new ArrayList<Location>();
 
     public ArrayList<Location> Provider = new ArrayList<Location>();
     public ArrayList<Location> Requester = new ArrayList<Location>();
@@ -216,6 +219,12 @@ public class TileEntityInfuser extends TileEntityEssenceHandler implements ISide
     }
 
     @Override
+    public ArrayList<Location> getDirConnections()
+    {
+        return this.dirConnections;
+    }
+
+    @Override
     public void resetConnections()
     {
         this.Provider = new ArrayList<Location>();
@@ -307,6 +316,7 @@ public class TileEntityInfuser extends TileEntityEssenceHandler implements ISide
                 resetEssenceNetwork();
 
             ArrayList<Location> Connections = getConnections(this.xCoord, this.yCoord, this.zCoord);
+            dirConnections = Connections;
 
             for (Location loc : Connections)
             {
@@ -326,14 +336,9 @@ public class TileEntityInfuser extends TileEntityEssenceHandler implements ISide
             int missingEssence = this.getMaxEssence() - this.getStoredEssence();
 
             if (missingEssence >= 5)
-            {
                 requestEssenceFromNetwork(5);
-            }
             else if (missingEssence < 5 && missingEssence > 0)
-            {
-                LogHelper.info("Requesting missing essence");
                 requestEssenceFromNetwork(missingEssence);
-            }
 
 
             if (canInfuse())

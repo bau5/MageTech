@@ -2,6 +2,7 @@ package com.techmage.magetech;
 
 import com.techmage.magetech.handler.ConfigurationHandler;
 import com.techmage.magetech.handler.GuiHandler;
+import com.techmage.magetech.handler.KeyInputEventHandler;
 import com.techmage.magetech.init.*;
 import com.techmage.magetech.handler.PacketHandler;
 import com.techmage.magetech.proxy.IProxy;
@@ -34,6 +35,8 @@ public class MageTech
 
         ModBlocks.init();
 
+        Entity.init();
+
         PacketHandler.init();
 
         LogHelper.info("Pre Initialization Complete!");
@@ -43,13 +46,18 @@ public class MageTech
     public void init(FMLInitializationEvent event)
     {
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+        FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
 
         proxy.registerTileEntities();
         proxy.bindTileEntityRenderer();
+        proxy.bindEntityRenderer();
+        proxy.registerKeyBindings();
 
         Recipes.init();
 
         WorldGeneration.init();
+
+        LogHelper.info("Initialization Complete!");
     }
 
     @Mod.EventHandler

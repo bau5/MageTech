@@ -1,8 +1,8 @@
-[08:24:59] [main/INFO]: Setting user: Player718
-[08:25:00] [Client thread/INFO]: LWJGL Version: 2.9.1
-[08:25:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
-[08:25:05] [Sound Library Loader/INFO]: Sound engine started
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_side.png
+[17:41:28] [main/INFO]: Setting user: Player656
+[17:41:29] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:41:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:41:34] [Sound Library Loader/INFO]: Sound engine started
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -27,7 +27,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_side.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_side.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/crusher_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -52,7 +52,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/crusher_side.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_top.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/crusher_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -77,7 +77,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/crusher_top.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_top.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -102,7 +102,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_top.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_bottom.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -127,7 +127,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_bottom.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_top.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -152,7 +152,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_top
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_side.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -177,7 +177,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_side.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_top.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -202,7 +202,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_top.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_bottom.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -227,7 +227,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_bot
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_bottom.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -252,7 +252,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_bottom.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/essenceNode.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/essenceNode.png
 java.io.FileNotFoundException: magetech:textures/blocks/essenceNode.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -277,7 +277,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/essenceNode.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_top.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -302,7 +302,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_top.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_side.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -327,7 +327,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_side.
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crystalCluster.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crystalCluster.png
 java.io.FileNotFoundException: magetech:textures/blocks/crystalCluster.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -352,7 +352,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/crystalCluster.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_bottom.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -377,7 +377,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_bottom.
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:05] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_side.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -402,7 +402,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_side.pn
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_bottom.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -427,7 +427,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_botto
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_side.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -452,7 +452,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_sid
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_top.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -477,7 +477,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_top.p
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_bottom.png
+[17:41:34] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/crusher_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -502,8 +502,8 @@ java.io.FileNotFoundException: magetech:textures/blocks/crusher_bottom.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/wireSolder.png
+[17:41:35] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/wireSolder.png
 java.io.FileNotFoundException: magetech:textures/items/wireSolder.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -528,7 +528,7 @@ java.io.FileNotFoundException: magetech:textures/items/wireSolder.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/circuitBoardAdvanced.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/circuitBoardAdvanced.png
 java.io.FileNotFoundException: magetech:textures/items/circuitBoardAdvanced.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -553,7 +553,7 @@ java.io.FileNotFoundException: magetech:textures/items/circuitBoardAdvanced.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/circuitBoardBasic.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/circuitBoardBasic.png
 java.io.FileNotFoundException: magetech:textures/items/circuitBoardBasic.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -578,7 +578,7 @@ java.io.FileNotFoundException: magetech:textures/items/circuitBoardBasic.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/ingotSolder.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/ingotSolder.png
 java.io.FileNotFoundException: magetech:textures/items/ingotSolder.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -603,9 +603,9 @@ java.io.FileNotFoundException: magetech:textures/items/ingotSolder.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[08:25:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_side.png
+[17:41:35] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[17:41:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MageTech
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -633,7 +633,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_side.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_side.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/crusher_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -661,7 +661,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/crusher_side.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_top.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/crusher_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -689,7 +689,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/crusher_top.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_top.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -717,7 +717,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_top.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_bottom.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -745,7 +745,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_bottom.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_top.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -773,7 +773,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_top
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_side.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -801,7 +801,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_side.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_top.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/centrifuge_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -829,7 +829,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/centrifuge_top.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_bottom.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -857,7 +857,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_bot
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_bottom.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -885,7 +885,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_bottom.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/essenceNode.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/essenceNode.png
 java.io.FileNotFoundException: magetech:textures/blocks/essenceNode.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -913,7 +913,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/essenceNode.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_top.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/powerFurnace_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -941,7 +941,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/powerFurnace_top.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_side.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -969,7 +969,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_side.
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crystalCluster.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crystalCluster.png
 java.io.FileNotFoundException: magetech:textures/blocks/crystalCluster.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -997,7 +997,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/crystalCluster.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_bottom.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -1025,7 +1025,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_bottom.
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_side.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/solderingStation_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -1053,7 +1053,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/solderingStation_side.pn
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_bottom.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -1081,7 +1081,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_botto
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_side.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/electronicsWorkbench_side.png
 java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_side.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -1109,7 +1109,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/electronicsWorkbench_sid
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_top.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/elementalExtractor_top.png
 java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_top.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -1137,7 +1137,7 @@ java.io.FileNotFoundException: magetech:textures/blocks/elementalExtractor_top.p
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_bottom.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/blocks/crusher_bottom.png
 java.io.FileNotFoundException: magetech:textures/blocks/crusher_bottom.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -1165,8 +1165,8 @@ java.io.FileNotFoundException: magetech:textures/blocks/crusher_bottom.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/wireSolder.png
+[17:41:35] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/wireSolder.png
 java.io.FileNotFoundException: magetech:textures/items/wireSolder.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -1194,7 +1194,7 @@ java.io.FileNotFoundException: magetech:textures/items/wireSolder.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/circuitBoardAdvanced.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/circuitBoardAdvanced.png
 java.io.FileNotFoundException: magetech:textures/items/circuitBoardAdvanced.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -1222,7 +1222,7 @@ java.io.FileNotFoundException: magetech:textures/items/circuitBoardAdvanced.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:06] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/circuitBoardBasic.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/circuitBoardBasic.png
 java.io.FileNotFoundException: magetech:textures/items/circuitBoardBasic.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -1250,7 +1250,7 @@ java.io.FileNotFoundException: magetech:textures/items/circuitBoardBasic.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:07] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/ingotSolder.png
+[17:41:35] [Client thread/ERROR]: Using missing texture, unable to load magetech:textures/items/ingotSolder.png
 java.io.FileNotFoundException: magetech:textures/items/ingotSolder.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -1278,30 +1278,26 @@ java.io.FileNotFoundException: magetech:textures/items/ingotSolder.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_31]
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[?:1.8.0_31]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[08:25:07] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[08:25:07] [Sound Library Loader/INFO]: Sound engine started
-[08:25:10] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[08:25:10] [Server thread/INFO]: Generating keypair
-[08:25:10] [Server thread/INFO]: Preparing start region for level 0
-[08:25:11] [Server thread/INFO]: Changing view distance to 16, from 10
-[08:25:11] [Server thread/INFO]: Player718[local:E:52aca95f] logged in with entity id 98 at (-522.6049934297683, 4.0, -844.2490246911187)
-[08:25:11] [Server thread/INFO]: Player718 joined the game
-[08:25:35] [Server thread/INFO]: Saving and pausing game...
-[08:25:35] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
-[08:25:35] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
-[08:25:35] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
-[08:27:17] [Server thread/INFO]: Saving and pausing game...
-[08:27:17] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
-[08:27:17] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
-[08:27:17] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
-[08:28:41] [Server thread/INFO]: Saving and pausing game...
-[08:28:41] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
-[08:28:41] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
-[08:28:41] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
-[08:49:39] [Client thread/INFO]: Stopping!
-[08:49:39] [Server thread/INFO]: Stopping server
-[08:49:39] [Server thread/INFO]: Saving players
-[08:49:39] [Server thread/INFO]: Saving worlds
-[08:49:39] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
-[08:49:39] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
-[08:49:39] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:41:35] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[17:41:36] [Sound Library Loader/INFO]: Sound engine started
+[17:41:38] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:41:38] [Server thread/INFO]: Generating keypair
+[17:41:38] [Server thread/INFO]: Preparing start region for level 0
+[17:41:39] [Server thread/INFO]: Changing view distance to 16, from 10
+[17:41:40] [Server thread/INFO]: Player656[local:E:3068cc7d] logged in with entity id 304 at (-121.86305511867495, 4.0, -751.1377035644366)
+[17:41:40] [Server thread/INFO]: Player656 joined the game
+[17:44:06] [Server thread/INFO]: Player656 has just earned the achievement [Taking Inventory]
+[17:44:06] [Client thread/INFO]: [CHAT] Player656 has just earned the achievement [Taking Inventory]
+[17:44:27] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-05-22_17.44.27.png
+[17:44:59] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-05-22_17.44.59.png
+[17:45:10] [Server thread/INFO]: Saving and pausing game...
+[17:45:10] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:45:10] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:45:10] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:45:11] [Server thread/INFO]: Stopping server
+[17:45:11] [Server thread/INFO]: Saving players
+[17:45:11] [Server thread/INFO]: Saving worlds
+[17:45:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Overworld
+[17:45:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/Nether
+[17:45:11] [Server thread/INFO]: Saving chunks for level 'MageTech Flat Test'/The End
+[17:45:12] [Client thread/INFO]: Stopping!

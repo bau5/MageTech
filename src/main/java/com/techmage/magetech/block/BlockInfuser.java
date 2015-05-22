@@ -30,7 +30,6 @@ public class BlockInfuser extends BlockMageTech_Magic implements ITileEntityProv
     private IIcon bottomIcon;
     @SideOnly(Side.CLIENT)
     private IIcon sideIcon;
-    @SideOnly(Side.CLIENT)
 
     @Override
     public TileEntity createNewTileEntity(World world, int metaData)
@@ -74,17 +73,11 @@ public class BlockInfuser extends BlockMageTech_Magic implements ITileEntityProv
     public IIcon getIcon (int side, int metadata)
     {
         if (side == 0)
-        {
             return bottomIcon;
-        }
         else if (side == 1)
-        {
             return topIcon;
-        }
         else
-        {
             return sideIcon;
-        }
     }
 
 }

@@ -15,6 +15,8 @@ public class TileEntityElementalExtractor extends TileEntityEssenceHandler
     public int storedEssence = 0;
     public int maxEssence = 1000;
 
+    public ArrayList<Location> dirConnections = new ArrayList<Location>();
+
     public ArrayList<Location> Provider = new ArrayList<Location>();
     public ArrayList<Location> Requester = new ArrayList<Location>();
     public ArrayList<Location> Nodes = new ArrayList<Location>();
@@ -75,6 +77,12 @@ public class TileEntityElementalExtractor extends TileEntityEssenceHandler
     public ArrayList<Location> getClonedNodes()
     {
         return this.clonedNodes;
+    }
+
+    @Override
+    public ArrayList<Location> getDirConnections()
+    {
+        return this.dirConnections;
     }
 
     @Override
@@ -159,6 +167,7 @@ public class TileEntityElementalExtractor extends TileEntityEssenceHandler
                 resetEssenceNetwork();
 
             ArrayList<Location> Connections = getConnections(this.xCoord, this.yCoord, this.zCoord);
+            dirConnections = Connections;
 
             for (Location loc : Connections)
             {

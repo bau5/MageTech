@@ -2,6 +2,7 @@ package com.techmage.magetech.item;
 
 import com.techmage.magetech.reference.Names;
 import com.techmage.magetech.reference.Textures;
+import com.techmage.magetech.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -10,6 +11,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntitySmallFireball;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.Vec3;
@@ -47,7 +49,7 @@ public class ItemTalismanAir extends ItemMageTech_Magic
     {
         if (!par2World.isRemote)
         {
-            int posX = ((int) par3Entity.posX) - 1;
+            int posX = ((int) par3Entity.posX - 1);
             int posY = ((int) par3Entity.posY);
             int posZ = ((int) par3Entity.posZ - 1);
 
@@ -87,6 +89,7 @@ public class ItemTalismanAir extends ItemMageTech_Magic
     @Override
     public void onUpdate(ItemStack par1ItemStack, World par2World, Entity par3Entity, int par4, boolean par5)
     {
+
         if (!par2World.isRemote)
         {
             int posX = ((int) par3Entity.posX) - 1;

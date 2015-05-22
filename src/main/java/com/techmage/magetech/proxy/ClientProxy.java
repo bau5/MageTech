@@ -1,13 +1,18 @@
 package com.techmage.magetech.proxy;
 
+import com.techmage.magetech.client.render.entity.EntityEssenceBeamRenderer;
 import com.techmage.magetech.client.render.item.ItemCrystalClusterRenderer;
 import com.techmage.magetech.client.render.item.ItemEssenceNodeRenderer;
 import com.techmage.magetech.client.render.tileentity.TileEntityCrystalClusterRenderer;
 import com.techmage.magetech.client.render.tileentity.TileEntityEssenceNodeRenderer;
+import com.techmage.magetech.client.settings.KeyBindings;
+import com.techmage.magetech.entity.EntityEssenceBeam;
 import com.techmage.magetech.init.ModBlocks;
 import com.techmage.magetech.reference.Names;
 import com.techmage.magetech.tileentity.*;
+import com.techmage.magetech.utility.LogHelper;
 import cpw.mods.fml.client.registry.ClientRegistry;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;
@@ -37,5 +42,17 @@ public class ClientProxy extends CommonProxy
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityEssenceNode.class, new TileEntityEssenceNodeRenderer());
         MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(ModBlocks.essenceNode), new ItemEssenceNodeRenderer());
+    }
+
+    @Override
+    public void bindEntityRenderer()
+    {
+        RenderingRegistry.registerEntityRenderingHandler(EntityEssenceBeam.class, new EntityEssenceBeamRenderer());
+    }
+
+    @Override
+    public void registerKeyBindings()
+    {
+        ClientRegistry.registerKeyBinding(KeyBindings.talismanSwitch);
     }
 }

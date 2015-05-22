@@ -37,7 +37,7 @@ public class TileEntityEssenceNodeRenderer extends TileEntitySpecialRenderer
     {
         GL11.glPushMatrix();
 
-        GL11.glTranslatef((float) x, (float) y, (float) z);
+        GL11.glTranslatef((float) x, (float) y + 0.5F, (float) z);
         Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 
         GL11.glPushMatrix();
@@ -51,11 +51,10 @@ public class TileEntityEssenceNodeRenderer extends TileEntitySpecialRenderer
     {
         GL11.glPushMatrix();
 
-        GL11.glTranslatef((float) x, (float) y - 0.2F, (float) z);
+        GL11.glTranslatef((float) x, (float) y, (float) z);
         Minecraft.getMinecraft().renderEngine.bindTexture(texture);
 
         GL11.glPushMatrix();
-        GL11.glScaled(1.5D, 1.5D, 1.5D);
         model.renderAll();
 
         GL11.glPopMatrix();
